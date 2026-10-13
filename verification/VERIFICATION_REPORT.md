@@ -2,13 +2,15 @@
 
 **Leonard van Hemert · 13 October 2026**
 
+**Verdict: READY FOR REVIEW**, with the conditional formal scope and unformalized analytical inputs stated below.
+
 Scope: a 14-page main article and 17-page supplement, with the readable pinned Lean project and portable finite certificate closure. The title is *Certified whole-domain bounds and equality barriers for the odd theta–Weil form*.
 
 ## Mathematical and formal correspondence
 
 The publication concentrates the certified whole-domain odd bounds, the full-residual mechanism, the retained-energy tradeoff and the quantitative equality barrier. Secondary signed-action, finite positivity and outside-coupling results are in the supplement. Standard factorization/residual/Schur arguments are attributed; the claimed contribution is the explicit theta–arithmetic realization and its controlled obstruction. Prior publication v1.0.0 and its version DOI were confirmed against the public GitHub tag/release and Zenodo record; no DOI has been assigned to this new work.
 
-The independent reviewer inspected the actual formal definitions, proof sources, fully explicit elaborated types, manuscript mapping and transitive axioms. In particular, `enriched_certified_retained_energy` composes the full action decomposition and separate errors with the finite RE5 price, derives the resolvent comparison, transfers using the original coefficient metric N to the full form domain, and derives the retained-energy/scalar-loss expression. The target does not assume that final expression or substitute the physical Gram for N. Complex real-scalar restriction preserves every complex vector. See `FORMAL_CORRESPONDENCE.md`.
+The independent reviewer inspected the actual formal definitions, proof sources, fully explicit elaborated types, manuscript mapping and transitive axioms. In particular, `enriched_certified_retained_energy` composes the full action decomposition and separate errors with the finite RE5 price, derives the resolvent comparison, transfers using the original coefficient metric N to the full form domain, and derives the retained-energy/scalar-loss expression. The target does not assume that final expression or substitute the physical Gram for N. Complex real-scalar restriction preserves every complex vector. See `FORMAL_CORRESPONDENCE.md`. A narrow second editorial review confirmed the expanded proof transitions and corrected the description of mixed numerical centers: CY, YA and CA need not be Hermitian, while their assembled comparison matrices are Hermitian. No estimate or certificate changed.
 
 ## Checks actually executed
 
