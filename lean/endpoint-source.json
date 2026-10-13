@@ -1,0 +1,3269 @@
+{
+  "source": "certificates/complement_residual_enrichment_shift_search.json",
+  "source_sha256": "98c03461437908021035e59a9a5b13aa6543ac3d2f20c33b8be4da9f29ae1018",
+  "rho_json_pointer": "/rho_exact",
+  "rho_exact": "979236349/2000000000000",
+  "record_count": 231,
+  "scope": "Exact rational arithmetic and conditional real lower-bound transfer only. No verification of interval balls, matrices, spectral inequalities, or continuum analytic premises.",
+  "fields": {
+    "mu": "mu_exact",
+    "beta": "beta_exact",
+    "theta": "theta_exact",
+    "retained": "retained_energy_exact",
+    "loss": "alpha_exact",
+    "passes": "passes"
+  },
+  "records": [
+    {
+      "index": 0,
+      "json_pointer": "/shifts/0",
+      "definition": "OddThetaWeil.Endpoints.endpoint_000",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_000_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "1/8",
+        "theta_exact": "772754937241/500000000000",
+        "retained_energy_exact": "-272754937241/500000000000",
+        "alpha_exact": "30643105940724399026891/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 1,
+      "json_pointer": "/shifts/1",
+      "definition": "OddThetaWeil.Endpoints.endpoint_001",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_001_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "1/4",
+        "theta_exact": "694999132279/500000000000",
+        "retained_energy_exact": "-194999132279/500000000000",
+        "alpha_exact": "27609015052808943990629/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 2,
+      "json_pointer": "/shifts/2",
+      "definition": "OddThetaWeil.Endpoints.endpoint_002",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_002_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "3/8",
+        "theta_exact": "1355349848119/1000000000000",
+        "retained_energy_exact": "-355349848119/1000000000000",
+        "alpha_exact": "53866022436870245922469/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 3,
+      "json_pointer": "/shifts/3",
+      "definition": "OddThetaWeil.Endpoints.endpoint_003",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_003_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "1/2",
+        "theta_exact": "1350892952267/1000000000000",
+        "retained_energy_exact": "-350892952267/1000000000000",
+        "alpha_exact": "53692110957212231646817/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 4,
+      "json_pointer": "/shifts/4",
+      "definition": "OddThetaWeil.Endpoints.endpoint_004",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_004_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "3/4",
+        "theta_exact": "343043589683/250000000000",
+        "retained_energy_exact": "-93043589683/250000000000",
+        "alpha_exact": "13630631922260965012633/500000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 5,
+      "json_pointer": "/shifts/5",
+      "definition": "OddThetaWeil.Endpoints.endpoint_005",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_005_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "1",
+        "theta_exact": "140857165951/100000000000",
+        "retained_energy_exact": "-40857165951/100000000000",
+        "alpha_exact": "5594277816023655647101/200000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 6,
+      "json_pointer": "/shifts/6",
+      "definition": "OddThetaWeil.Endpoints.endpoint_006",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_006_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "5/4",
+        "theta_exact": "725517023693/500000000000",
+        "retained_energy_exact": "-225517023693/500000000000",
+        "alpha_exact": "28799846480801520183143/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 7,
+      "json_pointer": "/shifts/7",
+      "definition": "OddThetaWeil.Endpoints.endpoint_007",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_007_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "3/2",
+        "theta_exact": "1496543200171/1000000000000",
+        "retained_energy_exact": "-496543200171/1000000000000",
+        "alpha_exact": "59375494856383773784321/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 8,
+      "json_pointer": "/shifts/8",
+      "definition": "OddThetaWeil.Endpoints.endpoint_008",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_008_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "7/4",
+        "theta_exact": "771902037697/500000000000",
+        "retained_energy_exact": "-271902037697/500000000000",
+        "alpha_exact": "30609825149199929351747/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 9,
+      "json_pointer": "/shifts/9",
+      "definition": "OddThetaWeil.Endpoints.endpoint_009",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_009_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "2",
+        "theta_exact": "816179202293/500000000000",
+        "retained_energy_exact": "-316179202293/500000000000",
+        "alpha_exact": "32337553924036870251743/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 10,
+      "json_pointer": "/shifts/10",
+      "definition": "OddThetaWeil.Endpoints.endpoint_010",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_010_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "9/4",
+        "theta_exact": "3524288657/2000000000",
+        "retained_energy_exact": "-1524288657/2000000000",
+        "alpha_exact": "139478907420697206707/4000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 11,
+      "json_pointer": "/shifts/11",
+      "definition": "OddThetaWeil.Endpoints.endpoint_011",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_011_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "5/2",
+        "theta_exact": "94596854971/50000000000",
+        "retained_energy_exact": "-44596854971/50000000000",
+        "alpha_exact": "3740203337401315459121/100000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 12,
+      "json_pointer": "/shifts/12",
+      "definition": "OddThetaWeil.Endpoints.endpoint_012",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_012_checked",
+      "exact": {
+        "mu_exact": "1/50",
+        "beta_exact": "3",
+        "theta_exact": "430307273799/200000000000",
+        "retained_energy_exact": "-230307273799/200000000000",
+        "alpha_exact": "16986765698016923880149/400000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 13,
+      "json_pointer": "/shifts/13",
+      "definition": "OddThetaWeil.Endpoints.endpoint_013",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_013_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "1/8",
+        "theta_exact": "1330240617357/1000000000000",
+        "retained_energy_exact": "-330240617357/1000000000000",
+        "alpha_exact": "66188647251417825290407/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 14,
+      "json_pointer": "/shifts/14",
+      "definition": "OddThetaWeil.Endpoints.endpoint_014",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_014_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "1/4",
+        "theta_exact": "600048418863/500000000000",
+        "retained_energy_exact": "-100048418863/500000000000",
+        "alpha_exact": "29904449894739373148813/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 15,
+      "json_pointer": "/shifts/15",
+      "definition": "OddThetaWeil.Endpoints.endpoint_015",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_015_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "3/8",
+        "theta_exact": "145747450777/125000000000",
+        "retained_energy_exact": "-20747450777/125000000000",
+        "alpha_exact": "7267055880900073306827/250000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 16,
+      "json_pointer": "/shifts/16",
+      "definition": "OddThetaWeil.Endpoints.endpoint_016",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_016_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "1/2",
+        "theta_exact": "18060002203/15625000000",
+        "retained_energy_exact": "-2435002203/15625000000",
+        "alpha_exact": "900615667482927323153/31250000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 17,
+      "json_pointer": "/shifts/17",
+      "definition": "OddThetaWeil.Endpoints.endpoint_017",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_017_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "3/4",
+        "theta_exact": "1159531836959/1000000000000",
+        "retained_energy_exact": "-159531836959/1000000000000",
+        "alpha_exact": "57820372474377005577309/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 18,
+      "json_pointer": "/shifts/18",
+      "definition": "OddThetaWeil.Endpoints.endpoint_018",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_018_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "1",
+        "theta_exact": "235043082937/200000000000",
+        "retained_energy_exact": "-35043082937/200000000000",
+        "alpha_exact": "11717838686257067922987/400000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 19,
+      "json_pointer": "/shifts/19",
+      "definition": "OddThetaWeil.Endpoints.endpoint_019",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_019_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "5/4",
+        "theta_exact": "1195705123073/1000000000000",
+        "retained_energy_exact": "-195705123073/1000000000000",
+        "alpha_exact": "59593614583451399819523/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 20,
+      "json_pointer": "/shifts/20",
+      "definition": "OddThetaWeil.Endpoints.endpoint_020",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_020_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "3/2",
+        "theta_exact": "24372117333/20000000000",
+        "retained_energy_exact": "-4372117333/20000000000",
+        "alpha_exact": "1214324530435433462783/40000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 21,
+      "json_pointer": "/shifts/21",
+      "definition": "OddThetaWeil.Endpoints.endpoint_021",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_021_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "7/4",
+        "theta_exact": "621445383331/500000000000",
+        "retained_energy_exact": "-121445383331/500000000000",
+        "alpha_exact": "30953345432774046101481/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 22,
+      "json_pointer": "/shifts/22",
+      "definition": "OddThetaWeil.Endpoints.endpoint_022",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_022_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "2",
+        "theta_exact": "65654746389/50000000000",
+        "retained_energy_exact": "-15654746389/50000000000",
+        "alpha_exact": "3267407622751514706239/100000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 23,
+      "json_pointer": "/shifts/23",
+      "definition": "OddThetaWeil.Endpoints.endpoint_023",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_023_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "9/4",
+        "theta_exact": "283262367557/200000000000",
+        "retained_energy_exact": "-83262367557/200000000000",
+        "alpha_exact": "14081584841034387270607/400000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 24,
+      "json_pointer": "/shifts/24",
+      "definition": "OddThetaWeil.Endpoints.endpoint_024",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_024_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "5/2",
+        "theta_exact": "15195342501/10000000000",
+        "retained_energy_exact": "-5195342501/10000000000",
+        "alpha_exact": "754679656827516231151/20000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 25,
+      "json_pointer": "/shifts/25",
+      "definition": "OddThetaWeil.Endpoints.endpoint_025",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_025_checked",
+      "exact": {
+        "mu_exact": "1/40",
+        "beta_exact": "3",
+        "theta_exact": "431497530301/250000000000",
+        "retained_energy_exact": "-181497530301/250000000000",
+        "alpha_exact": "21397147536125531888951/500000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 26,
+      "json_pointer": "/shifts/26",
+      "definition": "OddThetaWeil.Endpoints.endpoint_026",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_026_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "1/8",
+        "theta_exact": "237868615433/200000000000",
+        "retained_energy_exact": "-37868615433/200000000000",
+        "alpha_exact": "14235034601261704025883/400000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 27,
+      "json_pointer": "/shifts/27",
+      "definition": "OddThetaWeil.Endpoints.endpoint_027",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_027_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "1/4",
+        "theta_exact": "4207315073/3906250000",
+        "retained_energy_exact": "-301065073/3906250000",
+        "alpha_exact": "252144090517104061523/7812500000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 28,
+      "json_pointer": "/shifts/28",
+      "definition": "OddThetaWeil.Endpoints.endpoint_028",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_028_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "3/8",
+        "theta_exact": "1044411695049/1000000000000",
+        "retained_energy_exact": "-44411695049/1000000000000",
+        "alpha_exact": "62621212156827315863899/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 29,
+      "json_pointer": "/shifts/29",
+      "definition": "OddThetaWeil.Endpoints.endpoint_029",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_029_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "1/2",
+        "theta_exact": "1031622736867/1000000000000",
+        "retained_energy_exact": "-31622736867/1000000000000",
+        "alpha_exact": "61866398078624971221417/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 30,
+      "json_pointer": "/shifts/30",
+      "definition": "OddThetaWeil.Endpoints.endpoint_030",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_030_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "3/4",
+        "theta_exact": "512951993371/500000000000",
+        "retained_energy_exact": "-12951993371/500000000000",
+        "alpha_exact": "30764436539559109757521/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 31,
+      "json_pointer": "/shifts/31",
+      "definition": "OddThetaWeil.Endpoints.endpoint_031",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_031_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "1",
+        "theta_exact": "515057120847/500000000000",
+        "retained_energy_exact": "-15057120847/500000000000",
+        "alpha_exact": "30888682770775331932397/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 32,
+      "json_pointer": "/shifts/32",
+      "definition": "OddThetaWeil.Endpoints.endpoint_032",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_032_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "5/4",
+        "theta_exact": "1038299174079/1000000000000",
+        "retained_energy_exact": "-38299174079/1000000000000",
+        "alpha_exact": "62260446501345164602429/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 33,
+      "json_pointer": "/shifts/33",
+      "definition": "OddThetaWeil.Endpoints.endpoint_033",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_033_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "3/2",
+        "theta_exact": "524237382117/500000000000",
+        "retained_energy_exact": "-24237382117/500000000000",
+        "alpha_exact": "31430508801446431029167/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 34,
+      "json_pointer": "/shifts/34",
+      "definition": "OddThetaWeil.Endpoints.endpoint_034",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_034_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "7/4",
+        "theta_exact": "529895393633/500000000000",
+        "retained_energy_exact": "-29895393633/500000000000",
+        "alpha_exact": "31764448961866903234083/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 35,
+      "json_pointer": "/shifts/35",
+      "definition": "OddThetaWeil.Endpoints.endpoint_035",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_035_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "2",
+        "theta_exact": "275573481821/250000000000",
+        "retained_energy_exact": "-25573481821/250000000000",
+        "alpha_exact": "16509366426290386088471/500000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 36,
+      "json_pointer": "/shifts/36",
+      "definition": "OddThetaWeil.Endpoints.endpoint_036",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_036_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "9/4",
+        "theta_exact": "593986410737/500000000000",
+        "retained_energy_exact": "-93986410737/500000000000",
+        "alpha_exact": "35547149734514285720787/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 37,
+      "json_pointer": "/shifts/37",
+      "definition": "OddThetaWeil.Endpoints.endpoint_037",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_037_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "5/2",
+        "theta_exact": "1273656335929/1000000000000",
+        "retained_energy_exact": "-273656335929/1000000000000",
+        "alpha_exact": "76151405924464168516779/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 38,
+      "json_pointer": "/shifts/38",
+      "definition": "OddThetaWeil.Endpoints.endpoint_038",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_038_checked",
+      "exact": {
+        "mu_exact": "3/100",
+        "beta_exact": "3",
+        "theta_exact": "1445032655113/1000000000000",
+        "retained_energy_exact": "-445032655113/1000000000000",
+        "alpha_exact": "86266167154401369697563/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 39,
+      "json_pointer": "/shifts/39",
+      "definition": "OddThetaWeil.Endpoints.endpoint_039",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_039_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "1/8",
+        "theta_exact": "43617580609/40000000000",
+        "retained_energy_exact": "-3617580609/40000000000",
+        "alpha_exact": "3049688176202229643459/80000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 40,
+      "json_pointer": "/shifts/40",
+      "definition": "OddThetaWeil.Endpoints.endpoint_040",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_040_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "1/4",
+        "theta_exact": "991792592687/1000000000000",
+        "retained_energy_exact": "8207407313/1000000000000",
+        "alpha_exact": "69433518479661938020237/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 41,
+      "json_pointer": "/shifts/41",
+      "definition": "OddThetaWeil.Endpoints.endpoint_041",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_041_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "3/8",
+        "theta_exact": "240275127897/250000000000",
+        "retained_energy_exact": "9724872103/250000000000",
+        "alpha_exact": "16828781901042633671947/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 42,
+      "json_pointer": "/shifts/42",
+      "definition": "OddThetaWeil.Endpoints.endpoint_042",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_042_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "1/2",
+        "theta_exact": "94736718899/100000000000",
+        "retained_energy_exact": "5263281101/100000000000",
+        "alpha_exact": "6636724319099103940249/200000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 43,
+      "json_pointer": "/shifts/43",
+      "definition": "OddThetaWeil.Endpoints.endpoint_043",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_043_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "3/4",
+        "theta_exact": "936844439733/1000000000000",
+        "retained_energy_exact": "63155560267/1000000000000",
+        "alpha_exact": "65640955001564906545183/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 44,
+      "json_pointer": "/shifts/44",
+      "definition": "OddThetaWeil.Endpoints.endpoint_044",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_044_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "1",
+        "theta_exact": "233697442077/250000000000",
+        "retained_energy_exact": "16302557923/250000000000",
+        "alpha_exact": "16374785002689879543127/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 45,
+      "json_pointer": "/shifts/45",
+      "definition": "OddThetaWeil.Endpoints.endpoint_045",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_045_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "5/4",
+        "theta_exact": "9361221939/10000000000",
+        "retained_energy_exact": "638778061/10000000000",
+        "alpha_exact": "655911050426274939289/20000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 46,
+      "json_pointer": "/shifts/46",
+      "definition": "OddThetaWeil.Endpoints.endpoint_046",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_046_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "3/2",
+        "theta_exact": "469574467039/500000000000",
+        "retained_energy_exact": "30425532961/500000000000",
+        "alpha_exact": "32900006480543108799389/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 47,
+      "json_pointer": "/shifts/47",
+      "definition": "OddThetaWeil.Endpoints.endpoint_047",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_047_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "7/4",
+        "theta_exact": "943144714221/1000000000000",
+        "retained_energy_exact": "56855285779/1000000000000",
+        "alpha_exact": "66075804757937579580871/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 48,
+      "json_pointer": "/shifts/48",
+      "definition": "OddThetaWeil.Endpoints.endpoint_048",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_048_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "2",
+        "theta_exact": "476406000149/500000000000",
+        "retained_energy_exact": "23593999851/500000000000",
+        "alpha_exact": "33371524112702399783999/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 49,
+      "json_pointer": "/shifts/49",
+      "definition": "OddThetaWeil.Endpoints.endpoint_049",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_049_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "9/4",
+        "theta_exact": "513029270559/500000000000",
+        "retained_energy_exact": "-13029270559/500000000000",
+        "alpha_exact": "35899290203797671650909/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 50,
+      "json_pointer": "/shifts/50",
+      "definition": "OddThetaWeil.Endpoints.endpoint_050",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_050_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "5/2",
+        "theta_exact": "68706817561/62500000000",
+        "retained_energy_exact": "-6206817561/62500000000",
+        "alpha_exact": "4803399287902657275211/125000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 51,
+      "json_pointer": "/shifts/51",
+      "definition": "OddThetaWeil.Endpoints.endpoint_051",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_051_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "3",
+        "theta_exact": "311454554029/250000000000",
+        "retained_energy_exact": "-61454554029/250000000000",
+        "alpha_exact": "21741640248913218799879/500000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 52,
+      "json_pointer": "/shifts/52",
+      "definition": "OddThetaWeil.Endpoints.endpoint_052",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_052_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "1/8",
+        "theta_exact": "31798489957/31250000000",
+        "retained_energy_exact": "-548489957/31250000000",
+        "alpha_exact": "2543342095257044153007/62500000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 53,
+      "json_pointer": "/shifts/53",
+      "definition": "OddThetaWeil.Endpoints.endpoint_053",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_053_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "1/4",
+        "theta_exact": "929882824529/1000000000000",
+        "retained_energy_exact": "70117175471/1000000000000",
+        "alpha_exact": "74459287249230414395379/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 54,
+      "json_pointer": "/shifts/54",
+      "definition": "OddThetaWeil.Endpoints.endpoint_054",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_054_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "3/8",
+        "theta_exact": "56341835029/62500000000",
+        "retained_energy_exact": "6158164971/62500000000",
+        "alpha_exact": "4513377101302741730879/125000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 55,
+      "json_pointer": "/shifts/55",
+      "definition": "OddThetaWeil.Endpoints.endpoint_055",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_055_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "1/2",
+        "theta_exact": "22196028801/25000000000",
+        "retained_energy_exact": "2803971199/25000000000",
+        "alpha_exact": "1778428054599609912451/50000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 56,
+      "json_pointer": "/shifts/56",
+      "definition": "OddThetaWeil.Endpoints.endpoint_056",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_056_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "3/4",
+        "theta_exact": "175071031421/200000000000",
+        "retained_energy_exact": "24928968579/200000000000",
+        "alpha_exact": "14030093865855635678071/400000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 57,
+      "json_pointer": "/shifts/57",
+      "definition": "OddThetaWeil.Endpoints.endpoint_057",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_057_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "1",
+        "theta_exact": "217562393373/250000000000",
+        "retained_energy_exact": "32437606627/250000000000",
+        "alpha_exact": "17436755553323721684823/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 58,
+      "json_pointer": "/shifts/58",
+      "definition": "OddThetaWeil.Endpoints.endpoint_058",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_058_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "5/4",
+        "theta_exact": "434047448621/500000000000",
+        "retained_energy_exact": "65952551379/500000000000",
+        "alpha_exact": "34788379025299606875271/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 59,
+      "json_pointer": "/shifts/59",
+      "definition": "OddThetaWeil.Endpoints.endpoint_059",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_059_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "3/2",
+        "theta_exact": "216853866897/250000000000",
+        "retained_energy_exact": "33146133103/250000000000",
+        "alpha_exact": "17380767250123249760947/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 60,
+      "json_pointer": "/shifts/60",
+      "definition": "OddThetaWeil.Endpoints.endpoint_060",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_060_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "7/4",
+        "theta_exact": "867579071153/1000000000000",
+        "retained_energy_exact": "132420928847/1000000000000",
+        "alpha_exact": "69535997079135325059603/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 61,
+      "json_pointer": "/shifts/61",
+      "definition": "OddThetaWeil.Endpoints.endpoint_061",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_061_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "2",
+        "theta_exact": "868269671589/1000000000000",
+        "retained_energy_exact": "131730328411/1000000000000",
+        "alpha_exact": "69590568852965758611439/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 62,
+      "json_pointer": "/shifts/62",
+      "definition": "OddThetaWeil.Endpoints.endpoint_062",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_062_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "9/4",
+        "theta_exact": "452675526263/500000000000",
+        "retained_energy_exact": "47324473737/500000000000",
+        "alpha_exact": "36260383945920566266213/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 63,
+      "json_pointer": "/shifts/63",
+      "definition": "OddThetaWeil.Endpoints.endpoint_063",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_063_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "5/2",
+        "theta_exact": "38773443809/40000000000",
+        "retained_energy_exact": "1226556191/40000000000",
+        "alpha_exact": "3103076593126318186659/80000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 64,
+      "json_pointer": "/shifts/64",
+      "definition": "OddThetaWeil.Endpoints.endpoint_064",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_064_checked",
+      "exact": {
+        "mu_exact": "1/25",
+        "beta_exact": "3",
+        "theta_exact": "1097313323277/1000000000000",
+        "retained_energy_exact": "-97313323277/1000000000000",
+        "alpha_exact": "87689773118765173804327/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 65,
+      "json_pointer": "/shifts/65",
+      "definition": "OddThetaWeil.Endpoints.endpoint_065",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_065_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "1/8",
+        "theta_exact": "19237749187/20000000000",
+        "retained_energy_exact": "762250813/20000000000",
+        "alpha_exact": "1732143850533144401737/40000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 66,
+      "json_pointer": "/shifts/66",
+      "definition": "OddThetaWeil.Endpoints.endpoint_066",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_066_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "1/4",
+        "theta_exact": "1725461853/1953125000",
+        "retained_energy_exact": "227663147/1953125000",
+        "alpha_exact": "155514502798870130303/3906250000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 67,
+      "json_pointer": "/shifts/67",
+      "definition": "OddThetaWeil.Endpoints.endpoint_067",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_067_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "3/8",
+        "theta_exact": "428750371701/500000000000",
+        "retained_energy_exact": "71249628299/500000000000",
+        "alpha_exact": "38657303678973119840351/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 68,
+      "json_pointer": "/shifts/68",
+      "definition": "OddThetaWeil.Endpoints.endpoint_068",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_068_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "1/2",
+        "theta_exact": "844666946747/1000000000000",
+        "retained_energy_exact": "155333053253/1000000000000",
+        "alpha_exact": "76172132979176490293297/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 69,
+      "json_pointer": "/shifts/69",
+      "definition": "OddThetaWeil.Endpoints.endpoint_069",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_069_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "3/4",
+        "theta_exact": "6656698457/8000000000",
+        "retained_energy_exact": "1343301543/8000000000",
+        "alpha_exact": "600418270828573386507/16000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 70,
+      "json_pointer": "/shifts/70",
+      "definition": "OddThetaWeil.Endpoints.endpoint_070",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_070_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "1",
+        "theta_exact": "33041878039/40000000000",
+        "retained_energy_exact": "6958121961/40000000000",
+        "alpha_exact": "2980582669454986360389/80000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 71,
+      "json_pointer": "/shifts/71",
+      "definition": "OddThetaWeil.Endpoints.endpoint_071",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_071_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "5/4",
+        "theta_exact": "164524180293/200000000000",
+        "retained_energy_exact": "35475819707/200000000000",
+        "alpha_exact": "14841915438537664929743/400000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 72,
+      "json_pointer": "/shifts/72",
+      "definition": "OddThetaWeil.Endpoints.endpoint_072",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_072_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "3/2",
+        "theta_exact": "820501609173/1000000000000",
+        "retained_energy_exact": "179498390827/1000000000000",
+        "alpha_exact": "74020916174454806570623/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 73,
+      "json_pointer": "/shifts/73",
+      "definition": "OddThetaWeil.Endpoints.endpoint_073",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_073_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "7/4",
+        "theta_exact": "819128892927/1000000000000",
+        "retained_energy_exact": "180871107073/1000000000000",
+        "alpha_exact": "73898715925959752596477/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 74,
+      "json_pointer": "/shifts/74",
+      "definition": "OddThetaWeil.Endpoints.endpoint_074",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_074_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "2",
+        "theta_exact": "163644545647/200000000000",
+        "retained_energy_exact": "36355454353/200000000000",
+        "alpha_exact": "14763609690616867877197/400000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 75,
+      "json_pointer": "/shifts/75",
+      "definition": "OddThetaWeil.Endpoints.endpoint_075",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_075_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "9/4",
+        "theta_exact": "817627572419/1000000000000",
+        "retained_energy_exact": "182372427581/1000000000000",
+        "alpha_exact": "73765067227852685341769/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 76,
+      "json_pointer": "/shifts/76",
+      "definition": "OddThetaWeil.Endpoints.endpoint_076",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_076_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "5/2",
+        "theta_exact": "173756652121/200000000000",
+        "retained_energy_exact": "26243347879/200000000000",
+        "alpha_exact": "15663797131052568853771/400000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 77,
+      "json_pointer": "/shifts/77",
+      "definition": "OddThetaWeil.Endpoints.endpoint_077",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_077_checked",
+      "exact": {
+        "mu_exact": "9/200",
+        "beta_exact": "3",
+        "theta_exact": "491214437013/500000000000",
+        "retained_energy_exact": "8785562987/500000000000",
+        "alpha_exact": "44217902473793299414463/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 78,
+      "json_pointer": "/shifts/78",
+      "definition": "OddThetaWeil.Endpoints.endpoint_078",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_078_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "1/8",
+        "theta_exact": "91821084361/100000000000",
+        "retained_energy_exact": "8178915639/100000000000",
+        "alpha_exact": "9190117527589113362011/200000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 79,
+      "json_pointer": "/shifts/79",
+      "definition": "OddThetaWeil.Endpoints.endpoint_079",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_079_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "1/4",
+        "theta_exact": "847746440243/1000000000000",
+        "retained_energy_exact": "152253559757/1000000000000",
+        "alpha_exact": "84923736244278698007193/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 80,
+      "json_pointer": "/shifts/80",
+      "definition": "OddThetaWeil.Endpoints.endpoint_080",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_080_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "3/8",
+        "theta_exact": "412211370947/500000000000",
+        "retained_energy_exact": "87788629053/500000000000",
+        "alpha_exact": "41307102911297575047497/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 81,
+      "json_pointer": "/shifts/81",
+      "definition": "OddThetaWeil.Endpoints.endpoint_081",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_081_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "1/2",
+        "theta_exact": "406429529471/500000000000",
+        "retained_energy_exact": "93570470529/500000000000",
+        "alpha_exact": "40734580553035030058621/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 82,
+      "json_pointer": "/shifts/82",
+      "definition": "OddThetaWeil.Endpoints.endpoint_082",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_082_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "3/4",
+        "theta_exact": "801478743401/1000000000000",
+        "retained_energy_exact": "198521256599/1000000000000",
+        "alpha_exact": "80342273570610896917051/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 83,
+      "json_pointer": "/shifts/83",
+      "definition": "OddThetaWeil.Endpoints.endpoint_083",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_083_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "1",
+        "theta_exact": "397983804519/500000000000",
+        "retained_energy_exact": "102016195481/500000000000",
+        "alpha_exact": "39898278418701684738869/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 84,
+      "json_pointer": "/shifts/84",
+      "definition": "OddThetaWeil.Endpoints.endpoint_084",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_084_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "5/4",
+        "theta_exact": "7928028401/10000000000",
+        "retained_energy_exact": "2071971599/10000000000",
+        "alpha_exact": "794831790003836452051/20000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 85,
+      "json_pointer": "/shifts/85",
+      "definition": "OddThetaWeil.Endpoints.endpoint_085",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_085_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "3/2",
+        "theta_exact": "158162175907/200000000000",
+        "retained_energy_exact": "41837824093/200000000000",
+        "alpha_exact": "15857186708814933556457/400000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 86,
+      "json_pointer": "/shifts/86",
+      "definition": "OddThetaWeil.Endpoints.endpoint_086",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_086_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "7/4",
+        "theta_exact": "197372238871/250000000000",
+        "retained_energy_exact": "52627761129/250000000000",
+        "alpha_exact": "19788758903764006078021/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 87,
+      "json_pointer": "/shifts/87",
+      "definition": "OddThetaWeil.Endpoints.endpoint_087",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_087_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "2",
+        "theta_exact": "49286608917/62500000000",
+        "retained_energy_exact": "13213391083/62500000000",
+        "alpha_exact": "4941599924542026075967/125000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 88,
+      "json_pointer": "/shifts/88",
+      "definition": "OddThetaWeil.Endpoints.endpoint_088",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_088_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "9/4",
+        "theta_exact": "787961640231/1000000000000",
+        "retained_energy_exact": "212038359769/1000000000000",
+        "alpha_exact": "79003799692368144043381/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 89,
+      "json_pointer": "/shifts/89",
+      "definition": "OddThetaWeil.Endpoints.endpoint_089",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_089_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "5/2",
+        "theta_exact": "394368629823/500000000000",
+        "retained_energy_exact": "105631370177/500000000000",
+        "alpha_exact": "39540301059571992963773/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 90,
+      "json_pointer": "/shifts/90",
+      "definition": "OddThetaWeil.Endpoints.endpoint_090",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_090_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "3",
+        "theta_exact": "445489502787/500000000000",
+        "retained_energy_exact": "54510497213/500000000000",
+        "alpha_exact": "44602328938973032795337/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 91,
+      "json_pointer": "/shifts/91",
+      "definition": "OddThetaWeil.Endpoints.endpoint_091",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_091_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "1/8",
+        "theta_exact": "427344254337/500000000000",
+        "retained_energy_exact": "72655745663/500000000000",
+        "alpha_exact": "51352457667556908704387/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 92,
+      "json_pointer": "/shifts/92",
+      "definition": "OddThetaWeil.Endpoints.endpoint_092",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_092_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "1/4",
+        "theta_exact": "398867340771/500000000000",
+        "retained_energy_exact": "101132659229/500000000000",
+        "alpha_exact": "47963113668508067114921/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 93,
+      "json_pointer": "/shifts/93",
+      "definition": "OddThetaWeil.Endpoints.endpoint_093",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_093_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "3/8",
+        "theta_exact": "38994591723/50000000000",
+        "retained_energy_exact": "11005408277/50000000000",
+        "alpha_exact": "4690127902580423860673/100000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 94,
+      "json_pointer": "/shifts/94",
+      "definition": "OddThetaWeil.Endpoints.endpoint_094",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_094_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "1/2",
+        "theta_exact": "771804793573/1000000000000",
+        "retained_energy_exact": "228195206427/1000000000000",
+        "alpha_exact": "92840032269560876815023/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 95,
+      "json_pointer": "/shifts/95",
+      "definition": "OddThetaWeil.Endpoints.endpoint_095",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_095_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "3/4",
+        "theta_exact": "30615020451/40000000000",
+        "retained_energy_exact": "9384979549/40000000000",
+        "alpha_exact": "3682992567229002426601/80000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 96,
+      "json_pointer": "/shifts/96",
+      "definition": "OddThetaWeil.Endpoints.endpoint_096",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_096_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "1",
+        "theta_exact": "381907553031/500000000000",
+        "retained_energy_exact": "118092446969/500000000000",
+        "alpha_exact": "45944546780334399676181/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 97,
+      "json_pointer": "/shifts/97",
+      "definition": "OddThetaWeil.Endpoints.endpoint_097",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_097_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "5/4",
+        "theta_exact": "152840263603/200000000000",
+        "retained_energy_exact": "47159736397/200000000000",
+        "alpha_exact": "18387012160449200694553/400000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 98,
+      "json_pointer": "/shifts/98",
+      "definition": "OddThetaWeil.Endpoints.endpoint_098",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_098_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "3/2",
+        "theta_exact": "191390166627/250000000000",
+        "retained_energy_exact": "58609833373/250000000000",
+        "alpha_exact": "23024212874487674875177/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 99,
+      "json_pointer": "/shifts/99",
+      "definition": "OddThetaWeil.Endpoints.endpoint_099",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_099_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "7/4",
+        "theta_exact": "30699043879/40000000000",
+        "retained_energy_exact": "9300956121/40000000000",
+        "alpha_exact": "3692993099794137242229/80000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 100,
+      "json_pointer": "/shifts/100",
+      "definition": "OddThetaWeil.Endpoints.endpoint_100",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_100_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "2",
+        "theta_exact": "384869565773/500000000000",
+        "retained_energy_exact": "115130434227/500000000000",
+        "alpha_exact": "46297087798831232117223/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 101,
+      "json_pointer": "/shifts/101",
+      "definition": "OddThetaWeil.Endpoints.endpoint_101",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_101_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "9/4",
+        "theta_exact": "772233968033/1000000000000",
+        "retained_energy_exact": "227766031967/1000000000000",
+        "alpha_exact": "92891112941529582368483/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 102,
+      "json_pointer": "/shifts/102",
+      "definition": "OddThetaWeil.Endpoints.endpoint_102",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_102_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "5/2",
+        "theta_exact": "774891132971/1000000000000",
+        "retained_energy_exact": "225108867029/1000000000000",
+        "alpha_exact": "93207370741597004437121/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 103,
+      "json_pointer": "/shifts/103",
+      "definition": "OddThetaWeil.Endpoints.endpoint_103",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_103_checked",
+      "exact": {
+        "mu_exact": "3/50",
+        "beta_exact": "3",
+        "theta_exact": "195132589261/250000000000",
+        "retained_energy_exact": "54867410739/250000000000",
+        "alpha_exact": "23469638874291141751911/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 104,
+      "json_pointer": "/shifts/104",
+      "definition": "OddThetaWeil.Endpoints.endpoint_104",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_104_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "1/8",
+        "theta_exact": "24840539709/31250000000",
+        "retained_energy_exact": "6409460291/31250000000",
+        "alpha_exact": "3732357332844419317559/62500000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 105,
+      "json_pointer": "/shifts/105",
+      "definition": "OddThetaWeil.Endpoints.endpoint_105",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_105_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "1/4",
+        "theta_exact": "188628587889/250000000000",
+        "retained_energy_exact": "61371412111/250000000000",
+        "alpha_exact": "28354385300878550022739/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 106,
+      "json_pointer": "/shifts/106",
+      "definition": "OddThetaWeil.Endpoints.endpoint_106",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_106_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "3/8",
+        "theta_exact": "745259112869/1000000000000",
+        "retained_energy_exact": "254740887131/1000000000000",
+        "alpha_exact": "112038318466605181524719/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 107,
+      "json_pointer": "/shifts/107",
+      "definition": "OddThetaWeil.Endpoints.endpoint_107",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_107_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "1/2",
+        "theta_exact": "371884719521/500000000000",
+        "retained_energy_exact": "128115280479/500000000000",
+        "alpha_exact": "55908163067657366931171/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 108,
+      "json_pointer": "/shifts/108",
+      "definition": "OddThetaWeil.Endpoints.endpoint_108",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_108_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "3/4",
+        "theta_exact": "374275508851/500000000000",
+        "retained_energy_exact": "125724491149/500000000000",
+        "alpha_exact": "56264440319342629575001/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 109,
+      "json_pointer": "/shifts/109",
+      "definition": "OddThetaWeil.Endpoints.endpoint_109",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_109_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "1",
+        "theta_exact": "757215249103/1000000000000",
+        "retained_energy_exact": "242784750897/1000000000000",
+        "alpha_exact": "113820031018511252755053/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 110,
+      "json_pointer": "/shifts/110",
+      "definition": "OddThetaWeil.Endpoints.endpoint_110",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_110_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "5/4",
+        "theta_exact": "383718148593/500000000000",
+        "retained_energy_exact": "116281851407/500000000000",
+        "alpha_exact": "57671589704576751193043/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 111,
+      "json_pointer": "/shifts/111",
+      "definition": "OddThetaWeil.Endpoints.endpoint_111",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_111_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "3/2",
+        "theta_exact": "194609773767/250000000000",
+        "retained_energy_exact": "55390226233/250000000000",
+        "alpha_exact": "29245706187956686943317/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 112,
+      "json_pointer": "/shifts/112",
+      "definition": "OddThetaWeil.Endpoints.endpoint_112",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_112_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "7/4",
+        "theta_exact": "49368211201/62500000000",
+        "retained_energy_exact": "13131788799/62500000000",
+        "alpha_exact": "7418090805069371854851/125000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 113,
+      "json_pointer": "/shifts/113",
+      "definition": "OddThetaWeil.Endpoints.endpoint_113",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_113_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "2",
+        "theta_exact": "801626887273/1000000000000",
+        "retained_energy_exact": "198373112727/1000000000000",
+        "alpha_exact": "120438287253596552913723/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 114,
+      "json_pointer": "/shifts/114",
+      "definition": "OddThetaWeil.Endpoints.endpoint_114",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_114_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "9/4",
+        "theta_exact": "406776564029/500000000000",
+        "retained_energy_exact": "93223435971/500000000000",
+        "alpha_exact": "61107772381431477309879/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 115,
+      "json_pointer": "/shifts/115",
+      "definition": "OddThetaWeil.Endpoints.endpoint_115",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_115_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "5/2",
+        "theta_exact": "825614499099/1000000000000",
+        "retained_energy_exact": "174385500901/1000000000000",
+        "alpha_exact": "124012939486070831450449/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 116,
+      "json_pointer": "/shifts/116",
+      "definition": "OddThetaWeil.Endpoints.endpoint_116",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_116_checked",
+      "exact": {
+        "mu_exact": "3/40",
+        "beta_exact": "3",
+        "theta_exact": "425006237311/500000000000",
+        "retained_energy_exact": "74993762689/500000000000",
+        "alpha_exact": "63824372215023348782461/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 117,
+      "json_pointer": "/shifts/117",
+      "definition": "OddThetaWeil.Endpoints.endpoint_117",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_117_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "1/8",
+        "theta_exact": "742135809759/1000000000000",
+        "retained_energy_exact": "257864190241/1000000000000",
+        "alpha_exact": "148679671939989438270109/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 118,
+      "json_pointer": "/shifts/118",
+      "definition": "OddThetaWeil.Endpoints.endpoint_118",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_118_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "1/4",
+        "theta_exact": "144890801801/200000000000",
+        "retained_energy_exact": "55109198199/200000000000",
+        "alpha_exact": "29032125290240706135451/400000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 119,
+      "json_pointer": "/shifts/119",
+      "definition": "OddThetaWeil.Endpoints.endpoint_119",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_119_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "3/8",
+        "theta_exact": "36499519549/50000000000",
+        "retained_energy_exact": "13500480451/50000000000",
+        "alpha_exact": "7313124070986583113399/100000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 120,
+      "json_pointer": "/shifts/120",
+      "definition": "OddThetaWeil.Endpoints.endpoint_120",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_120_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "1/2",
+        "theta_exact": "1158334349/1562500000",
+        "retained_energy_exact": "404165651/1562500000",
+        "alpha_exact": "232062643496476448199/3125000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 121,
+      "json_pointer": "/shifts/121",
+      "definition": "OddThetaWeil.Endpoints.endpoint_121",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_121_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "3/4",
+        "theta_exact": "769859272237/1000000000000",
+        "retained_energy_exact": "230140727763/1000000000000",
+        "alpha_exact": "154197216613410843057287/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 122,
+      "json_pointer": "/shifts/122",
+      "definition": "OddThetaWeil.Endpoints.endpoint_122",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_122_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "1",
+        "theta_exact": "801341590659/1000000000000",
+        "retained_energy_exact": "198658409341/1000000000000",
+        "alpha_exact": "160462851667261228336009/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 123,
+      "json_pointer": "/shifts/123",
+      "definition": "OddThetaWeil.Endpoints.endpoint_123",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_123_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "5/4",
+        "theta_exact": "16680769701/20000000000",
+        "retained_energy_exact": "3319230299/20000000000",
+        "alpha_exact": "3339404251159482938351/40000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 124,
+      "json_pointer": "/shifts/124",
+      "definition": "OddThetaWeil.Endpoints.endpoint_124",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_124_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "3/2",
+        "theta_exact": "867364803489/1000000000000",
+        "retained_energy_exact": "132635196511/1000000000000",
+        "alpha_exact": "173602841903380329178339/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 125,
+      "json_pointer": "/shifts/125",
+      "definition": "OddThetaWeil.Endpoints.endpoint_125",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_125_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "7/4",
+        "theta_exact": "901066675569/1000000000000",
+        "retained_energy_exact": "98933324431/1000000000000",
+        "alpha_exact": "180310214221210244942419/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 126,
+      "json_pointer": "/shifts/126",
+      "definition": "OddThetaWeil.Endpoints.endpoint_126",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_126_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "2",
+        "theta_exact": "116876871177/125000000000",
+        "retained_energy_exact": "8123128823/125000000000",
+        "alpha_exact": "23383328698411091187227/250000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 127,
+      "json_pointer": "/shifts/127",
+      "definition": "OddThetaWeil.Endpoints.endpoint_127",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_127_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "9/4",
+        "theta_exact": "484568179023/500000000000",
+        "retained_energy_exact": "15431820977/500000000000",
+        "alpha_exact": "96928747204631939092973/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 128,
+      "json_pointer": "/shifts/128",
+      "definition": "OddThetaWeil.Endpoints.endpoint_128",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_128_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "5/2",
+        "theta_exact": "40135427107/40000000000",
+        "retained_energy_exact": "-135427107/40000000000",
+        "alpha_exact": "8026952806254185687657/80000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 129,
+      "json_pointer": "/shifts/129",
+      "definition": "OddThetaWeil.Endpoints.endpoint_129",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_129_checked",
+      "exact": {
+        "mu_exact": "1/10",
+        "beta_exact": "3",
+        "theta_exact": "107215886103/100000000000",
+        "retained_energy_exact": "-7215886103/100000000000",
+        "alpha_exact": "21436111162637698442053/200000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 130,
+      "json_pointer": "/shifts/130",
+      "definition": "OddThetaWeil.Endpoints.endpoint_130",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_130_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "1/8",
+        "theta_exact": "28247789549/40000000000",
+        "retained_energy_exact": "11752210451/40000000000",
+        "alpha_exact": "8485845056354716883399/80000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 131,
+      "json_pointer": "/shifts/131",
+      "definition": "OddThetaWeil.Endpoints.endpoint_131",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_131_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "1/4",
+        "theta_exact": "2906626787/4000000000",
+        "retained_energy_exact": "1093373213/4000000000",
+        "alpha_exact": "873058706893192519337/8000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 132,
+      "json_pointer": "/shifts/132",
+      "definition": "OddThetaWeil.Endpoints.endpoint_132",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_132_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "3/8",
+        "theta_exact": "6100937877/8000000000",
+        "retained_energy_exact": "1899062123/8000000000",
+        "alpha_exact": "1832140993759850708927/16000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 133,
+      "json_pointer": "/shifts/133",
+      "definition": "OddThetaWeil.Endpoints.endpoint_133",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_133_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "1/2",
+        "theta_exact": "200634144891/250000000000",
+        "retained_energy_exact": "49365855109/250000000000",
+        "alpha_exact": "60238584307022200157041/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 134,
+      "json_pointer": "/shifts/134",
+      "definition": "OddThetaWeil.Endpoints.endpoint_134",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_134_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "3/4",
+        "theta_exact": "22162731677/25000000000",
+        "retained_energy_exact": "2837268323/25000000000",
+        "alpha_exact": "6651597859373747872727/50000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 135,
+      "json_pointer": "/shifts/135",
+      "definition": "OddThetaWeil.Endpoints.endpoint_135",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_135_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "1",
+        "theta_exact": "972705669249/1000000000000",
+        "retained_energy_exact": "27294330751/1000000000000",
+        "alpha_exact": "291838428375493007668099/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 136,
+      "json_pointer": "/shifts/136",
+      "definition": "OddThetaWeil.Endpoints.endpoint_136",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_136_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "5/4",
+        "theta_exact": "105989546613/100000000000",
+        "retained_energy_exact": "-5989546613/100000000000",
+        "alpha_exact": "31790998802142520564063/200000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 137,
+      "json_pointer": "/shifts/137",
+      "definition": "OddThetaWeil.Endpoints.endpoint_137",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_137_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "3/2",
+        "theta_exact": "560371239/488281250",
+        "retained_energy_exact": "-72089989/488281250",
+        "alpha_exact": "168040778562372189839/976562500000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 138,
+      "json_pointer": "/shifts/138",
+      "definition": "OddThetaWeil.Endpoints.endpoint_138",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_138_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "7/4",
+        "theta_exact": "617868599071/500000000000",
+        "retained_energy_exact": "-117868599071/500000000000",
+        "alpha_exact": "185245158504683969168221/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 139,
+      "json_pointer": "/shifts/139",
+      "definition": "OddThetaWeil.Endpoints.endpoint_139",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_139_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "2",
+        "theta_exact": "1324076115323/1000000000000",
+        "retained_energy_exact": "-324076115323/1000000000000",
+        "alpha_exact": "396905487484933002524273/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 140,
+      "json_pointer": "/shifts/140",
+      "definition": "OddThetaWeil.Endpoints.endpoint_140",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_140_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "9/4",
+        "theta_exact": "1412590791439/1000000000000",
+        "retained_energy_exact": "-412590791439/1000000000000",
+        "alpha_exact": "423373213531460253183789/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 141,
+      "json_pointer": "/shifts/141",
+      "definition": "OddThetaWeil.Endpoints.endpoint_141",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_141_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "5/2",
+        "theta_exact": "1501238284889/1000000000000",
+        "retained_energy_exact": "-501238284889/1000000000000",
+        "alpha_exact": "449880654718626273769739/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 142,
+      "json_pointer": "/shifts/142",
+      "definition": "OddThetaWeil.Endpoints.endpoint_142",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_142_checked",
+      "exact": {
+        "mu_exact": "3/20",
+        "beta_exact": "3",
+        "theta_exact": "839411307117/500000000000",
+        "retained_energy_exact": "-339411307117/500000000000",
+        "alpha_exact": "251491028245909431204167/1000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 143,
+      "json_pointer": "/shifts/143",
+      "definition": "OddThetaWeil.Endpoints.endpoint_143",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_143_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "7/8",
+        "theta_exact": "935212313879/1000000000000",
+        "retained_energy_exact": "64787686121/1000000000000",
+        "alpha_exact": "65528304428747286012229/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 144,
+      "json_pointer": "/shifts/144",
+      "definition": "OddThetaWeil.Endpoints.endpoint_144",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_144_checked",
+      "exact": {
+        "mu_exact": "7/200",
+        "beta_exact": "9/8",
+        "theta_exact": "467586835593/500000000000",
+        "retained_energy_exact": "32413164407/500000000000",
+        "alpha_exact": "32762818640283447430043/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 145,
+      "json_pointer": "/shifts/145",
+      "definition": "OddThetaWeil.Endpoints.endpoint_145",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_145_checked",
+      "exact": {
+        "mu_exact": "13/400",
+        "beta_exact": "1",
+        "theta_exact": "1527649051/1562500000",
+        "retained_energy_exact": "34850949/1562500000",
+        "alpha_exact": "99331315631057945201/3125000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 146,
+      "json_pointer": "/shifts/146",
+      "definition": "OddThetaWeil.Endpoints.endpoint_146",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_146_checked",
+      "exact": {
+        "mu_exact": "3/80",
+        "beta_exact": "1",
+        "theta_exact": "224864310031/250000000000",
+        "retained_energy_exact": "25135689969/250000000000",
+        "alpha_exact": "16889437033599839483181/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 147,
+      "json_pointer": "/shifts/147",
+      "definition": "OddThetaWeil.Endpoints.endpoint_147",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_147_checked",
+      "exact": {
+        "mu_exact": "59/400",
+        "beta_exact": "1/8",
+        "theta_exact": "176720006929/250000000000",
+        "retained_energy_exact": "73279993071/250000000000",
+        "alpha_exact": "52204160476924591337779/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 148,
+      "json_pointer": "/shifts/148",
+      "definition": "OddThetaWeil.Endpoints.endpoint_148",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_148_checked",
+      "exact": {
+        "mu_exact": "61/400",
+        "beta_exact": "1/8",
+        "theta_exact": "7055858839/10000000000",
+        "retained_energy_exact": "2944141161/10000000000",
+        "alpha_exact": "2154919955936438261189/20000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 149,
+      "json_pointer": "/shifts/149",
+      "definition": "OddThetaWeil.Endpoints.endpoint_149",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_149_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "17/8",
+        "theta_exact": "788244960921/1000000000000",
+        "retained_energy_exact": "211755039079/1000000000000",
+        "alpha_exact": "79031854323450072282571/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 150,
+      "json_pointer": "/shifts/150",
+      "definition": "OddThetaWeil.Endpoints.endpoint_150",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_150_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "19/8",
+        "theta_exact": "39386335297/50000000000",
+        "retained_energy_exact": "10613664703/50000000000",
+        "alpha_exact": "3949026815973275889347/100000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 151,
+      "json_pointer": "/shifts/151",
+      "definition": "OddThetaWeil.Endpoints.endpoint_151",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_151_checked",
+      "exact": {
+        "mu_exact": "13/400",
+        "beta_exact": "15/16",
+        "theta_exact": "977093162873/1000000000000",
+        "retained_energy_exact": "22906837127/1000000000000",
+        "alpha_exact": "63533486794300381129323/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 152,
+      "json_pointer": "/shifts/152",
+      "definition": "OddThetaWeil.Endpoints.endpoint_152",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_152_checked",
+      "exact": {
+        "mu_exact": "13/400",
+        "beta_exact": "17/16",
+        "theta_exact": "122314097033/125000000000",
+        "retained_energy_exact": "2685902967/125000000000",
+        "alpha_exact": "7953046440960173347483/250000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 153,
+      "json_pointer": "/shifts/153",
+      "definition": "OddThetaWeil.Endpoints.endpoint_153",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_153_checked",
+      "exact": {
+        "mu_exact": "1/32",
+        "beta_exact": "1",
+        "theta_exact": "1002569729931/1000000000000",
+        "retained_energy_exact": "-2569729931/1000000000000",
+        "alpha_exact": "62658091747731951538081/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 154,
+      "json_pointer": "/shifts/154",
+      "definition": "OddThetaWeil.Endpoints.endpoint_154",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_154_checked",
+      "exact": {
+        "mu_exact": "27/800",
+        "beta_exact": "1",
+        "theta_exact": "477594189499/500000000000",
+        "retained_energy_exact": "22405810501/500000000000",
+        "alpha_exact": "32259548375253885100849/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 155,
+      "json_pointer": "/shifts/155",
+      "definition": "OddThetaWeil.Endpoints.endpoint_155",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_155_checked",
+      "exact": {
+        "mu_exact": "61/400",
+        "beta_exact": "1/16",
+        "theta_exact": "45537893607/62500000000",
+        "retained_energy_exact": "16962106393/62500000000",
+        "alpha_exact": "13905667461270630879157/125000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 156,
+      "json_pointer": "/shifts/156",
+      "definition": "OddThetaWeil.Endpoints.endpoint_156",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_156_checked",
+      "exact": {
+        "mu_exact": "61/400",
+        "beta_exact": "3/16",
+        "theta_exact": "7129127347/10000000000",
+        "retained_energy_exact": "2870872653/10000000000",
+        "alpha_exact": "2177195103690167663897/20000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 157,
+      "json_pointer": "/shifts/157",
+      "definition": "OddThetaWeil.Endpoints.endpoint_157",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_157_checked",
+      "exact": {
+        "mu_exact": "121/800",
+        "beta_exact": "1/8",
+        "theta_exact": "352940497791/500000000000",
+        "retained_energy_exact": "147059502209/500000000000",
+        "alpha_exact": "106908506591806398594941/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 158,
+      "json_pointer": "/shifts/158",
+      "definition": "OddThetaWeil.Endpoints.endpoint_158",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_158_checked",
+      "exact": {
+        "mu_exact": "123/800",
+        "beta_exact": "1/8",
+        "theta_exact": "176327236543/250000000000",
+        "retained_energy_exact": "73672763457/250000000000",
+        "alpha_exact": "54292768284880873298493/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 159,
+      "json_pointer": "/shifts/159",
+      "definition": "OddThetaWeil.Endpoints.endpoint_159",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_159_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "37/16",
+        "theta_exact": "787838615291/1000000000000",
+        "retained_energy_exact": "212161384709/1000000000000",
+        "alpha_exact": "78991617668861225587441/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 160,
+      "json_pointer": "/shifts/160",
+      "definition": "OddThetaWeil.Endpoints.endpoint_160",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_160_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "39/16",
+        "theta_exact": "787625056961/1000000000000",
+        "retained_energy_exact": "212374943039/1000000000000",
+        "alpha_exact": "78970470959940593324611/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 161,
+      "json_pointer": "/shifts/161",
+      "definition": "OddThetaWeil.Endpoints.endpoint_161",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_161_checked",
+      "exact": {
+        "mu_exact": "13/400",
+        "beta_exact": "29/32",
+        "theta_exact": "488443314359/500000000000",
+        "retained_energy_exact": "11556685641/500000000000",
+        "alpha_exact": "31760132159988633564709/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 162,
+      "json_pointer": "/shifts/162",
+      "definition": "OddThetaWeil.Endpoints.endpoint_162",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_162_checked",
+      "exact": {
+        "mu_exact": "13/400",
+        "beta_exact": "31/32",
+        "theta_exact": "61085298957/62500000000",
+        "retained_energy_exact": "1414701043/62500000000",
+        "alpha_exact": "3971929758889273812007/125000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 163,
+      "json_pointer": "/shifts/163",
+      "definition": "OddThetaWeil.Endpoints.endpoint_163",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_163_checked",
+      "exact": {
+        "mu_exact": "51/1600",
+        "beta_exact": "15/16",
+        "theta_exact": "197801226301/200000000000",
+        "retained_energy_exact": "2198773699/200000000000",
+        "alpha_exact": "12611981295818035984951/400000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 164,
+      "json_pointer": "/shifts/164",
+      "definition": "OddThetaWeil.Endpoints.endpoint_164",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_164_checked",
+      "exact": {
+        "mu_exact": "53/1600",
+        "beta_exact": "15/16",
+        "theta_exact": "965755532611/1000000000000",
+        "retained_energy_exact": "34244467389/1000000000000",
+        "alpha_exact": "64014837462698203922761/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 165,
+      "json_pointer": "/shifts/165",
+      "definition": "OddThetaWeil.Endpoints.endpoint_165",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_165_checked",
+      "exact": {
+        "mu_exact": "123/800",
+        "beta_exact": "3/32",
+        "theta_exact": "708927614923/1000000000000",
+        "retained_energy_exact": "291072385077/1000000000000",
+        "alpha_exact": "218280270248480023563873/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 166,
+      "json_pointer": "/shifts/166",
+      "definition": "OddThetaWeil.Endpoints.endpoint_166",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_166_checked",
+      "exact": {
+        "mu_exact": "123/800",
+        "beta_exact": "5/32",
+        "theta_exact": "353852863259/500000000000",
+        "retained_energy_exact": "146147136741/500000000000",
+        "alpha_exact": "108952868040741560598609/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 167,
+      "json_pointer": "/shifts/167",
+      "definition": "OddThetaWeil.Endpoints.endpoint_167",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_167_checked",
+      "exact": {
+        "mu_exact": "49/320",
+        "beta_exact": "1/8",
+        "theta_exact": "22045161603/31250000000",
+        "retained_energy_exact": "9204838397/31250000000",
+        "alpha_exact": "6760344453263763292553/62500000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 168,
+      "json_pointer": "/shifts/168",
+      "definition": "OddThetaWeil.Endpoints.endpoint_168",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_168_checked",
+      "exact": {
+        "mu_exact": "247/1600",
+        "beta_exact": "1/8",
+        "theta_exact": "705177153659/1000000000000",
+        "retained_energy_exact": "294822846341/1000000000000",
+        "alpha_exact": "218012147439868998849009/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 169,
+      "json_pointer": "/shifts/169",
+      "definition": "OddThetaWeil.Endpoints.endpoint_169",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_169_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "77/32",
+        "theta_exact": "787674648883/1000000000000",
+        "retained_energy_exact": "212325351117/1000000000000",
+        "alpha_exact": "78975381589927954151833/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 170,
+      "json_pointer": "/shifts/170",
+      "definition": "OddThetaWeil.Endpoints.endpoint_170",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_170_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "79/32",
+        "theta_exact": "787577836543/1000000000000",
+        "retained_energy_exact": "212422163457/1000000000000",
+        "alpha_exact": "78965795158090313898493/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 171,
+      "json_pointer": "/shifts/171",
+      "definition": "OddThetaWeil.Endpoints.endpoint_171",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_171_checked",
+      "exact": {
+        "mu_exact": "51/1600",
+        "beta_exact": "59/64",
+        "theta_exact": "494421240751/500000000000",
+        "retained_energy_exact": "5578759249/500000000000",
+        "alpha_exact": "31524817021715190741901/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 172,
+      "json_pointer": "/shifts/172",
+      "definition": "OddThetaWeil.Endpoints.endpoint_172",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_172_checked",
+      "exact": {
+        "mu_exact": "51/1600",
+        "beta_exact": "61/64",
+        "theta_exact": "494593185121/500000000000",
+        "retained_energy_exact": "5406814879/500000000000",
+        "alpha_exact": "31535610101125580836771/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 173,
+      "json_pointer": "/shifts/173",
+      "definition": "OddThetaWeil.Endpoints.endpoint_173",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_173_checked",
+      "exact": {
+        "mu_exact": "101/3200",
+        "beta_exact": "15/16",
+        "theta_exact": "995189287903/1000000000000",
+        "retained_energy_exact": "4810712097/1000000000000",
+        "alpha_exact": "62826034623026831413853/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 174,
+      "json_pointer": "/shifts/174",
+      "definition": "OddThetaWeil.Endpoints.endpoint_174",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_174_checked",
+      "exact": {
+        "mu_exact": "103/3200",
+        "beta_exact": "15/16",
+        "theta_exact": "491487794487/500000000000",
+        "retained_energy_exact": "8512205513/500000000000",
+        "alpha_exact": "31647862231149112792037/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 175,
+      "json_pointer": "/shifts/175",
+      "definition": "OddThetaWeil.Endpoints.endpoint_175",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_175_checked",
+      "exact": {
+        "mu_exact": "247/1600",
+        "beta_exact": "7/64",
+        "theta_exact": "705841883071/1000000000000",
+        "retained_energy_exact": "294158116929/1000000000000",
+        "alpha_exact": "218216731718621519052221/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 176,
+      "json_pointer": "/shifts/176",
+      "definition": "OddThetaWeil.Endpoints.endpoint_176",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_176_checked",
+      "exact": {
+        "mu_exact": "247/1600",
+        "beta_exact": "9/64",
+        "theta_exact": "705938669581/1000000000000",
+        "retained_energy_exact": "294061330419/1000000000000",
+        "alpha_exact": "218246519776715334200231/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 177,
+      "json_pointer": "/shifts/177",
+      "definition": "OddThetaWeil.Endpoints.endpoint_177",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_177_checked",
+      "exact": {
+        "mu_exact": "493/3200",
+        "beta_exact": "1/8",
+        "theta_exact": "705242499233/1000000000000",
+        "retained_energy_exact": "294757500767/1000000000000",
+        "alpha_exact": "217591482335059566779683/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 178,
+      "json_pointer": "/shifts/178",
+      "definition": "OddThetaWeil.Endpoints.endpoint_178",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_178_checked",
+      "exact": {
+        "mu_exact": "99/640",
+        "beta_exact": "1/8",
+        "theta_exact": "176278225683/250000000000",
+        "retained_energy_exact": "73721774317/250000000000",
+        "alpha_exact": "54608267111802106048633/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 179,
+      "json_pointer": "/shifts/179",
+      "definition": "OddThetaWeil.Endpoints.endpoint_179",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_179_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "157/64",
+        "theta_exact": "787601155979/1000000000000",
+        "retained_energy_exact": "212398844021/1000000000000",
+        "alpha_exact": "78968104266450944519329/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 180,
+      "json_pointer": "/shifts/180",
+      "definition": "OddThetaWeil.Endpoints.endpoint_180",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_180_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "159/64",
+        "theta_exact": "196888771919/250000000000",
+        "retained_energy_exact": "53111228081/250000000000",
+        "alpha_exact": "19740885636976944716269/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 181,
+      "json_pointer": "/shifts/181",
+      "definition": "OddThetaWeil.Endpoints.endpoint_181",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_181_checked",
+      "exact": {
+        "mu_exact": "101/3200",
+        "beta_exact": "119/128",
+        "theta_exact": "39803663363/40000000000",
+        "retained_energy_exact": "196336637/40000000000",
+        "alpha_exact": "2512798509760965818313/80000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 182,
+      "json_pointer": "/shifts/182",
+      "definition": "OddThetaWeil.Endpoints.endpoint_182",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_182_checked",
+      "exact": {
+        "mu_exact": "101/3200",
+        "beta_exact": "121/128",
+        "theta_exact": "248822795163/250000000000",
+        "retained_energy_exact": "1177204837/250000000000",
+        "alpha_exact": "15708091706430984020113/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 183,
+      "json_pointer": "/shifts/183",
+      "definition": "OddThetaWeil.Endpoints.endpoint_183",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_183_checked",
+      "exact": {
+        "mu_exact": "201/6400",
+        "beta_exact": "15/16",
+        "theta_exact": "499169775767/500000000000",
+        "retained_energy_exact": "830224233/500000000000",
+        "alpha_exact": "31354914526111461745317/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 184,
+      "json_pointer": "/shifts/184",
+      "definition": "OddThetaWeil.Endpoints.endpoint_184",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_184_checked",
+      "exact": {
+        "mu_exact": "203/6400",
+        "beta_exact": "15/16",
+        "theta_exact": "24801958621/25000000000",
+        "retained_energy_exact": "198041379/25000000000",
+        "alpha_exact": "1573568179336610385271/50000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 185,
+      "json_pointer": "/shifts/185",
+      "definition": "OddThetaWeil.Endpoints.endpoint_185",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_185_checked",
+      "exact": {
+        "mu_exact": "99/640",
+        "beta_exact": "15/128",
+        "theta_exact": "28208569141/40000000000",
+        "retained_energy_exact": "11791430859/40000000000",
+        "alpha_exact": "8738572675700728093791/80000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 186,
+      "json_pointer": "/shifts/186",
+      "definition": "OddThetaWeil.Endpoints.endpoint_186",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_186_checked",
+      "exact": {
+        "mu_exact": "99/640",
+        "beta_exact": "17/128",
+        "theta_exact": "705363217671/1000000000000",
+        "retained_energy_exact": "294636782329/1000000000000",
+        "alpha_exact": "218510264513974582676821/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 187,
+      "json_pointer": "/shifts/187",
+      "definition": "OddThetaWeil.Endpoints.endpoint_187",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_187_checked",
+      "exact": {
+        "mu_exact": "989/6400",
+        "beta_exact": "1/8",
+        "theta_exact": "352572445891/500000000000",
+        "retained_energy_exact": "147427554109/500000000000",
+        "alpha_exact": "109111287978014884608041/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 188,
+      "json_pointer": "/shifts/188",
+      "definition": "OddThetaWeil.Endpoints.endpoint_188",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_188_checked",
+      "exact": {
+        "mu_exact": "991/6400",
+        "beta_exact": "1/8",
+        "theta_exact": "176270296419/250000000000",
+        "retained_energy_exact": "73729703581/250000000000",
+        "alpha_exact": "54660906228006573165769/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 189,
+      "json_pointer": "/shifts/189",
+      "definition": "OddThetaWeil.Endpoints.endpoint_189",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_189_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "317/128",
+        "theta_exact": "787566391463/1000000000000",
+        "retained_energy_exact": "212433608537/1000000000000",
+        "alpha_exact": "78964661857528667111413/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 190,
+      "json_pointer": "/shifts/190",
+      "definition": "OddThetaWeil.Endpoints.endpoint_190",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_190_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "319/128",
+        "theta_exact": "196885980963/250000000000",
+        "retained_energy_exact": "53114019037/250000000000",
+        "alpha_exact": "19740609274382508375913/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 191,
+      "json_pointer": "/shifts/191",
+      "definition": "OddThetaWeil.Endpoints.endpoint_191",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_191_checked",
+      "exact": {
+        "mu_exact": "201/6400",
+        "beta_exact": "239/256",
+        "theta_exact": "998286628321/1000000000000",
+        "retained_energy_exact": "1713371679/1000000000000",
+        "alpha_exact": "62706556637240236459971/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 192,
+      "json_pointer": "/shifts/192",
+      "definition": "OddThetaWeil.Endpoints.endpoint_192",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_192_checked",
+      "exact": {
+        "mu_exact": "201/6400",
+        "beta_exact": "241/256",
+        "theta_exact": "99839352733/100000000000",
+        "retained_energy_exact": "160647267/100000000000",
+        "alpha_exact": "6271316655184776408183/200000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 193,
+      "json_pointer": "/shifts/193",
+      "definition": "OddThetaWeil.Endpoints.endpoint_193",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_193_checked",
+      "exact": {
+        "mu_exact": "401/12800",
+        "beta_exact": "15/16",
+        "theta_exact": "499964808239/500000000000",
+        "retained_energy_exact": "35191761/500000000000",
+        "alpha_exact": "31325954477276400270589/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 194,
+      "json_pointer": "/shifts/194",
+      "definition": "OddThetaWeil.Endpoints.endpoint_194",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_194_checked",
+      "exact": {
+        "mu_exact": "403/12800",
+        "beta_exact": "15/16",
+        "theta_exact": "498379733627/500000000000",
+        "retained_energy_exact": "1620266373/500000000000",
+        "alpha_exact": "31383935475552660242177/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 195,
+      "json_pointer": "/shifts/195",
+      "definition": "OddThetaWeil.Endpoints.endpoint_195",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_195_checked",
+      "exact": {
+        "mu_exact": "991/6400",
+        "beta_exact": "31/256",
+        "theta_exact": "705079418577/1000000000000",
+        "retained_energy_exact": "294920581423/1000000000000",
+        "alpha_exact": "218643079393962303244627/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 196,
+      "json_pointer": "/shifts/196",
+      "definition": "OddThetaWeil.Endpoints.endpoint_196",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_196_checked",
+      "exact": {
+        "mu_exact": "991/6400",
+        "beta_exact": "33/256",
+        "theta_exact": "176292628889/250000000000",
+        "retained_energy_exact": "73707371111/250000000000",
+        "alpha_exact": "54667800446043311213739/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 197,
+      "json_pointer": "/shifts/197",
+      "definition": "OddThetaWeil.Endpoints.endpoint_197",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_197_checked",
+      "exact": {
+        "mu_exact": "1981/12800",
+        "beta_exact": "1/8",
+        "theta_exact": "44068563141/62500000000",
+        "retained_energy_exact": "18431436859/62500000000",
+        "alpha_exact": "13658646167674287437791/125000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 198,
+      "json_pointer": "/shifts/198",
+      "definition": "OddThetaWeil.Endpoints.endpoint_198",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_198_checked",
+      "exact": {
+        "mu_exact": "1983/12800",
+        "beta_exact": "1/8",
+        "theta_exact": "705065428887/1000000000000",
+        "retained_energy_exact": "294934571113/1000000000000",
+        "alpha_exact": "218748927134316981236437/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 199,
+      "json_pointer": "/shifts/199",
+      "definition": "OddThetaWeil.Endpoints.endpoint_199",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_199_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "637/256",
+        "theta_exact": "787549488351/1000000000000",
+        "retained_energy_exact": "212450511649/1000000000000",
+        "alpha_exact": "78962988098470348729501/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 200,
+      "json_pointer": "/shifts/200",
+      "definition": "OddThetaWeil.Endpoints.endpoint_200",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_200_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "639/256",
+        "theta_exact": "98492315497/125000000000",
+        "retained_energy_exact": "26507684503/125000000000",
+        "alpha_exact": "9875188837893161599547/250000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 201,
+      "json_pointer": "/shifts/201",
+      "definition": "OddThetaWeil.Endpoints.endpoint_201",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_201_checked",
+      "exact": {
+        "mu_exact": "401/12800",
+        "beta_exact": "479/512",
+        "theta_exact": "249975531027/250000000000",
+        "retained_energy_exact": "24468973/250000000000",
+        "alpha_exact": "15662553326818253049577/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 202,
+      "json_pointer": "/shifts/202",
+      "definition": "OddThetaWeil.Endpoints.endpoint_202",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_202_checked",
+      "exact": {
+        "mu_exact": "401/12800",
+        "beta_exact": "481/512",
+        "theta_exact": "3906083487/3906250000",
+        "retained_energy_exact": "166513/3906250000",
+        "alpha_exact": "244740706537925931037/7812500000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 203,
+      "json_pointer": "/shifts/203",
+      "definition": "OddThetaWeil.Endpoints.endpoint_203",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_203_checked",
+      "exact": {
+        "mu_exact": "801/25600",
+        "beta_exact": "15/16",
+        "theta_exact": "1000728415577/1000000000000",
+        "retained_energy_exact": "-728415577/1000000000000",
+        "alpha_exact": "62622994590019276916627/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 204,
+      "json_pointer": "/shifts/204",
+      "definition": "OddThetaWeil.Endpoints.endpoint_204",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_204_checked",
+      "exact": {
+        "mu_exact": "803/25600",
+        "beta_exact": "15/16",
+        "theta_exact": "49956666583/50000000000",
+        "retained_energy_exact": "43333417/50000000000",
+        "alpha_exact": "3134042688824943399533/100000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 205,
+      "json_pointer": "/shifts/205",
+      "definition": "OddThetaWeil.Endpoints.endpoint_205",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_205_checked",
+      "exact": {
+        "mu_exact": "1983/12800",
+        "beta_exact": "63/512",
+        "theta_exact": "705052029849/1000000000000",
+        "retained_energy_exact": "294947970151/1000000000000",
+        "alpha_exact": "218744788646961719968699/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 206,
+      "json_pointer": "/shifts/206",
+      "definition": "OddThetaWeil.Endpoints.endpoint_206",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_206_checked",
+      "exact": {
+        "mu_exact": "1983/12800",
+        "beta_exact": "65/512",
+        "theta_exact": "352550345721/500000000000",
+        "retained_energy_exact": "147449654279/500000000000",
+        "alpha_exact": "109379909243108573937371/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 207,
+      "json_pointer": "/shifts/207",
+      "definition": "OddThetaWeil.Endpoints.endpoint_207",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_207_checked",
+      "exact": {
+        "mu_exact": "793/5120",
+        "beta_exact": "1/8",
+        "theta_exact": "352536649407/500000000000",
+        "retained_energy_exact": "147463350593/500000000000",
+        "alpha_exact": "109348137012011230679957/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 208,
+      "json_pointer": "/shifts/208",
+      "definition": "OddThetaWeil.Endpoints.endpoint_208",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_208_checked",
+      "exact": {
+        "mu_exact": "3967/25600",
+        "beta_exact": "1/8",
+        "theta_exact": "352528787941/500000000000",
+        "retained_energy_exact": "147471212059/500000000000",
+        "alpha_exact": "109400792121431369307591/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 209,
+      "json_pointer": "/shifts/209",
+      "definition": "OddThetaWeil.Endpoints.endpoint_209",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_209_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "1275/512",
+        "theta_exact": "393773350879/500000000000",
+        "retained_energy_exact": "106226649121/500000000000",
+        "alpha_exact": "39481356083951752099229/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 210,
+      "json_pointer": "/shifts/210",
+      "definition": "OddThetaWeil.Endpoints.endpoint_210",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_210_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "1277/512",
+        "theta_exact": "787541154611/1000000000000",
+        "retained_energy_exact": "212458845389/1000000000000",
+        "alpha_exact": "78962162885171479844761/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 211,
+      "json_pointer": "/shifts/211",
+      "definition": "OddThetaWeil.Endpoints.endpoint_211",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_211_checked",
+      "exact": {
+        "mu_exact": "401/12800",
+        "beta_exact": "957/1024",
+        "theta_exact": "999888477373/1000000000000",
+        "retained_energy_exact": "111522627/1000000000000",
+        "alpha_exact": "62649371617412125618823/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 212,
+      "json_pointer": "/shifts/212",
+      "definition": "OddThetaWeil.Endpoints.endpoint_212",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_212_checked",
+      "exact": {
+        "mu_exact": "401/12800",
+        "beta_exact": "959/1024",
+        "theta_exact": "249978959303/250000000000",
+        "retained_energy_exact": "21040697/250000000000",
+        "alpha_exact": "15662764772643904445253/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 213,
+      "json_pointer": "/shifts/213",
+      "definition": "OddThetaWeil.Endpoints.endpoint_213",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_213_checked",
+      "exact": {
+        "mu_exact": "1603/51200",
+        "beta_exact": "479/512",
+        "theta_exact": "25007524571/25000000000",
+        "retained_energy_exact": "-7524571/25000000000",
+        "alpha_exact": "1565893486639730231221/50000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 214,
+      "json_pointer": "/shifts/214",
+      "definition": "OddThetaWeil.Endpoints.endpoint_214",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_214_checked",
+      "exact": {
+        "mu_exact": "321/10240",
+        "beta_exact": "479/512",
+        "theta_exact": "31234496669/31250000000",
+        "retained_energy_exact": "15503331/31250000000",
+        "alpha_exact": "1958271710868409841019/62500000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 215,
+      "json_pointer": "/shifts/215",
+      "definition": "OddThetaWeil.Endpoints.endpoint_215",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_215_checked",
+      "exact": {
+        "mu_exact": "1983/12800",
+        "beta_exact": "125/1024",
+        "theta_exact": "352526928561/500000000000",
+        "retained_energy_exact": "147473071439/500000000000",
+        "alpha_exact": "109372676513374086286211/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 216,
+      "json_pointer": "/shifts/216",
+      "definition": "OddThetaWeil.Endpoints.endpoint_216",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_216_checked",
+      "exact": {
+        "mu_exact": "1983/12800",
+        "beta_exact": "127/1024",
+        "theta_exact": "176263982967/250000000000",
+        "retained_energy_exact": "73736017033/250000000000",
+        "alpha_exact": "54686498460540602982517/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 217,
+      "json_pointer": "/shifts/217",
+      "definition": "OddThetaWeil.Endpoints.endpoint_217",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_217_checked",
+      "exact": {
+        "mu_exact": "7931/51200",
+        "beta_exact": "63/512",
+        "theta_exact": "141011244979/200000000000",
+        "retained_energy_exact": "58988755021/200000000000",
+        "alpha_exact": "43743708617803858520829/400000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 218,
+      "json_pointer": "/shifts/218",
+      "definition": "OddThetaWeil.Endpoints.endpoint_218",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_218_checked",
+      "exact": {
+        "mu_exact": "7933/51200",
+        "beta_exact": "63/512",
+        "theta_exact": "176261959763/250000000000",
+        "retained_energy_exact": "73738040237/250000000000",
+        "alpha_exact": "54692758797424368412213/500000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 219,
+      "json_pointer": "/shifts/219",
+      "definition": "OddThetaWeil.Endpoints.endpoint_219",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_219_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "2553/1024",
+        "theta_exact": "15750850763/20000000000",
+        "retained_energy_exact": "4249149237/20000000000",
+        "alpha_exact": "1579245997685196015713/40000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 220,
+      "json_pointer": "/shifts/220",
+      "definition": "OddThetaWeil.Endpoints.endpoint_220",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_220_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "2555/1024",
+        "theta_exact": "39386942007/50000000000",
+        "retained_energy_exact": "10613057993/50000000000",
+        "alpha_exact": "3949086892860790587557/100000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 221,
+      "json_pointer": "/shifts/221",
+      "definition": "OddThetaWeil.Endpoints.endpoint_221",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_221_checked",
+      "exact": {
+        "mu_exact": "401/12800",
+        "beta_exact": "1913/2048",
+        "theta_exact": "499940839479/500000000000",
+        "retained_energy_exact": "59160521/500000000000",
+        "alpha_exact": "31324476155738682727829/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 222,
+      "json_pointer": "/shifts/222",
+      "definition": "OddThetaWeil.Endpoints.endpoint_222",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_222_checked",
+      "exact": {
+        "mu_exact": "401/12800",
+        "beta_exact": "1915/2048",
+        "theta_exact": "999895292431/1000000000000",
+        "retained_energy_exact": "104707569/1000000000000",
+        "alpha_exact": "62649791949837423975581/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 223,
+      "json_pointer": "/shifts/223",
+      "definition": "OddThetaWeil.Endpoints.endpoint_223",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_223_checked",
+      "exact": {
+        "mu_exact": "3207/102400",
+        "beta_exact": "957/1024",
+        "theta_exact": "1000087771743/1000000000000",
+        "retained_energy_exact": "-87771743/1000000000000",
+        "alpha_exact": "62642130534699327594943/2000000000000000000000000"
+      },
+      "passes": false
+    },
+    {
+      "index": 224,
+      "json_pointer": "/shifts/224",
+      "definition": "OddThetaWeil.Endpoints.endpoint_224",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_224_checked",
+      "exact": {
+        "mu_exact": "3209/102400",
+        "beta_exact": "957/1024",
+        "theta_exact": "124961167493/125000000000",
+        "retained_energy_exact": "38832507/125000000000",
+        "alpha_exact": "7832076824738256103193/250000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 225,
+      "json_pointer": "/shifts/225",
+      "definition": "OddThetaWeil.Endpoints.endpoint_225",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_225_checked",
+      "exact": {
+        "mu_exact": "7933/51200",
+        "beta_exact": "251/2048",
+        "theta_exact": "705047961971/1000000000000",
+        "retained_energy_exact": "294952038029/1000000000000",
+        "alpha_exact": "218771073159816150553621/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 226,
+      "json_pointer": "/shifts/226",
+      "definition": "OddThetaWeil.Endpoints.endpoint_226",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_226_checked",
+      "exact": {
+        "mu_exact": "7933/51200",
+        "beta_exact": "253/2048",
+        "theta_exact": "141009829641/200000000000",
+        "retained_energy_exact": "58990170359/200000000000",
+        "alpha_exact": "43754287918348180491791/400000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 227,
+      "json_pointer": "/shifts/227",
+      "definition": "OddThetaWeil.Endpoints.endpoint_227",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_227_checked",
+      "exact": {
+        "mu_exact": "3173/20480",
+        "beta_exact": "63/512",
+        "theta_exact": "705049933919/1000000000000",
+        "retained_energy_exact": "294950066081/1000000000000",
+        "alpha_exact": "218757911795083478897019/2000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 228,
+      "json_pointer": "/shifts/228",
+      "definition": "OddThetaWeil.Endpoints.endpoint_228",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_228_checked",
+      "exact": {
+        "mu_exact": "15867/102400",
+        "beta_exact": "63/512",
+        "theta_exact": "352522872623/500000000000",
+        "retained_energy_exact": "147477127377/500000000000",
+        "alpha_exact": "109392079415124071582823/1000000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 229,
+      "json_pointer": "/shifts/229",
+      "definition": "OddThetaWeil.Endpoints.endpoint_229",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_229_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "5107/2048",
+        "theta_exact": "78754184611/100000000000",
+        "retained_energy_exact": "21245815389/100000000000",
+        "alpha_exact": "7896223135793052374761/200000000000000000000000"
+      },
+      "passes": true
+    },
+    {
+      "index": 230,
+      "json_pointer": "/shifts/230",
+      "definition": "OddThetaWeil.Endpoints.endpoint_230",
+      "theorem": "OddThetaWeil.Endpoints.endpoint_230_checked",
+      "exact": {
+        "mu_exact": "1/20",
+        "beta_exact": "5109/2048",
+        "theta_exact": "393819499117/500000000000",
+        "retained_energy_exact": "106180500883/500000000000",
+        "alpha_exact": "39485925717719660196167/1000000000000000000000000"
+      },
+      "passes": true
+    }
+  ],
+  "paper_selected": [
+    {
+      "index": 59,
+      "theorem": "OddThetaWeil.Endpoints.paper_first",
+      "loss_upper_exact": "17381/500000"
+    },
+    {
+      "index": 210,
+      "theorem": "OddThetaWeil.Endpoints.paper_second",
+      "loss_upper_exact": "19741/500000"
+    },
+    {
+      "index": 221,
+      "theorem": "OddThetaWeil.Endpoints.paper_third",
+      "loss_upper_exact": "31324476155738682727829/1000000000000000000000000"
+    }
+  ]
+}

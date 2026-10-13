@@ -1,0 +1,40 @@
+{
+  "status": "PASS new actual midpoint rank residual calculation",
+  "source": "routes/complement-midpoint-rank.md",
+  "dimension": 2906,
+  "rank": 56,
+  "gram_interval_error_upper": 3.1244046932252195e-09,
+  "full_frobenius_residual_upper": 0.000239105182843633,
+  "complete_loss_upper": 0.0004886338756279965,
+  "base_price_exact": "451236349/2000000000000",
+  "midpoint_multiplier": "11/10",
+  "threshold_exact": "1548763651/2200000000000",
+  "locator_count": 46,
+  "all_coupling_retained": "full dense A-minus-rankN residual",
+  "float_factor_interpretation": "stored binary64 factors are exact dyadic construction, not certified eigenvectors",
+  "script_sha256": "9666870baf58c83b0346ec5b824bcc7dab1e1acf81523cf27937445481cae4ee",
+  "cell_certificate_sha256": "cf4e6b03f62d5f787f41fb104f7912a7fcadd6333da3032ac086b36f5020df30",
+  "Fourier_certificate_sha256": "b9b18b988354cf912bcc305946f9fe8ecdb677ad8b464bc5bd26be057b3bfe16",
+  "factor_file_sha256": "97873d70e5472682244984d2986288b60eb63aeba414f0b2cc4b1acd55daf5f9",
+  "elapsed_seconds": 2.1675091670040274,
+  "successful_execution": {
+    "session_id": 37281,
+    "final_chunk": "d27f28",
+    "exit_code": 0,
+    "stdout": [
+      "Complete midpoint Gram entry-error upper 3.1244046932252195e-09 dimension 2906",
+      "UNVERIFIED eigenvalue locator: threshold 0.0007039834777272727 count 46 largest 0.2557455102111982 next 0.0005680669043943568",
+      "rank 46 full Frobenius residual 0.001161398660413238 guarded remainder 0.0011614028908494794",
+      "rank 56 full Frobenius residual 0.00023910075215912512 guarded remainder 0.000239105182843633",
+      "PASS candidate rank 56 complete loss 0.0004886338756279965"
+    ]
+  },
+  "exact_theorem_postprocessing": {
+    "residual_epsilon": "3/12500",
+    "complete_loss": "979236349/2000000000000",
+    "loss_strict_endpoint": "49/100000",
+    "projector": "exact orthogonal projector onto saved factor-column span; rank at most56",
+    "guarded_endpoint_comparison": "exact binary64 rational remainder <3/12500",
+    "loop_repeated": false
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS actual physical rank56 and coefficient-metric conditioning",
+  "source": "routes/complement-physical-frame-certificate.md",
+  "dimension": 2906,
+  "columns": 56,
+  "kernel": "K=span(q)",
+  "physical_rank": 56,
+  "coefficient_factor_interpretation": "all stored Z entries exact binary64 dyadic; no assumed orthogonality",
+  "physical_Gram": "H=Z*D(G0-bb*/Q)DZ; tau is actual pole diagonal",
+  "precision_bits": 192,
+  "norm_integral_interval": "[0,2] doubled",
+  "norm_integral_runtime": "existing Arb acb.integral, meromorphic callback; preserved successful norm run",
+  "norm_certificate_sha256": "99ebffe92756ab7e67e0fcc97c4c12348f90573e337471010c50d0f65cb8fd44",
+  "norm_theta_error_exact": "1/2^250",
+  "norm_physical_tail_error_exact": "1/2^180",
+  "norm_endpoint_scale": "1267650600228229401496703205376",
+  "Q_outward_endpoint_pair": [
+    14029933127491080440862441745163,
+    14029933127491080440862441745341
+  ],
+  "tau_outward_endpoint_pair": [
+    7241971926824905640462844130,
+    7241971926824905640462844143
+  ],
+  "Q_ball": "[11.0676657471428749463191678229 +/- 6.98e-29]",
+  "tau_ball": "[0.00571290852978025013036375087 +/- 4.56e-30]",
+  "coefficient_Gram_guarded_defect_upper": 3.62642215991221e-11,
+  "coefficient_Gram_lower_exact": "99999999/100000000",
+  "coefficient_Gram_upper_exact": "100000001/100000000",
+  "physical_full_Gram_interval_error_upper": 3.1371702608655624e-09,
+  "physical_compression_error_upper": 3.1950109186718805e-09,
+  "physical_IEEE_compression_error_upper": 5.784062643461534e-11,
+  "coefficient_column_square_upper": 1.0000000000006521,
+  "locator_orthogonality_error_upper": 4.253752768912865e-11,
+  "locator_entire_residual_upper": 1.1412534290073072e-11,
+  "physical_spectral_error_ball": "[3.222486290259122654686969233135622070959485848348e-9 +/- 4.83e-58]",
+  "physical_Gram_lower_ball": "[2.10732835784098527381939039377427354670716325505723e-7 +/- 3.84e-58]",
+  "physical_Gram_upper_ball": "[0.255495125508181443411696421106633258442323731115735848348 +/- 6.16e-58]",
+  "generalized_lower_h_exact": "21/100000000",
+  "generalized_inequality": "H >= h W",
+  "kappa_B_upper_exact": "2182178903/1000000",
+  "kappa_B_upper_ball": "[2182.17890235992381266097485415619451856402694131808185838 +/- 5.34e-54]",
+  "all_coupling_retained": "entire dense frequency-frequency, frequency-pole and score-capture terms",
+  "Fourier_far_tail": "5 exp(-|nu|/4); score 5|nu| exp(-|nu|/4), full theta",
+  "pole_measure": 2,
+  "entry_IEEE_allowance": "1e-12",
+  "source_hashes": {
+    "rank_script": "9666870baf58c83b0346ec5b824bcc7dab1e1acf81523cf27937445481cae4ee",
+    "rank_certificate": "583ba0173a380e0ea882f23c2f594b562273d9455a80aeb33ad0c9ca65bfca61",
+    "cells": "cf4e6b03f62d5f787f41fb104f7912a7fcadd6333da3032ac086b36f5020df30",
+    "fourier": "b9b18b988354cf912bcc305946f9fe8ecdb677ad8b464bc5bd26be057b3bfe16",
+    "factors": "97873d70e5472682244984d2986288b60eb63aeba414f0b2cc4b1acd55daf5f9"
+  },
+  "Fourier_script_sha256": "717bf81924d3a494f782acaca8af5eab88ec6b2bb111fdec264265716b02645d",
+  "script_sha256": "2187bc9de732670f9d60bcb5f9b1a87e0c757480ffd8cea28e9dd8b7169de89b",
+  "physical_locator_file_sha256": "bd387bda2eb9c49b3f191e2e9a84072845f8953e6400199eaf7ccfed11cb81a7",
+  "elapsed_seconds": 0.6885523330129217,
+  "successful_matrix_execution": {
+    "session_id": 37022,
+    "final_chunk": "57aab1",
+    "exit_code": 0,
+    "post_run_source_change": "added the identical norm calculation as a cache-miss branch; existing norm and matrix calculations unchanged, no check rerun",
+    "executed_script_sha256": "39be7ae3d8401600f75c0e359c7ffb8890ace98b80d49b5985d090dbf2ea10c8",
+    "executed_source_file": "certificates/complement_physical_frame_executed_source.py"
+  },
+  "spectral_majorants_exact": {
+    "d": "1/312500000",
+    "o": "43/1000000000000",
+    "r": "23/2000000000000",
+    "extra_scalar_reserve": "1/1000000000000000000"
+  },
+  "successful_exact_spectral_postprocessing": {
+    "uses_saved_matrix_run": true,
+    "matrix_loop_repeated": false,
+    "status": "PASS exact rational d/o/r retain same h and kappa"
+  }
+}

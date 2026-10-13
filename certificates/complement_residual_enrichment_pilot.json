@@ -1,0 +1,37 @@
+{
+  "status": "DIAGNOSTIC ONLY: uncertified symbol/Fourier quadrature",
+  "mu_exact": "1/20",
+  "frequency_step": 0.25,
+  "frequency_limit": 3100.0,
+  "trial_columns": 112,
+  "selected_center_Gram_rank": 106,
+  "center_Gram_minimum": -1.1605641868160962e-18,
+  "projected_midpoint_residual_cross_norm": 3.536511214219269e-29,
+  "whole_action_Gram_minimum": -4.806846415921649e-18,
+  "whole_residual_Gram_minimum": -2.2829517239089914e-14,
+  "K_maximum": 0.6374640004278893,
+  "whole_residual_squared_maximum": 0.009164995905132891,
+  "matrix_resolvent_price_maximum": 0.7012104004720408,
+  "separate_norm_price": 0.9048342693226404,
+  "global_midpoint_difference_upper": 0.013155613842000102,
+  "smooth_plus_midpoint_robust_beta": 2.4797086661822756,
+  "smooth_plus_midpoint_robust_price": 0.7790412184193749,
+  "smooth_plus_midpoint_whole_residual_squared_maximum": 0.009149314063692782,
+  "smooth_plus_midpoint_Gram_minimum": -6.629202149187231e-18,
+  "elapsed_seconds": 7.45371516700834,
+  "input_sha256": {
+    "complement_energy_resolvent_matrices.npz": "0e4cc230db21c4a3796e79d1e39186b2defb79edaa0a2d4cc2beb9e102142bd6",
+    "complement_energy_resolvent_tighter_matrices.npz": "3b14e3bd86d530502bace088096db3cc86b0cba9e03f54bc8539f8dc47d68bb6",
+    "complement_low_zero_frame_matrices.npz": "0812a4c912fa040546088b100a62d58ae60bd8fde7d5fc0e16121f30283e91a0",
+    "complement_midpoint_rank_factors.npz": "97873d70e5472682244984d2986288b60eb63aeba414f0b2cc4b1acd55daf5f9",
+    "complement_low_zero_taylor_grid.npz": "a09c3eaf546b97ef2a2b174885572f8ba1b031925982417b24986cd8a6b402e0"
+  },
+  "source_sha256": "c86ed3c253f44894cb67b411d76ea7792c348b1f9217a75b5130d63f19e026ec",
+  "matrix_sha256": "8c4bb30c3e969c4522b92af667e018859e9ad17a6d35cc4d1901560f07e08a24",
+  "additional_input_sha256_postprocessing": {
+    "complement_physical_frame_locator.npz": "bd387bda2eb9c49b3f191e2e9a84072845f8953e6400199eaf7ccfed11cb81a7",
+    "complement_physical_norms.json": "99ebffe92756ab7e67e0fcc97c4c12348f90573e337471010c50d0f65cb8fd44",
+    "complement_signed_symbol_norm_cells.json": "cf4e6b03f62d5f787f41fb104f7912a7fcadd6333da3032ac086b36f5020df30"
+  },
+  "exact_strip_selfcheck": "2[80(106/125)+38(14/25)](25/246)=2228/123<20; A-envelope4480/47200 checked by Fraction"
+}

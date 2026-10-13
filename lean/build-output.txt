@@ -1,0 +1,6 @@
+⚠ [2999/3005] Replayed OddThetaWeil.ActionError
+warning: OddThetaWeil/ActionError.lean:14:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3004/3005] Built OddThetaWeil (13s)
+Build completed successfully (3005 jobs).

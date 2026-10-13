@@ -1,0 +1,558 @@
+{
+  "author": "Leonard van Hemert",
+  "candidate_date": "2026-10-13",
+  "version": "0.1.0-rc-local",
+  "publication_status": "not published",
+  "upstream_publication": {
+    "version": "1.0.0",
+    "doi": "10.5281/zenodo.23298499",
+    "source_sha256": "538fe25a41df103c3ca73228986fa601e88d2ed9907b901845b0e8c1fae4613e"
+  },
+  "runtime": {
+    "python_flint": "0.9.0",
+    "FLINT": "3.6.0",
+    "precision_bits": 192,
+    "arithmetic": "binary64 centers with complete explicit guards; exact-input Arb locators",
+    "numpy": "2.5.3",
+    "python": "3.14.7",
+    "scipy_generation_only": "1.18.1"
+  },
+  "supplement_map": {
+    "S0": "supplement.tex section S0",
+    "S1": "supplement.tex section S1",
+    "S2": "supplement.tex section S2",
+    "S3": "supplement.tex section S3",
+    "S4": "supplement.tex section S4",
+    "S5": "supplement.tex section S5",
+    "S6": "supplement.tex section S6",
+    "S7": "supplement.tex section S7",
+    "S8": "supplement.tex section S8",
+    "S9": "supplement.tex section S9",
+    "S10": "supplement.tex section S10",
+    "S11": "supplement.tex section S11",
+    "S12": "supplement.tex section S12",
+    "S13": "supplement.tex section S13",
+    "S14": "supplement.tex section S14"
+  },
+  "files": {
+    "certificates/complement_energy_resolvent.json": {
+      "sha256": "6318beabe9812f1679d7fdb90a846b5477f882d40f14743f2029cd6b5c85f457",
+      "bytes": 6316
+    },
+    "certificates/complement_energy_resolvent_executed_source.py": {
+      "sha256": "e03e3205c9b1c8cea7d74bddb6e74e7bd377e32b6c4530155744f53b74a4e2d8",
+      "bytes": 15575
+    },
+    "certificates/complement_energy_resolvent_matrices.npz": {
+      "sha256": "0e4cc230db21c4a3796e79d1e39186b2defb79edaa0a2d4cc2beb9e102142bd6",
+      "bytes": 29150395
+    },
+    "certificates/complement_energy_resolvent_tighter.json": {
+      "sha256": "967c045b47b2ff261395975f494909cc2e84909582d18d9c735b7cb02a65fcb8",
+      "bytes": 2915
+    },
+    "certificates/complement_energy_resolvent_tighter_executed_source.py": {
+      "sha256": "0a8ff808a4637851625fc806dc0fae5e653cfd8040f67244e5664e282bfd77f1",
+      "bytes": 6291
+    },
+    "certificates/complement_energy_resolvent_tighter_matrices.npz": {
+      "sha256": "3b14e3bd86d530502bace088096db3cc86b0cba9e03f54bc8539f8dc47d68bb6",
+      "bytes": 2110244
+    },
+    "certificates/complement_enriched_signed_tail_capture_certificate.json": {
+      "sha256": "3936167013888f584a22252569e177931657a3f0eb23c8af64ef0225e0ac2e5c",
+      "bytes": 2354
+    },
+    "certificates/complement_enriched_signed_tail_capture_executed_source.py": {
+      "sha256": "4f9bb7ab570d51bf7bb3948d81e3fa084870c3312c96cd0c7f7142355777ff8d",
+      "bytes": 990
+    },
+    "certificates/complement_fourier_weight_grid.json": {
+      "sha256": "b9b18b988354cf912bcc305946f9fe8ecdb677ad8b464bc5bd26be057b3bfe16",
+      "bytes": 873157
+    },
+    "certificates/complement_low_zero_frame_certificate.json": {
+      "sha256": "0fc15c8f6972f737376d154112c1b3e39dbd9761ad0e0ad261848a7e0b2d19e6",
+      "bytes": 281981
+    },
+    "certificates/complement_low_zero_frame_matrices.npz": {
+      "sha256": "0812a4c912fa040546088b100a62d58ae60bd8fde7d5fc0e16121f30283e91a0",
+      "bytes": 49622522
+    },
+    "certificates/complement_low_zero_taylor_grid.npz": {
+      "sha256": "a09c3eaf546b97ef2a2b174885572f8ba1b031925982417b24986cd8a6b402e0",
+      "bytes": 389149
+    },
+    "certificates/complement_low_zero_taylor_grid_certificate.json": {
+      "sha256": "9e3cea5c726274b1a7485215d5c05313147af66d3fcdb802222965df14c0dd7a",
+      "bytes": 676
+    },
+    "certificates/complement_low_zero_taylor_grid_executed_source.py": {
+      "sha256": "1dc91ef8d118e2791a4be848c34293e556befda026509abe9ff7a747ddd6e34a",
+      "bytes": 13136
+    },
+    "certificates/complement_matrix_residual_certificate.json": {
+      "sha256": "cb0246d387ac0d8e8d0eda070bc1a1b74e559d94af7351fc4a4de9e4ed7bfec1",
+      "bytes": 15676
+    },
+    "certificates/complement_matrix_residual_certificate_executed_source.py": {
+      "sha256": "2cfb11b9acea9cf69eaaea6376aa060ad51f08c59b7bb07f836d28bd6251f5fb",
+      "bytes": 11405
+    },
+    "certificates/complement_matrix_residual_certificate_matrices.npz": {
+      "sha256": "e1a5721fd043e8c4865d5d34c57bfc68dc6ad4dfe1003d438de06f12f05b31c2",
+      "bytes": 8835417
+    },
+    "certificates/complement_midpoint_deficit_norm.json": {
+      "sha256": "636bfe6b8ade96134892018541e523b9dbd1fe0f981445b1bf8087b5d508bf03",
+      "bytes": 41165
+    },
+    "certificates/complement_midpoint_mass_deficit.json": {
+      "sha256": "7e06094b7a11319619558ba9246020391bb5435ebbfb94d504fd29aff8618a17",
+      "bytes": 889540
+    },
+    "certificates/complement_midpoint_rank.json": {
+      "sha256": "583ba0173a380e0ea882f23c2f594b562273d9455a80aeb33ad0c9ca65bfca61",
+      "bytes": 2058
+    },
+    "certificates/complement_midpoint_rank_factors.npz": {
+      "sha256": "97873d70e5472682244984d2986288b60eb63aeba414f0b2cc4b1acd55daf5f9",
+      "bytes": 1171684
+    },
+    "certificates/complement_physical_frame_certificate.json": {
+      "sha256": "8505edd30826a9117bd3fc76929eb4179f52da195314ed7d17f2507e297caafb",
+      "bytes": 4112
+    },
+    "certificates/complement_physical_frame_executed_source.py": {
+      "sha256": "39be7ae3d8401600f75c0e359c7ffb8890ace98b80d49b5985d090dbf2ea10c8",
+      "bytes": 11946
+    },
+    "certificates/complement_physical_frame_locator.npz": {
+      "sha256": "bd387bda2eb9c49b3f191e2e9a84072845f8953e6400199eaf7ccfed11cb81a7",
+      "bytes": 57488
+    },
+    "certificates/complement_physical_norms.json": {
+      "sha256": "99ebffe92756ab7e67e0fcc97c4c12348f90573e337471010c50d0f65cb8fd44",
+      "bytes": 1128
+    },
+    "certificates/complement_physical_norms_executed_source.py": {
+      "sha256": "0da544a4b7e7cb82ff839dbf603e5a0451862dfb7e66c5ffd55ca12ec5a759b2",
+      "bytes": 11518
+    },
+    "certificates/complement_residual_enrichment_action.json": {
+      "sha256": "e530857ce32dbaab301f8ef9085c08dfdead78258479701be3bc13eb575311c3",
+      "bytes": 6182
+    },
+    "certificates/complement_residual_enrichment_action_certificate.json": {
+      "sha256": "26e175880276e79cfb9840230cd1e632cb4e5a94228ad84da72a17dc2c619162",
+      "bytes": 5288
+    },
+    "certificates/complement_residual_enrichment_action_executed_source.py": {
+      "sha256": "bb3b37363a42f82f4d6a2faa4dae10239e0acd9fa3fd686a86719c8d3a6bfb4d",
+      "bytes": 21880
+    },
+    "certificates/complement_residual_enrichment_action_matrices.npz": {
+      "sha256": "1509969eeaf36edfffde3625fc5b11e17ae641b3721c97b1df547ea178dc3f95",
+      "bytes": 3301575
+    },
+    "certificates/complement_residual_enrichment_pilot.json": {
+      "sha256": "59083e3804b70a86fb27885f5132f6a70ad83e3a923b6505b416d14518d279eb",
+      "bytes": 2269
+    },
+    "certificates/complement_residual_enrichment_pilot_matrices.npz": {
+      "sha256": "8c4bb30c3e969c4522b92af667e018859e9ad17a6d35cc4d1901560f07e08a24",
+      "bytes": 3506414
+    },
+    "certificates/complement_residual_enrichment_shift_search.json": {
+      "sha256": "98c03461437908021035e59a9a5b13aa6543ac3d2f20c33b8be4da9f29ae1018",
+      "bytes": 271888
+    },
+    "certificates/complement_signed_cached_gram_certificate.json": {
+      "sha256": "36132a5baead2399dcb9342ffda84b3eb97d9ce75ce03c0b82983abda51a47fc",
+      "bytes": 7021
+    },
+    "certificates/complement_signed_cached_gram_matrices.npz": {
+      "sha256": "abe6d8b50ada52c356ee9feed5872dd91bc05127215205304bc29d275f18e020",
+      "bytes": 86248
+    },
+    "certificates/complement_signed_symbol_norm_cells.json": {
+      "sha256": "84bc46ab7df92590adbac45f84768aeb17c7842ec217f78f98a0e7a058b4b27d",
+      "bytes": 1653563
+    },
+    "computations/complement_energy_resolvent.py": {
+      "sha256": "e03e3205c9b1c8cea7d74bddb6e74e7bd377e32b6c4530155744f53b74a4e2d8",
+      "bytes": 15575
+    },
+    "computations/complement_energy_resolvent_tighter.py": {
+      "sha256": "fca3de86023d4129d96101c8dfa92a2a76dc6e6082b62c0c7992b4ac34dc64d2",
+      "bytes": 6999
+    },
+    "computations/complement_enriched_signed_tail_capture_check.py": {
+      "sha256": "359c7bab3ededb633c87411d06b4e1639c75af2a165374a9e641f62a6e4d035d",
+      "bytes": 1036
+    },
+    "computations/complement_fourier_weight_grid.py": {
+      "sha256": "717bf81924d3a494f782acaca8af5eab88ec6b2bb111fdec264265716b02645d",
+      "bytes": 3383
+    },
+    "computations/complement_low_zero_frame.py": {
+      "sha256": "d4f5ca8a5ea851b94f6413ed0e8468a6c9d0e0a72954d0a2ee9046d90a7e0509",
+      "bytes": 14945
+    },
+    "computations/complement_matrix_residual_certificate.py": {
+      "sha256": "2cfb11b9acea9cf69eaaea6376aa060ad51f08c59b7bb07f836d28bd6251f5fb",
+      "bytes": 11405
+    },
+    "computations/complement_matrix_residual_tight_endpoints.py": {
+      "sha256": "e1fc9d2c69a7462aef755bacf358935f27d997b2439b3660624ef718f1e2b883",
+      "bytes": 1886
+    },
+    "computations/complement_midpoint_deficit_norm.py": {
+      "sha256": "539ae95af54cf332aa5b6227c3d0e1c0210b6707da46b14a2f5e01295bcdf015",
+      "bytes": 4245
+    },
+    "computations/complement_midpoint_mass_deficit.py": {
+      "sha256": "03dce18df292fe53396579cc3870cddd446bfef424d13629ece02d1a7d029333",
+      "bytes": 3306
+    },
+    "computations/complement_midpoint_rank.py": {
+      "sha256": "9666870baf58c83b0346ec5b824bcc7dab1e1acf81523cf27937445481cae4ee",
+      "bytes": 5701
+    },
+    "computations/complement_physical_frame_certificate.py": {
+      "sha256": "2187bc9de732670f9d60bcb5f9b1a87e0c757480ffd8cea28e9dd8b7169de89b",
+      "bytes": 13419
+    },
+    "computations/complement_residual_enrichment_action.py": {
+      "sha256": "d67cc3d57bc6046b0221bd3fda5d25a1aa38d50bf4c7315e3d7a91bcc8cad0dc",
+      "bytes": 21960
+    },
+    "computations/complement_residual_enrichment_action_finalize.py": {
+      "sha256": "19a6b8f4c6419644262435be636054764453b33c86d8a197d36c215451470ca6",
+      "bytes": 6373
+    },
+    "computations/complement_residual_enrichment_pilot.py": {
+      "sha256": "c86ed3c253f44894cb67b411d76ea7792c348b1f9217a75b5130d63f19e026ec",
+      "bytes": 9525
+    },
+    "computations/complement_residual_enrichment_shift_search.py": {
+      "sha256": "7c757d3f92957e613da81bf30b2c57d3625584752fbd1231dc521d27717afc3a",
+      "bytes": 9214
+    },
+    "computations/complement_signed_cached_gram.py": {
+      "sha256": "3948f55202601846ad814946619baf9a1684ff97a545bd26faf1584a989434f3",
+      "bytes": 8365
+    },
+    "computations/complement_signed_symbol_norm_cells.py": {
+      "sha256": "9dc38b7083a71e644bdbb600760d7a8a3c15e6739eaeabdc408154cb15804b69",
+      "bytes": 2270
+    },
+    "computations/verify_candidate.py": {
+      "sha256": "b003c156dfd8a58f9daa1d71267cd0e27f5494b150aea20ec08678cd0498f11b",
+      "bytes": 229
+    },
+    "requirements-certificate.txt": {
+      "sha256": "e7c34f8b11057cd40b7c0cdab7dde5879306cb1b89210e8c967f0cae88a42972",
+      "bytes": 33
+    },
+    "requirements-generation.txt": {
+      "sha256": "9a326697e9f3d0ad0d0602e70c5c9fed916fc6a009a554339bf60f8fdb4d63a0",
+      "bytes": 46
+    },
+    "routes/complement-positive-rest-barrier-certificate.json": {
+      "sha256": "d143466825c5dcfecccd3d1de5d72fc2c420456b7af4f8deb29b5b9b46b58704",
+      "bytes": 1252
+    },
+    "routes/complement-positive-rest-barrier-check.py": {
+      "sha256": "76bfc0b9a043e774031d6b34c10530c619754a5749825950f87feaceeb1f6725",
+      "bytes": 4945
+    },
+    "routes/complement-residual-enrichment.md": {
+      "sha256": "6cde937c30f5c5abd6eb284fd170f7276f541b33f7995a0bff69ca829ca4456f",
+      "bytes": 15852
+    },
+    "scripts/check_certificates.py": {
+      "sha256": "67dd5598f2c5cf425f873b8435143d5d52a06e9853e1223c22cebd8b33594285",
+      "bytes": 14929
+    },
+    "verification/CERTIFICATE_SCOPE.md": {
+      "sha256": "2ec9dacf9f8f338ed6bebc62333b633bc9e6f93df588cddb99e93bde3c782dd1",
+      "bytes": 7515
+    }
+  },
+  "verification_scope": "Bounded read-only hash closure, exact-input finite guards, all 231 saved rational endpoints, four published enriched prices reconstructed from cached matrices, signed finite guards, and fresh ST2 inverse/Rayleigh check. Upstream integral/zero/DFT/large-Gram error claims remain accepted premises; see verification/CERTIFICATE_SCOPE.md. Cell-certificate command/cwd provenance alone is sanitized; historical digests are preserved and explicitly resolved through a verified canonical-payload adaptation.",
+  "verification_result": {
+    "status": "PASS",
+    "file_count": 61,
+    "embedded_certificate_hash_links": 158,
+    "python": "3.14.7",
+    "numpy": "2.5.3",
+    "python_flint": "0.9.0",
+    "FLINT": "3.6.0",
+    "precision_bits": 192,
+    "working_directory": "outside the release tree",
+    "command": "python3 -B /absolute/path/to/odd-theta-weil-bounds/scripts/check_certificates.py",
+    "upstream_regeneration": false,
+    "saved_enriched_endpoint_rows": 231,
+    "reconstructed_published_enriched_rows": [
+      {
+        "mu": "401/12800",
+        "beta": "1913/2048"
+      },
+      {
+        "mu": "15867/102400",
+        "beta": "63/512"
+      },
+      {
+        "mu": "1/25",
+        "beta": "3/2"
+      },
+      {
+        "mu": "1/20",
+        "beta": "1277/512"
+      }
+    ],
+    "ST2_fresh_inverse_and_Rayleigh_check": true,
+    "ST2_lower_witness_ball": "[0.147867617424864413486807996434464976194344315790160460 +/- 5.07e-55]",
+    "limitations": "Upstream scalar integrals, zero validation/completeness, native DFT and large-Gram/action error enclosures accepted as immutable premises. No fresh-install or cross-platform regeneration test.",
+    "provenance_portability_repair": {
+      "status": "PASS hash-only check",
+      "working_directory": "outside the release tree",
+      "numerical_rerun": false,
+      "mathematical_payload_changed": false,
+      "canonical_original_release_payload_comparison": "equal during preparation",
+      "private_absolute_paths_in_owned_text_files": false,
+      "historical_digest_policy": "unchanged original references resolved via explicitly declared provenance-only alias"
+    }
+  },
+  "certificate_hash_links": {
+    "certificates/complement_energy_resolvent.json": {
+      ".input_sha256.cells": "certificates/complement_signed_symbol_norm_cells.json",
+      ".input_sha256.fourier": "certificates/complement_fourier_weight_grid.json",
+      ".input_sha256.factor": "certificates/complement_midpoint_rank_factors.npz",
+      ".input_sha256.physical": "certificates/complement_physical_frame_certificate.json",
+      ".input_sha256.physical_locator": "certificates/complement_physical_frame_locator.npz",
+      ".input_sha256.norms": "certificates/complement_physical_norms.json",
+      ".input_sha256.sampling": "certificates/complement_low_zero_frame_certificate.json",
+      ".input_sha256.sampling_matrices": "certificates/complement_low_zero_frame_matrices.npz",
+      ".input_sha256.taylor": "certificates/complement_low_zero_taylor_grid.npz",
+      ".input_sha256.taylor_record": "certificates/complement_low_zero_taylor_grid_certificate.json",
+      ".input_sha256.mass_deficit": "certificates/complement_midpoint_mass_deficit.json",
+      ".input_sha256.deficit_norm": "certificates/complement_midpoint_deficit_norm.json",
+      ".matrix_sha256": "certificates/complement_energy_resolvent_matrices.npz",
+      ".script_sha256": "computations/complement_energy_resolvent.py",
+      ".successful_execution.executed_source_sha256": "computations/complement_energy_resolvent.py"
+    },
+    "certificates/complement_energy_resolvent_tighter.json": {
+      ".owning_main_certificate_sha256": "certificates/complement_energy_resolvent.json",
+      ".owning_utilities_sha256": "computations/complement_energy_resolvent.py",
+      ".input_sha256.frame": "certificates/complement_midpoint_rank_factors.npz",
+      ".input_sha256.physical": "certificates/complement_physical_frame_certificate.json",
+      ".input_sha256.physical_locator": "certificates/complement_physical_frame_locator.npz",
+      ".input_sha256.sampling": "certificates/complement_low_zero_frame_certificate.json",
+      ".input_sha256.sampling_matrices": "certificates/complement_low_zero_frame_matrices.npz",
+      ".input_sha256.completed_full_Gram": "certificates/complement_energy_resolvent_matrices.npz",
+      ".matrix_sha256": "certificates/complement_energy_resolvent_tighter_matrices.npz",
+      ".script_sha256": "certificates/complement_energy_resolvent_tighter_executed_source.py",
+      ".current_source_sha256": "computations/complement_energy_resolvent_tighter.py",
+      ".successful_execution.executed_source_sha256": "certificates/complement_energy_resolvent_tighter_executed_source.py"
+    },
+    "certificates/complement_enriched_signed_tail_capture_certificate.json": {
+      ".source_sha256": "certificates/complement_enriched_signed_tail_capture_executed_source.py",
+      ".input_sha256.complement_residual_enrichment_action_matrices.npz": "certificates/complement_residual_enrichment_action_matrices.npz",
+      ".input_sha256.complement_physical_frame_locator.npz": "certificates/complement_physical_frame_locator.npz",
+      ".input_sha256.complement_residual_enrichment_action.json": "certificates/complement_residual_enrichment_action.json",
+      ".input_sha256.complement_residual_enrichment_action_certificate.json": "certificates/complement_residual_enrichment_action_certificate.json",
+      ".input_sha256.complement_physical_frame_certificate.json": "certificates/complement_physical_frame_certificate.json"
+    },
+    "certificates/complement_fourier_weight_grid.json": {
+      ".script_sha256": "computations/complement_fourier_weight_grid.py"
+    },
+    "certificates/complement_low_zero_frame_certificate.json": {
+      ".script_sha256": "computations/complement_low_zero_frame.py",
+      ".cell_certificate_sha256": "certificates/complement_signed_symbol_norm_cells.json",
+      ".factor_file_sha256": "certificates/complement_midpoint_rank_factors.npz",
+      ".Taylor_grid_sha256": "certificates/complement_low_zero_taylor_grid.npz",
+      ".Taylor_grid_executed_source_sha256": "certificates/complement_low_zero_taylor_grid_executed_source.py",
+      ".matrix_file_sha256": "certificates/complement_low_zero_frame_matrices.npz",
+      ".physical_certificate_sha256": "certificates/complement_physical_frame_certificate.json"
+    },
+    "certificates/complement_low_zero_taylor_grid_certificate.json": {
+      ".executed_source_sha256": "certificates/complement_low_zero_taylor_grid_executed_source.py",
+      ".grid_sha256": "certificates/complement_low_zero_taylor_grid.npz"
+    },
+    "certificates/complement_matrix_residual_certificate.json": {
+      ".owning_main_certificate_sha256": "certificates/complement_energy_resolvent.json",
+      ".owning_guards_sha256": "computations/complement_energy_resolvent.py",
+      ".completed_full_Gram_sha256": "certificates/complement_energy_resolvent_matrices.npz",
+      ".input_sha256.factor": "certificates/complement_midpoint_rank_factors.npz",
+      ".input_sha256.physical": "certificates/complement_physical_frame_certificate.json",
+      ".input_sha256.physical_locator": "certificates/complement_physical_frame_locator.npz",
+      ".input_sha256.sampling": "certificates/complement_low_zero_frame_certificate.json",
+      ".input_sha256.sampling_matrices": "certificates/complement_low_zero_frame_matrices.npz",
+      ".matrix_sha256": "certificates/complement_matrix_residual_certificate_matrices.npz",
+      ".script_sha256": "computations/complement_matrix_residual_certificate.py",
+      ".successful_execution.executed_source_sha256": "computations/complement_matrix_residual_certificate.py",
+      ".tight_exact_postprocessing.source_sha256": "computations/complement_matrix_residual_tight_endpoints.py"
+    },
+    "certificates/complement_midpoint_deficit_norm.json": {
+      ".mass_deficit_certificate_sha256": "certificates/complement_midpoint_mass_deficit.json",
+      ".Fourier_certificate_sha256": "certificates/complement_fourier_weight_grid.json",
+      ".cell_certificate_sha256": "certificates/complement_signed_symbol_norm_cells.json",
+      ".rank_certificate_sha256": "certificates/complement_midpoint_rank.json",
+      ".script_sha256": "computations/complement_midpoint_deficit_norm.py"
+    },
+    "certificates/complement_midpoint_mass_deficit.json": {
+      ".cell_certificate_sha256": "certificates/complement_signed_symbol_norm_cells.json",
+      ".rank_certificate_sha256": "certificates/complement_midpoint_rank.json",
+      ".script_sha256": "computations/complement_midpoint_mass_deficit.py"
+    },
+    "certificates/complement_midpoint_rank.json": {
+      ".script_sha256": "computations/complement_midpoint_rank.py",
+      ".cell_certificate_sha256": "certificates/complement_signed_symbol_norm_cells.json",
+      ".Fourier_certificate_sha256": "certificates/complement_fourier_weight_grid.json",
+      ".factor_file_sha256": "certificates/complement_midpoint_rank_factors.npz"
+    },
+    "certificates/complement_physical_frame_certificate.json": {
+      ".norm_certificate_sha256": "certificates/complement_physical_norms.json",
+      ".source_hashes.rank_script": "computations/complement_midpoint_rank.py",
+      ".source_hashes.rank_certificate": "certificates/complement_midpoint_rank.json",
+      ".source_hashes.cells": "certificates/complement_signed_symbol_norm_cells.json",
+      ".source_hashes.fourier": "certificates/complement_fourier_weight_grid.json",
+      ".source_hashes.factors": "certificates/complement_midpoint_rank_factors.npz",
+      ".Fourier_script_sha256": "computations/complement_fourier_weight_grid.py",
+      ".script_sha256": "computations/complement_physical_frame_certificate.py",
+      ".physical_locator_file_sha256": "certificates/complement_physical_frame_locator.npz",
+      ".successful_matrix_execution.executed_script_sha256": "certificates/complement_physical_frame_executed_source.py"
+    },
+    "certificates/complement_physical_norms.json": {
+      ".original_script_sha256": "certificates/complement_physical_norms_executed_source.py",
+      ".executed_source_file_sha256": "certificates/complement_physical_norms_executed_source.py"
+    },
+    "certificates/complement_residual_enrichment_action.json": {
+      ".input_sha256.complement_residual_enrichment_pilot.json": "certificates/complement_residual_enrichment_pilot.json",
+      ".input_sha256.complement_residual_enrichment_pilot_matrices.npz": "certificates/complement_residual_enrichment_pilot_matrices.npz",
+      ".input_sha256.complement_energy_resolvent.json": "certificates/complement_energy_resolvent.json",
+      ".input_sha256.complement_energy_resolvent_matrices.npz": "certificates/complement_energy_resolvent_matrices.npz",
+      ".input_sha256.complement_energy_resolvent_tighter_matrices.npz": "certificates/complement_energy_resolvent_tighter_matrices.npz",
+      ".input_sha256.complement_midpoint_rank_factors.npz": "certificates/complement_midpoint_rank_factors.npz",
+      ".input_sha256.complement_physical_frame_certificate.json": "certificates/complement_physical_frame_certificate.json",
+      ".input_sha256.complement_physical_frame_locator.npz": "certificates/complement_physical_frame_locator.npz",
+      ".input_sha256.complement_physical_norms.json": "certificates/complement_physical_norms.json",
+      ".input_sha256.complement_signed_symbol_norm_cells.json": "certificates/complement_signed_symbol_norm_cells.json",
+      ".input_sha256.complement_low_zero_frame_certificate.json": "certificates/complement_low_zero_frame_certificate.json",
+      ".input_sha256.complement_low_zero_frame_matrices.npz": "certificates/complement_low_zero_frame_matrices.npz",
+      ".input_sha256.complement_low_zero_taylor_grid_certificate.json": "certificates/complement_low_zero_taylor_grid_certificate.json",
+      ".input_sha256.complement_low_zero_taylor_grid.npz": "certificates/complement_low_zero_taylor_grid.npz",
+      ".input_sha256.complement_fourier_weight_grid.json": "certificates/complement_fourier_weight_grid.json",
+      ".source_sha256": "certificates/complement_residual_enrichment_action_executed_source.py",
+      ".route_sha256": "routes/complement-residual-enrichment.md",
+      ".matrix_sha256": "certificates/complement_residual_enrichment_action_matrices.npz"
+    },
+    "certificates/complement_residual_enrichment_action_certificate.json": {
+      ".action_record_sha256": "certificates/complement_residual_enrichment_action.json",
+      ".action_matrix_sha256": "certificates/complement_residual_enrichment_action_matrices.npz",
+      ".action_executed_source_sha256": "certificates/complement_residual_enrichment_action_executed_source.py",
+      ".source_sha256": "computations/complement_residual_enrichment_action_finalize.py",
+      ".route_sha256": "routes/complement-residual-enrichment.md",
+      ".input_sha256.complement_residual_enrichment_pilot.json": "certificates/complement_residual_enrichment_pilot.json",
+      ".input_sha256.complement_residual_enrichment_pilot_matrices.npz": "certificates/complement_residual_enrichment_pilot_matrices.npz",
+      ".input_sha256.complement_energy_resolvent.json": "certificates/complement_energy_resolvent.json",
+      ".input_sha256.complement_energy_resolvent_matrices.npz": "certificates/complement_energy_resolvent_matrices.npz",
+      ".input_sha256.complement_energy_resolvent_tighter_matrices.npz": "certificates/complement_energy_resolvent_tighter_matrices.npz",
+      ".input_sha256.complement_midpoint_rank_factors.npz": "certificates/complement_midpoint_rank_factors.npz",
+      ".input_sha256.complement_physical_frame_certificate.json": "certificates/complement_physical_frame_certificate.json",
+      ".input_sha256.complement_physical_frame_locator.npz": "certificates/complement_physical_frame_locator.npz",
+      ".input_sha256.complement_physical_norms.json": "certificates/complement_physical_norms.json",
+      ".input_sha256.complement_signed_symbol_norm_cells.json": "certificates/complement_signed_symbol_norm_cells.json",
+      ".input_sha256.complement_low_zero_frame_certificate.json": "certificates/complement_low_zero_frame_certificate.json",
+      ".input_sha256.complement_low_zero_frame_matrices.npz": "certificates/complement_low_zero_frame_matrices.npz",
+      ".input_sha256.complement_low_zero_taylor_grid_certificate.json": "certificates/complement_low_zero_taylor_grid_certificate.json",
+      ".input_sha256.complement_low_zero_taylor_grid.npz": "certificates/complement_low_zero_taylor_grid.npz",
+      ".input_sha256.complement_fourier_weight_grid.json": "certificates/complement_fourier_weight_grid.json"
+    },
+    "certificates/complement_residual_enrichment_pilot.json": {
+      ".input_sha256.complement_energy_resolvent_matrices.npz": "certificates/complement_energy_resolvent_matrices.npz",
+      ".input_sha256.complement_energy_resolvent_tighter_matrices.npz": "certificates/complement_energy_resolvent_tighter_matrices.npz",
+      ".input_sha256.complement_low_zero_frame_matrices.npz": "certificates/complement_low_zero_frame_matrices.npz",
+      ".input_sha256.complement_midpoint_rank_factors.npz": "certificates/complement_midpoint_rank_factors.npz",
+      ".input_sha256.complement_low_zero_taylor_grid.npz": "certificates/complement_low_zero_taylor_grid.npz",
+      ".source_sha256": "computations/complement_residual_enrichment_pilot.py",
+      ".matrix_sha256": "certificates/complement_residual_enrichment_pilot_matrices.npz",
+      ".additional_input_sha256_postprocessing.complement_physical_frame_locator.npz": "certificates/complement_physical_frame_locator.npz",
+      ".additional_input_sha256_postprocessing.complement_physical_norms.json": "certificates/complement_physical_norms.json",
+      ".additional_input_sha256_postprocessing.complement_signed_symbol_norm_cells.json": "certificates/complement_signed_symbol_norm_cells.json"
+    },
+    "certificates/complement_residual_enrichment_shift_search.json": {
+      ".action_record_sha256": "certificates/complement_residual_enrichment_action.json",
+      ".action_matrix_sha256": "certificates/complement_residual_enrichment_action_matrices.npz",
+      ".action_executed_source_sha256": "certificates/complement_residual_enrichment_action_executed_source.py",
+      ".source_sha256": "computations/complement_residual_enrichment_shift_search.py",
+      ".route_sha256": "routes/complement-residual-enrichment.md",
+      ".input_sha256.complement_residual_enrichment_pilot.json": "certificates/complement_residual_enrichment_pilot.json",
+      ".input_sha256.complement_residual_enrichment_pilot_matrices.npz": "certificates/complement_residual_enrichment_pilot_matrices.npz",
+      ".input_sha256.complement_energy_resolvent.json": "certificates/complement_energy_resolvent.json",
+      ".input_sha256.complement_energy_resolvent_matrices.npz": "certificates/complement_energy_resolvent_matrices.npz",
+      ".input_sha256.complement_energy_resolvent_tighter_matrices.npz": "certificates/complement_energy_resolvent_tighter_matrices.npz",
+      ".input_sha256.complement_midpoint_rank_factors.npz": "certificates/complement_midpoint_rank_factors.npz",
+      ".input_sha256.complement_physical_frame_certificate.json": "certificates/complement_physical_frame_certificate.json",
+      ".input_sha256.complement_physical_frame_locator.npz": "certificates/complement_physical_frame_locator.npz",
+      ".input_sha256.complement_physical_norms.json": "certificates/complement_physical_norms.json",
+      ".input_sha256.complement_signed_symbol_norm_cells.json": "certificates/complement_signed_symbol_norm_cells.json",
+      ".input_sha256.complement_low_zero_frame_certificate.json": "certificates/complement_low_zero_frame_certificate.json",
+      ".input_sha256.complement_low_zero_frame_matrices.npz": "certificates/complement_low_zero_frame_matrices.npz",
+      ".input_sha256.complement_low_zero_taylor_grid_certificate.json": "certificates/complement_low_zero_taylor_grid_certificate.json",
+      ".input_sha256.complement_low_zero_taylor_grid.npz": "certificates/complement_low_zero_taylor_grid.npz",
+      ".input_sha256.complement_fourier_weight_grid.json": "certificates/complement_fourier_weight_grid.json"
+    },
+    "certificates/complement_signed_cached_gram_certificate.json": {
+      ".input_sha256.complement_residual_enrichment_action.json": "certificates/complement_residual_enrichment_action.json",
+      ".input_sha256.complement_residual_enrichment_action_matrices.npz": "certificates/complement_residual_enrichment_action_matrices.npz",
+      ".input_sha256.complement_residual_enrichment_action_certificate.json": "certificates/complement_residual_enrichment_action_certificate.json",
+      ".input_sha256.complement_physical_frame_certificate.json": "certificates/complement_physical_frame_certificate.json",
+      ".input_sha256.complement_physical_frame_locator.npz": "certificates/complement_physical_frame_locator.npz",
+      ".source_sha256": "computations/complement_signed_cached_gram.py",
+      ".matrix_sha256": "certificates/complement_signed_cached_gram_matrices.npz"
+    },
+    "certificates/complement_signed_symbol_norm_cells.json": {
+      ".script_sha256": "computations/complement_signed_symbol_norm_cells.py"
+    },
+    "routes/complement-positive-rest-barrier-certificate.json": {
+      ".cells_sha256": "certificates/complement_signed_symbol_norm_cells.json",
+      ".existing_norm_cache_sha256": "certificates/complement_physical_norms.json",
+      ".script_sha256": "routes/complement-positive-rest-barrier-check.py"
+    }
+  },
+  "source_adaptations": [
+    {
+      "original_file": "certificates/complement_enriched_signed_tail_capture_executed_source.py",
+      "original_sha256": "4f9bb7ab570d51bf7bb3948d81e3fa084870c3312c96cd0c7f7142355777ff8d",
+      "release_file": "computations/complement_enriched_signed_tail_capture_check.py",
+      "release_sha256": "359c7bab3ededb633c87411d06b4e1639c75af2a165374a9e641f62a6e4d035d",
+      "change": "Only imports pathlib and resolves certificates relative to the release source; mathematical expressions unchanged."
+    }
+  ],
+  "historical_route_pruning": {
+    "retained": "One immutable hash-referenced analytical snapshot and the scalar barrier source/record; public proofs are in supplement.tex.",
+    "omitted_report_count": 36
+  },
+  "provenance_adaptations": [
+    {
+      "release_file": "certificates/complement_signed_symbol_norm_cells.json",
+      "original_sha256": "cf4e6b03f62d5f787f41fb104f7912a7fcadd6333da3032ac086b36f5020df30",
+      "release_sha256": "84bc46ab7df92590adbac45f84768aeb17c7842ec217f78f98a0e7a058b4b27d",
+      "omitted_fields": [
+        "execution_provenance.command",
+        "execution_provenance.cwd"
+      ],
+      "release_values": {
+        "command": "python3 computations/complement_signed_symbol_norm_cells.py",
+        "cwd": "release root"
+      },
+      "canonical_payload_sha256": "a856312462acc9274f3367a56eab693bbe03fe353db006af7752a8a098b478a0",
+      "canonicalization": "Remove exactly the two named provenance fields; JSON sort_keys=True, separators=(comma,colon), ensure_ascii=False; UTF-8.",
+      "identity_check": "Original and release canonical payload bytes compared equal during release preparation. The checker recomputes the release payload digest; the unredacted original is deliberately not shipped.",
+      "historical_hash_policy": "Downstream recorded original SHA-256 values are unchanged; checker resolves this historical digest to the provenance-only release adaptation, never calls the sanitized file byte-identical to the original."
+    }
+  ]
+}

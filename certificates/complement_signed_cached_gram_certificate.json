@@ -1,0 +1,92 @@
+{
+  "status": "PASS cached whole signed Grams and enriched 5-dimensional positivity",
+  "precision_bits": 192,
+  "locators": {
+    "signed_central_56": {
+      "orthogonality": "[9.41455909360752189212257749129438745922098478081750250e-15 +/- 2.50e-69]",
+      "whole_residual": "[3.84694286872031798590634801350402645248255007577266349e-16 +/- 4.56e-70]",
+      "polar_correction": "[1.970022921520290679512280075486616105741771e-15 +/- 2.63e-58]"
+    },
+    "signed_action_56": {
+      "orthogonality": "[8.63156702639916392475879682033649260287825467787187559e-15 +/- 2.84e-69]",
+      "whole_residual": "[3.30559786285255140286424690533374018484713942839221269e-16 +/- 3.32e-70]",
+      "polar_correction": "[1.576410799176106254856548387698813434418371e-15 +/- 4.35e-58]"
+    },
+    "restricted_physical_Gram": {
+      "orthogonality": "[2.20353238667339852664863822991992767521925219963635172628e-15 +/- 6.35e-72]",
+      "whole_residual": "[3.48137698598792874801296144095411333254718235700596379826e-15 +/- 6.10e-72]",
+      "polar_correction": "[1.372431047085688365661294259813676369247018e-14 +/- 8.22e-57]"
+    },
+    "restricted_signed_central": {
+      "orthogonality": "[1.38691207560135198946087462536801276914507799023880255984e-15 +/- 1.95e-72]",
+      "whole_residual": "[6.3660024200084464388749665172900106027751449820537909859e-17 +/- 1.45e-73]",
+      "polar_correction": "[2.24083890388288540719110292125300011039146e-16 +/- 2.12e-58]"
+    },
+    "restricted_signed_action": {
+      "orthogonality": "[9.11957861948813647961262557522828118932337915017067021385e-16 +/- 5.18e-73]",
+      "whole_residual": "[3.16759579899253929682570523133739388264905985592234513816e-17 +/- 7.94e-74]",
+      "polar_correction": "[9.85843247018042408080631263386123757741580e-17 +/- 6.44e-59]"
+    },
+    "whole_signed_trial_residual": {
+      "orthogonality": "[1.26801200260393499594745136706110686741256775339247671807e-15 +/- 5.22e-72]",
+      "whole_residual": "[1.94684943314602772824934046310437087276367971383574926950e-17 +/- 5.58e-74]",
+      "polar_correction": "[9.70239891526500937284490458447971378866758e-17 +/- 8.65e-59]"
+    }
+  },
+  "scope": "Complete signed action and whole Grams; certified 5-dimensional enriched positive subspace, no global sign",
+  "input_sha256": {
+    "complement_residual_enrichment_action.json": "e530857ce32dbaab301f8ef9085c08dfdead78258479701be3bc13eb575311c3",
+    "complement_residual_enrichment_action_matrices.npz": "1509969eeaf36edfffde3625fc5b11e17ae641b3721c97b1df547ea178dc3f95",
+    "complement_residual_enrichment_action_certificate.json": "26e175880276e79cfb9840230cd1e632cb4e5a94228ad84da72a17dc2c619162",
+    "complement_physical_frame_certificate.json": "8505edd30826a9117bd3fc76929eb4179f52da195314ed7d17f2507e297caafb",
+    "complement_physical_frame_locator.npz": "bd387bda2eb9c49b3f191e2e9a84072845f8953e6400199eaf7ccfed11cb81a7"
+  },
+  "source_sha256": "3948f55202601846ad814946619baf9a1684ff97a545bd26faf1584a989434f3",
+  "reuse": "No integration, zero validation, point grid or DFT replay; exact-input finite matrix assembly only",
+  "selector_frobenius_ball": "[0.840777244960676248389121650612317986914012660124691337 +/- 1.91e-55]",
+  "selector_native_residual_ball": "[1.254585392515878464416805446576120978953579496388141678e-16 +/- 5.53e-71]",
+  "coefficient_center_defect_ball": "[1.834393729462179931656896825197070946055026109309908351e-14 +/- 2.35e-69]",
+  "coefficient_center_uncertainty_exact": "1/50000000",
+  "capture_error_exact": "3/12500",
+  "whole_signed_action_error_ball": "[0.000557772074896092034134675123199120739685 +/- 8.56e-43]",
+  "whole_signed_action_error_endpoint_exact": "7/12500",
+  "signed_central_Gram_error_ball": "[4.746336903655719152764039902115411821e-5 +/- 6.21e-42]",
+  "C_signed_action_cross_error_ball": "[2.2509660348033987257936268770184343495e-8 +/- 9.33e-46]",
+  "whole_signed_action_Gram_error_ball": "[3.78560774009332817313515159e-8 +/- 6.77e-35]",
+  "restricted_selector_orthogonality_ball": "[2.81008429859911887484211002129071915217461236131166817964e-15 +/- 5.05e-72]",
+  "restricted_physical_Gram_lower_ball": "[0.504623828423969574134277246050486319215 +/- 6.16e-40]",
+  "restricted_signed_form_coefficient_lower_ball": "[0.00125321983763579704968080281880016907762 +/- 1.99e-42]",
+  "restricted_rank": 5,
+  "restricted_signed_norm_lower_exact": "1/5000",
+  "whole_signed_trial_residual_error_ball": "[0.0010254688160502425726584710651420 +/- 8.17e-35]",
+  "whole_signed_trial_residual_upper_ball": "[0.0621885293091095910067782515614646 +/- 6.31e-35]",
+  "outside_trial_coupling_norm_lower_ball": "[0.228388635576055539897140511654739585747 +/- 6.08e-40]",
+  "outside_trial_coupling_norm_lower_exact": "11/50",
+  "outside_trial_coupling_squared_upper_ball": "[0.0628420882022006870058515201171883 +/- 6.61e-35]",
+  "coupling_metric": "input coefficient Euclidean norm of exact dyadic YW; no normalization or tail gap assumed",
+  "central56_lower_before_action_error_ball": "[-4.745930756759922413342450457956342609e-5 +/- 3.61e-42]",
+  "full56_rank_unestablished": "Y Gram uncertainty exceeds minimum center eigenvalue; no enlarged inverse used",
+  "conditioning": "restricted exact physical Gram >=1/2 I; signed action error after orthonormalization <=sqrt(2)*(7/12500)*sqrt(1+wdef)",
+  "elapsed_seconds": 0.26489387500623707,
+  "saved_center_operator_error_balls": {
+    "Dcenter": "[4.746336903657623545603576844235156604e-5 +/- 3.70e-42]",
+    "Cactioncenter": "[2.250966036707551466580720714298911728e-8 +/- 3.13e-45]",
+    "actionGramcenter": "[3.78560774158614712046566693e-8 +/- 5.88e-35]",
+    "restrictedGcenter": "[0.014115738590697570131730993070132031857 +/- 4.86e-40]",
+    "restrictedDcenter": "[4.746336903656365002236621435120978938e-5 +/- 5.74e-42]",
+    "restrictedAGcenter": "[3.78560774059166579600992078e-8 +/- 5.62e-35]",
+    "restrictedRawCross": "[4.746336903656373437029435144950134879e-5 +/- 1.42e-42]",
+    "restrictedResidualcenter": "[0.0010254688160502457572947257384746 +/- 5.50e-35]"
+  },
+  "saved_center_conversion_error_balls": {
+    "Dcenter": "[1.904392839536942119744782749159133983228746560219579240e-17 +/- 8.90e-72]",
+    "Cactioncenter": "[1.904152740787093837280477378752844618511926345751919544e-17 +/- 4.94e-72]",
+    "actionGramcenter": "[1.492818947330515336677090727823344534376571119956501422e-17 +/- 6.33e-72]",
+    "restrictedGcenter": "[1.54957322191689397498647151654395985391169140308013275647e-16 +/- 5.11e-73]",
+    "restrictedDcenter": "[6.3251186577270851035269616914321667386844381595597829070e-18 +/- 3.94e-74]",
+    "restrictedAGcenter": "[4.9832698499789809538633333493128275103366256277941144812e-18 +/- 1.45e-74]",
+    "restrictedRawCross": "[6.4094665858641833950863760081499350559469822445431904898e-18 +/- 2.85e-74]",
+    "restrictedResidualcenter": "[3.18463625467333264332528871713550971297099823293096241848e-18 +/- 6.40e-75]"
+  },
+  "matrix_sha256": "abe6d8b50ada52c356ee9feed5872dd91bc05127215205304bc29d275f18e020"
+}
