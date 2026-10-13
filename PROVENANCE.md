@@ -1,6 +1,6 @@
 # Provenance and rights
 
-This is version 1.0.0 of **Certified whole-domain bounds and equality barriers for the odd theta–Weil form**, by Leonard van Hemert. It is a new publication, distinct from the earlier *Coupling estimates* publication. The publication date is the manuscript's preparation date; upload and archival have not occurred.
+This is version 1.0.0 of **Certified whole-domain bounds and equality barriers for the odd theta–Weil form**, by Leonard van Hemert. It is a new publication, distinct from the earlier *Coupling estimates* publication. The publication date is the manuscript's preparation date. GitHub publication is recorded in [the repository history](https://github.com/LeonardSEO/odd-theta-weil-bounds); a Zenodo DOI for this new work has not been assigned.
 
 ## Mathematical source
 
