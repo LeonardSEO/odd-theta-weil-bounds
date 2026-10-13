@@ -28,6 +28,8 @@ The independent reviewer inspected the actual formal definitions, proof sources,
 | PDF inspection | Every page rendered and inspected for layout; corrected overflowing expressions and one visible spacing-command typo. PDF text contains no unresolved reference markers. PDF titles and author metadata match the sources. |
 | Release metadata | CFF and workflow YAML and Zenodo JSON parsed; author, title, version, preparation date and preprint metadata checked. CFF uses a software-package record with the paper as preferred article citation. No new DOI present. |
 
+During GitHub publication, Linux exposed platform sensitivity in the fresh eigensolver surcharge for four exceptionally tight endpoint margins. The verifier now preserves the complete original assembly and all error terms, but proves the same strict comparison by interval LDL positive pivots. The revised local checker passed; independent mathematical/code review accepted the implication, and positive, indefinite, singular and interval-uncertain control matrices behaved as required. Published constants and upstream certificates were not changed. Platform execution results are recorded by GitHub Actions.
+
 The detailed numerical trust boundary is in `CERTIFICATE_SCOPE.md`. The authoritative read-only command is `python3 scripts/check_certificates.py`, with its pinned dependencies. The generator sources are archival and may be expensive or overwrite certificates; they are not the routine verifier.
 
 ## Analytical boundary
