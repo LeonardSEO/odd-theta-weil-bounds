@@ -1,0 +1,1120 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools,longtable}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Supplement to Certified whole-domain bounds and equality barriers for the odd theta–Weil form},
+ pdfauthor={Leonard van Hemert},
+ pdfsubject={Version 1.0.0; mathematical preprint and certified proof scope}}
+\usepackage{microtype}
+\setlength{\emergencystretch}{1em}
+\makeatletter
+\renewcommand*\l@section{\@dottedtocline{1}{0em}{2.8em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{2.8em}{3.6em}}
+\makeatother
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\Ran}{\operatorname{ran}}
+\newcommand{\Dom}{\operatorname{Dom}}
+\newcommand{\dd}{\,d}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\numberwithin{equation}{section}
+\title{Supplement to \emph{Certified whole-domain bounds and equality barriers
+for the odd theta--Weil form}}
+\author{Leonard van Hemert}
+\date{13 October 2026 --- Version 1.0.0}
+\begin{document}\maketitle
+\begin{abstract}
+This supplement supplies the analytic domain and tail arguments, finite
+matrix error formulas, and certificate correspondence for the main article.
+It also records the secondary signed-action and coupling results. All
+norms are in the original complex Hilbert space unless a coefficient
+norm is explicitly specified. Exact stored binary numbers define trial
+maps; floating solves and spectral decompositions select those numbers
+but do not establish inverses, rank, or positivity. The finite arithmetic
+certificates and their source files accompany this document.
+\end{abstract}
+\tableofcontents
+\setcounter{section}{-1}
+\section{Foundations, domains, and primitive tails}\label{foundations}
+We use the definitions $\Phi,w,p,q,G,\mathcal V,A_W,E_8,J,J_8$ of
+Section~1 of the main article. Write $W=w^2$, $\Omega=\widehat W$,
+$\Xi=\widehat\Phi$, $Q=\|q\|^2$, $\tau=\|p\|^2$ and
+$S=I-q\otimes q/Q$. Pairings are sesquilinear, and $f\otimes f$
+denotes the positive map $u\mapsto\langle u,f\rangle f$, with the
+corresponding consistent convention for adjoints. The whole-line
+normalization equals $2\dd x$ on the positive half-line for products
+of odd functions. In particular the positive-frequency measure is
+$r_8(t)\dd t/\pi$, not $r_8(t)\dd t/(2\pi)$.
+
+\subsection{Closed realization and domain-preserving kernels}
+The original signed realization and unconditional pole-null jet
+identity are \cite[Lemma 5.1]{Theta}; its closed form and compact
+core are proved in \cite[Lemma 2.2]{Theta}. We spell
+out the additional facts needed for this article. The positive symbol has
+the absolutely convergent representation
+\[
+ b(t)=\sum_{j\ge0}\frac{(t/2)^2}
+ {(j+1/4)((j+1/4)^2+(t/2)^2)}.
+\]
+Multiplication by bounded $w$ followed by the closed multiplier
+$b(D)^{1/2}$ is closed: convergence of its input and output implies
+convergence of $wu$ and its multiplier image, so closedness of the
+multiplier applies. Its squared norm defines the closed form $g$.
+The prime majorant below and the finite-rank pole show that the
+remaining signed form is a bounded selfadjoint perturbation. Thus
+$A_W$ is selfadjoint on $\Dom(G)$ and has form domain $\mathcal V$.
+
+Writing $a_j=2j+1/2$ gives
+\[
+ b'(t)=4t\sum_{j\ge0}\frac{a_j}{(a_j^2+t^2)^2},\qquad t>0.
+\]
+The step-two unimodal sum is bounded by half its integral plus twice
+its supremum. Consequently $b'(t)\le9/t$ for $t\ge1$, while
+$b(1)\le\tfrac14\sum(j+1/4)^{-3}<17$. Hence
+\begin{equation}\label{logbound}
+ 0\le b(t)\le17+9\log(1+|t|).
+\end{equation}
+For each fixed frequency, $W\sin(tx)$, $W\sinh(x/2)$ and every
+fixed derivative of $\Phi$ are Schwartz. The entire theta series and
+its differentiated series converge with a common superexponential
+majorant on the real line. Equation~\eqref{logbound} therefore places
+the corresponding physical columns in $\Dom(G)$.
+
+The score $q=\Phi'/w$ and first pole-null jet
+$h=(\Phi'''-\Phi'/4)/w$ also belong to $\Dom(G)$ and to
+$\ker A_W$. Here is the full domain argument underlying that statement.
+For every fixed $j$, termwise differentiation gives
+$|\Phi^{(j)}(x)|\le D_j e^{2j|x|}\Phi(x)$ with finite $D_j$:
+a polynomial in $y=\pi n^2e^{2|x|}$ multiplies each theta atom, and
+the residual sum is bounded by
+$\sum n^{4+2j}e^{-\pi(n^2-1)}<\infty$. Division by the positive
+first theta atom bounds the ratios and shows that $q,h$ are square
+integrable with all required theta-weighted derivatives. Their
+weighted transforms are
+\[
+ \widehat{wq}(z)=-iz\Xi(z),\qquad
+ \widehat{wh}(z)=iz(z^2+1/4)\Xi(z).
+\]
+They vanish at every actual nontrivial zero, without assuming its
+ordinate real. The second also vanishes at the poles $z=\pm i/2$.
+Apply the signed explicit formula first to compactly cut off physical
+tests and then remove the cutoffs. The relative-theta bounds just given
+control every differentiated cutoff error; contour shifts within
+$|\Im x|<\pi/4$ and the zero-count bound below dominate the paired
+zero sum. The full geometric side contains the contact, every prime
+power and both poles before odd restriction. Thus its mixed pairing
+with either vector vanishes on the compact form core. By continuity
+in the form norm, it vanishes on $\mathcal V$. The representation
+theorem gives $A_Wq=A_Wh=0$ and their operator-domain membership.
+For the score, the nonzero pole values are included in this signed
+identity; they are not discarded as if the score were pole-null.
+
+More generally, let $K$ be a closed subspace of $\ker A_W$. If
+$A_W=G-D$ with $D$ bounded, then $GP_K=DP_K$ is bounded. It follows
+that $P_K$ preserves both $\Dom(G)$ and $\mathcal V$ and
+\begin{equation}\label{kerneltransfer}
+ \mathfrak a(u)=\mathfrak a((I-P_K)u),\qquad u\in\mathcal V.
+\end{equation}
+Indeed the spectral projection onto the kernel reduces $A_W$;
+any subprojection inside that zero block also reduces it. Alternatively
+expand the form and use its vanishing mixed pairings. Since
+$|d_{8,+}-b|\le |c_\Gamma|+\|k_8\|_\infty$, the operators $E_8$
+and $G$ differ by a bounded selfadjoint operator. They have identical
+operator and form domains. The positive compressed operator
+$\mathcal E$ on $q^\perp$ has domain $\Dom(G)\cap q^\perp$ and
+value $SE_8u$: the missing pairing with $q$ is bounded because
+$E_8q\in H$. This justifies every resolvent and projection used in
+the main article.
+
+\subsection{Complete prime tail}
+Put $q_0=e^{-\pi}$, $d=1+16q_0^3/(1-6q_0)$ and $a=3/(2\pi)$.
+The inequalities $j^4\le16\,6^{j-2}$ and $j^2-1\ge j+1$ for $j\ge2$
+retain every theta atom and give
+\[
+ \Phi(x)\le4\pi^2e^{9|x|/2-\pi e^{2|x|}}(d-ae^{-2|x|}).
+\]
+For a shift $\log n$, write $A=e^{2|x|}$, $B=e^{2|x-\log n|}$,
+$t=\sqrt{AB}\ge n$. Using $A+B\ge2t$ and
+$(d-a/A)(d-a/B)\le(d-a/t)^2$, and dropping only the positive
+cosh denominator, gives
+\[
+ w(x)w(x-\log n)\le4\pi^2t^{9/4}e^{-\pi t}(d-a/t).
+\]
+This decreases for $t\ge2$, since its logarithmic derivative is at
+most $9/8+1/6-\pi<0$. Therefore
+\begin{equation}\label{primebound}
+ \|J-J_8\|\le8\pi^2\sum_{n\ge9}
+       \Lambda(n)n^{7/4}e^{-\pi n}(d-a/n)
+       <t_8:=\frac{32237}{10^{12}}.
+\end{equation}
+For an exact rational verification take
+$\pi_+=355/113$, $q_+=2160875733/(5\cdot10^{10})$ and
+$\delta_+=348730539/(2\cdot10^{11})$. Then $\pi<\pi_+$,
+$e^{-\pi}<q_+$ and $d\le1+\delta_+$. Since
+$\Lambda(n)n^{7/4}\le n^3$, the last sum is at most
+\[
+ 8\pi_+^2(1+\delta_+)\,
+       \frac{9^3q_+^9}{1-q_+(10/9)^3}<\frac{32237}{10^{12}}.
+\]
+The rational inequalities follow by cross multiplication; the elementary
+$\pi$ and exponential endpoints follow from Machin's formula with
+alternating remainders and the exponential Taylor remainder. The same
+summable majorant proves operator-norm convergence before the split.
+Thus this is a whole operator bound, not a bound on a sampled prime sum.
+
+\subsection{Full gamma cutoff and complete cells}
+The exact principal-log integral for $\psi$ \cite[5.9.13]{DLMF}
+yields, for $|t|\ge2$,
+\[
+ m_\Gamma(t)\ge\log(|t|/(2\pi))-211/300.
+\]
+To see the explicit error, $\coth s\le1/s+s/3$ follows by comparing
+Taylor coefficients in $(3+s^2)\sinh s-3s\cosh s$. Hence
+$1/(1-e^{-x})-1/x\le1/2+x/12$. The integral at $5/4+it/2$ bounds
+$|\psi(z)-\log z|$ by $34/75$; recurrence back to $1/4+it/2$
+costs at most $1/t^2\le1/4$. The six actual prime powers have
+$\|k_8\|_\infty<13/2$. Since $\log(10000/(2\pi))>29/4$,
+\begin{equation}\label{cutoff}
+ d_8(t)>7/150\quad(|t|\ge10000),\qquad r_8(t)=0\quad(|t|\ge10000).
+\end{equation}
+For reproducible exact checks, the square-root lower endpoints for
+$n=2,3,4,5,7,8$ are respectively $7/5,5/3,2,11/5,13/5,14/5$.
+Logarithm upper endpoints may be checked by positive exponential
+Taylor sums. The logarithm inequality uses $e<11/4$,
+$e^{1/4}\le4/3$ and $\pi<22/7$.
+
+On $[0,10000]$, all $80000$ closed cells of width $1/8$ are covered.
+Outward evaluation classifies $79524$ as zero and $476$ as possibly
+positive. The latter are refined to width $1/256$; their $11476$
+possibly nonzero subcells lie in $2905$ cells of width $1/64$.
+For a subcell with midpoint $c$, halfwidth $h$ and lower endpoint
+$a>0$, the full gamma derivative bound is
+\[
+ L(a)=\min(10,2/a^2+\pi/(2a)),\qquad L(0)=10.
+\]
+It follows by differentiating the entire digamma series and comparing
+the remaining positive tail with its integral. Thus the center
+$\Re\psi(1/4+ic/2)-\log\pi$ plus $[-Lh,Lh]$ encloses the full
+symbol. Evaluating all six cosines on the whole interval and taking
+the positive part gives upper and lower rectangles for $r_8$.
+Every upper mass is rounded upward to a dyadic endpoint of denominator
+$2^{80}$, then to the exact upward binary64 endpoint used to define $B$.
+Their sum is below $14$. Zero cells, refined cells and \eqref{cutoff}
+cover the entire frequency line by evenness.
+
+\subsection{Theta and zero envelopes}
+For $x\ge0$, the full lattice gives
+$\Phi(x)\le80e^{9x/2-3e^{2x}}$ and
+$W(x)\le160e^{4x-3e^{2x}}$. Contour shifting gives
+\begin{equation}\label{fouriertail}
+ |\Omega(t)|,|v(t)|\le5e^{-|t|/4},\qquad
+ |t\Xi(t)|\le5|t|e^{-|t|/4},
+\end{equation}
+where $v(t)=2\int_0^\infty W(x)\sinh(x/2)\sin(tx)\dd x$.
+For completeness, on $|\Im x|\le1/4$ use
+$\pi\cos(1/2)>21/8$ and
+$|\cosh((x+i/4)/2)|\ge(127/128)\cosh(x/2)$.
+With $q=1/13$ and
+\[
+ S_0\le q+q^4/(1-q^3),\quad
+ S_2\le q+4q^4/(1-3q^3),\quad
+ S_4\le q+16q^4/(1-6q^3),
+\]
+the complete strip bounds are
+$|W(z)|\le(256/127)(40S_4+19S_2)<10$ and
+\[
+ \int|\Phi(x+i/4)|\dd x,\quad
+ \int|W(x+i/4)\sinh((x+i/4)/2)|\dd x
+       \le(128/127)(15S_2+25S_0)<5.
+\]
+The analogous $W$ integral is smaller. They follow by
+$t=e^{2|x|}$ and integration of the positive exponential-polynomial
+majorants. Vertical contour ends vanish superexponentially, proving
+\eqref{fouriertail}. These estimates also give the looser weighted
+$1/8$-strip integrals bounded by $120$ used below.
+
+The unconditional zero count, with both signs and multiplicity, is
+bounded for $L\ge e^2$ by $2L\log L$. The explicit bound of \cite[Corollary 1.2]{HSW} is
+$|N_+(T)-\frac{T}{2\pi}\log(T/(2\pi e))|
+\le0.1038\log T+0.2573\log\log T+9.3675$ for $T\ge e$.
+Twice this upper bound is at most $2T\log T$ for $T\ge e^2$:
+use $\log\log T\le\log T$, bound the main coefficient by $1/\pi$,
+and check the endpoint; the difference thereafter increases.
+This retains multiplicity and both signs. Stieltjes integration then gives the complete tail
+\begin{equation}\label{zerotail}
+ Z_a(L)=e^{-aL}\left[2L\log L+
+ \frac{2(\log L+1)}a+\frac4{a^2L}\right],\qquad a>0.
+\end{equation}
+Indeed integrate the counting majorant against $ae^{-at}$ on
+$[L,\infty)$, twice integrate by parts, and use
+$\int_L^\infty e^{-at}/t\dd t\le e^{-aL}/(aL)$.
+The bound includes possible off-line zeros: if
+$\rho=1/2+i\gamma$, then $|\Im\gamma|<1/2$. Cauchy--Schwarz and
+the complete theta envelope give
+$|\widehat{wu}(\gamma)|\le11\|u\|$. Thus exponentially decaying
+samples may be paired against every Hilbert test in the full signed
+zero formula, rather than only other trial vectors.
+
+\section{Continuum features and the midpoint comparison}\label{midpoint}
+Put $f_t=S[w\sin(tx)]$ and $p_Y=Sp$. On the common coefficient
+space $L^2(r_8(t)\dd t/\pi)\oplus\mathbb C$, the continuum
+feature map has positive product
+\[
+ R_q=SR_8S=\int_0^{10000} f_t\otimes f_t\,r_8(t)\dd t/\pi
+             +2p_Y\otimes p_Y.
+\]
+Let $I_i=[k_i/64,(k_i+1)/64]$, $t_i=(2k_i+1)/128$ and let
+$\mu_i^+$ be the exact stored upward masses. Define
+$Be_i=\sqrt{\mu_i^+}f_{t_i}$, $Be_p=\sqrt2p_Y$ and $R_m=BB^*$.
+The square roots are mathematical square roots of exact dyadics.
+
+Because $|x|\le2|\sinh(x/2)|$ and $\tau<3/500$,
+\[
+ \|f_t-f_{t_i}\|^2\le |t-t_i|^2\int x^2W(x)\dd x
+ \le4\tau|t-t_i|^2.
+\]
+The full mass is below $14$ and $|t-t_i|\le1/128$, whence
+\begin{equation}\label{delta}
+ \int\|f_t-f_{t_i}\|^2\,r_8(t)\dd t/\pi
+       \le\delta_0:=21/1024000.
+\end{equation}
+For any $a>0$, vector Young's inequality on every whole cell proves
+\begin{equation}\label{youngmid}
+ R_q\le(1+a)R_m+(1+1/a)\delta_0I.
+\end{equation}
+Replacing the true cell mass by its upper mass is legitimate only
+on the nonnegative midpoint term. The pole is exact in both maps;
+enlarging it by $1+a$ is conservative.
+
+Let $G_0(i,j)=[\Omega(t_i-t_j)-\Omega(t_i+t_j)]/2$,
+$G_0(p,i)=v(t_i)$, $G_0(p,p)=\tau$,
+$b_i=-t_i\Xi(t_i)$ and $b_p=-1/4$.
+For $D_\mu=\operatorname{diag}(\sqrt{\mu_i^+},\sqrt2)$,
+\[
+ B^*B=D_\mu(G_0-bb^*/Q)D_\mu\le\Gamma,
+\]
+where $\Gamma$ replaces $Q$ by $12$ and the pole norm by $3/500$.
+The difference is positive semidefinite, since $Q<12$ and
+$\tau<3/500$. All difference, sum, score and pole entries remain.
+
+\section{Dense capture and arithmetic spectral enclosures}\label{capture}
+The exact dyadic $2906\times56$ matrix $Z$ and positive diagonal
+$\Lambda$ satisfy the certified full dense residual bound
+\[
+ \|\Gamma-Z\Lambda Z^*\|<3/12500.
+\]
+Let $P$ be the actual coefficient projection onto $\Ran Z$. Since
+$(I-P)Z=0$ and $\Gamma\ge0$,
+$0\le B(I-P)B^*\le(3/12500)I$. Once $N=Z^*Z>0$ is established,
+$P=ZN^{-1}Z^*$. Put $C=BZ$ and $R_{56}=(11/10)CN^{-1}C^*$.
+Using \eqref{youngmid} with $a=1/10$ and the complete prime tail gives
+\begin{equation}\label{rest}
+ \mathfrak a(z)\ge E_8(z)-\langle R_{56}z,z\rangle-\rho\|z\|^2,
+ \quad \rho=t_8+11\delta_0+\frac{11}{10}\frac3{12500}
+       =\frac{979236349}{2000000000000}.
+\end{equation}
+This holds throughout $\mathcal V\cap q^\perp$. No physical mixed
+block is removed by the coefficient-space decomposition.
+
+The center entry error for $\Gamma$ is below
+$3.124405\cdot10^{-9}$ in operator norm. Near Fourier arguments use
+outward dyadic endpoint pairs; far arguments use \eqref{fouriertail}.
+Each short scalar entry expression receives $10^{-12}$ for endpoint
+conversion, products, square-root scales and symmetrization. Absolute
+row sums receive the positive summation guard below. The full center
+Frobenius residual is $0.0002391007522$ to the displayed precision;
+its guarded upper endpoint is below $0.000239106<3/12500$.
+The entire dense residual is evaluated, not just retained columns.
+
+Here are the common arithmetic rules used throughout the certificate.
+For binary64 unit roundoff $u=2^{-53}$, write
+$\gamma_n=nu/(1-nu)$. A length-$m$ matrix dot product receives
+$\gamma_{2m+10}$ times its absolute-product sum. Positive sums used
+to bound those absolute products are themselves enlarged by their
+corresponding $\gamma$ factor. A Frobenius norm receives a serial
+square/sum bound for all entries, followed by an outward square root.
+Symmetrization and short final scalar formulas receive their stated
+additional absolute allowance. Nonnegative row sums are divided by
+$1-\gamma_n$ and rounded upward. Every intermediate is finite and
+away from overflow; outward nextafter steps cover conversion underflow.
+No unbounded cancellation is hidden in a relative sum error.
+
+For a real symmetric center $A$, let the exact dyadic locator $V,D$
+have orthogonality defect $o=\|V^*V-I\|<1$, full residual
+$r=\|AV-VD\|$ and $L=\|D\|$. Its exact polar unitary
+$U=V(V^*V)^{-1/2}$ obeys
+\begin{equation}\label{polar}
+ \|U^*AU-D\|\le\frac r{\sqrt{1-o}}
+ +2L\sqrt{1+o}\left(\frac1{\sqrt{1-o}}-1\right).
+\end{equation}
+Expand $AU-UD$ into $(AV-VD)(V^*V)^{-1/2}$ and the remaining
+commutator. Functional calculus bounds the latter by twice $L$
+times the distance of $(V^*V)^{-1/2}$ from $I$. Add any whole
+center error $\|A_{\rm true}-A\|$ before using the spectral endpoint.
+This proves that eigensolvers supply locators only. The later small
+comparisons use exact-input 192-bit Arb products and Frobenius bounds
+in \eqref{polar}.
+
+\section{Physical Gram and genuine rank}\label{physical}
+The coefficient and physical metrics are different:
+\[
+ N=Z^*Z,\qquad H_C=C^*C=Z^*B^*BZ.
+\]
+The full coefficient defect is below $3.627\cdot10^{-11}$ after
+dot and row guards. Hence
+\begin{equation}\label{ngram}
+ (1-10^{-8})I\le N\le(1+10^{-8})I.
+\end{equation}
+The physical Gram uses the actual $Q$ and $\tau$, not their loose
+upper substitutes. The complete norm integrals are
+\[
+ Q=2\int_0^\infty\frac{\Phi'^2\cosh(x/2)}{\Phi}\dd x,
+ \qquad \tau=2\int_0^\infty\frac{\Phi\sinh^2(x/2)}{\cosh(x/2)}\dd x.
+\]
+Put $t=e^{2x}$ and $y_n=\pi n^2t$. The first two atom polynomials
+are $4y^2-6y$ and $-8y^3+30y^2-15y$. For $y\ge3$, positivity of
+the first and the complete lattice sum imply
+$|\Phi'|\le80t\Phi$. Consequently both doubled integral tails
+beyond $x=2$ are bounded by
+\[
+ 512000\int_{54}^\infty t^4e^{-3t}\dd t<2^{-180}.
+\]
+On $[0,2]$ the atoms $n\ge9$ satisfy
+$\sum_{n\ge9}n^re^{-\pi t(n^2-1)}\le2\,9^re^{-240}$ for $r=4,6$.
+Relative to the retained positive eight-atom sum, the omitted function
+and derivative are each below $2^{-300}$. Expanding the quotient
+shows that their total integral effect is below $2^{-250}$.
+The common allowance is therefore $2^{-250}+2^{-180}$.
+
+Native meromorphic Arb integration on $[0,2]$ encloses the finite
+integrals, with absolute and relative tolerance $2^{-100}$. A possible
+zero in a denominator ball produces a nonfinite ball rather than an
+analyticity assertion. The finite returned balls, enlarged by both
+complete allowances, give
+\begin{align*}
+ Q&=11.0676657471428749463191678229\ \pm6.97\cdot10^{-29},\\
+ \tau&=0.00571290852978025013036375087\ \pm4.55\cdot10^{-30}.
+\end{align*}
+The actual whole Gram error is below $3.138\cdot10^{-9}$. Compression
+adds less than $5.785\cdot10^{-11}$, and multiplying the input error
+by $\|Z\|^2\le1+10^{-8}$ gives total below $3.2\cdot10^{-9}$.
+Score products of either sign use both $Q$ endpoints. The exact pole
+entry is $2(\tau-1/(16Q))$ and the cross term is
+$v(t_i)+b_i/(4Q)$ before mass scaling.
+
+For the saved physical spectral locator, safe rational upper errors
+are $d=32/10^{10}$, $o=43/10^{12}$ and $r=115/10^{13}$ in
+\eqref{polar}. They prove
+\begin{equation}\label{physicalbounds}
+ H_C\ge\frac{21}{10^8}N,
+ \qquad H_C<\frac{32}{125}I.
+\end{equation}
+It follows that the actual physical rank is $56$ and the coefficient
+preimage cost is at most $\kappa_B\le\sqrt{10^8/21}<2182.178903$.
+No enlarged enriched-trial inverse or rank is inferred from this.
+
+\section{Fourier grids and the complete low-zero frame}\label{zeros}
+\subsection{Outward quadrature}
+The basic grid evaluates $\Omega,\Omega'$ at $j/64$ through $100$
+and $v,-t\Xi(t)$ at the half-step frequencies. Native 192-bit Arb
+Legendre roots and weights of order $256$ are mapped to $[0,3]$.
+The Bernstein ellipse of parameter $r=23/20$ has imaginary part less
+than $1/4$, real part below $16/5$ and $|z|<4$. The strip estimates
+in S0 give the common integrand bound $M=240\cdot3^{25}$.
+Chebyshev coefficients satisfy $|a_j|\le2Mr^{-j}$; positivity and
+polynomial exactness through degree $511$ give the doubled integral
+error
+\[
+ E_{256}=24M r^{-512}/(1-r^{-1})+32\,2^{-128}+2^{-1160}.
+\]
+The second term covers all omitted theta atoms; the last covers the
+whole physical tail. For example $t=e^{2x}$ reduces that tail to
+$160e^{-1200}(729^2/3+2\cdot729/9+2/27)<2^{-1175}$.
+Every transform ball is enlarged before conversion to outward
+integer endpoints over $2^{80}$. For the score multiply the enclosed
+$\Xi(t)$ by the exact frequency and retain its enlarged radius.
+
+Arbitrary zero arguments use an order-$20$ Taylor grid at $j/8$
+through $128$, with native quadrature order $320$. Derivative $j$
+costs $4^j$ in the ellipse bound; its complete base error is
+\[
+ E_{320}=24\cdot240\cdot3^{32}r^{-640}/(1-r^{-1})
+                     +32\,2^{-128}+2^{-1100}.
+\]
+For $j\le19$, the physical derivative tails are bounded by
+$160\int_{400}^\infty t^6e^{-3t}\dd t<2^{-1100}$. At displacement
+$|h|\le1/16$ the entire Taylor remainder is at most
+$120(2|h|)^{20}$, using the exponential moment bound from S0.
+Horner products, coefficient radii, frequency addition and native zero
+location errors are priced. Global derivative bounds are
+$|\Omega'|<11/100$ and $|v'|<3/250$. Far arguments retain
+\eqref{fouriertail} with a downward dyadic argument reserve; both
+sum and difference arguments are included through $6000$.
+
+\subsection{Actual zeros, signs and multiplicity}
+Native FLINT 3.6.0 \texttt{zeta\_zeros} and \texttt{zeta\_nzeros}
+\cite{FLINT} certify $2469$ disjoint actual positive roots on the
+critical line and the full multiplicity count $N(3000)=2469$.
+Their last upper ordinate is below $3000$; hence the roots exhaust
+the count and are simple within this finite interval. The intervals
+are stored outward over $2^{128}$. Both signs are retained by oddness.
+Define $V_0e_j=w\sin(\gamma_jx)$, $A_0=V_0^*C$ and $G_z=V_0^*V_0$.
+At actual zeros the score transform vanishes exactly. Thus
+\[
+ S_{3000}=2V_0V_0^*,\quad L=C^*S_{3000}C=2A_0^*A_0,
+ \quad O=C^*S_{3000}^2C=4A_0^*G_zA_0.
+\]
+The complete sample entries use
+$\sqrt{\mu_i^+}[\Omega(\gamma-t_i)-\Omega(\gamma+t_i)]/2$
+and pole entry $\sqrt2v(\gamma)$. All $2469^2$ zero correlations and
+all $2469\cdot2906$ zero/feature correlations are included.
+The full certified errors are
+\[
+ \|\Delta A_0\|_F\le2\cdot10^{-12},\quad
+ \|\Delta G_z\|\le3.2\cdot10^{-11},\quad
+ \|\Delta L\|\le10^{-11},\quad\|\Delta O\|\le3.1\cdot10^{-10}.
+\]
+To certify a small positive gap, the rectangular factor $A_0$ is
+checked directly. Its singular-factor locator has left and right
+orthogonality defects at most $10^{-11},2\cdot10^{-13}$ and full
+residual at most $3\cdot10^{-14}$. Subtracting this residual and
+the complete sample error from
+$\sigma_{\min}\sqrt{1-o_L}\sqrt{1-o_R}$ gives at least
+$3.2586\cdot10^{-8}$. Consequently $L\ge10^{-15}I$.
+This argument does not subtract the larger additive $L$-error from
+an unverified tiny eigenvalue.
+
+\subsection{The omitted zeros as a whole action bound}
+The actual largest midpoint is $T=313317/128$. If $f=B\xi$ with
+minimal coefficient preimage, $\|\xi\|\le\kappa_B\|f\|$.
+The sine sum on the $1/8$ strip has size at most
+$4e^{T/8}\|\xi\|$, and the pole coefficient at most $2\|\xi\|$.
+Using the full strip integrals bounded by $120$ yields, at every
+actual zero,
+\[
+ |\widehat{wf}(\gamma)|\le1000\kappa_B
+       e^{(T-|\Re\gamma|)/8}\|f\|.
+\]
+The subtracted score vanishes at these zeros. Squaring this bound and
+using \eqref{zerotail} bounds the form remainder; pairing it with the
+whole Hilbert evaluation bound $11\|v\|$ bounds the operator remainder:
+\[
+ e_L=10^6\kappa_B^2e^{T/4}Z_{1/4}(L),\qquad
+ d_L=11000\kappa_Be^{T/8}Z_{1/8}(L).
+\]
+At $L=3000$ these satisfy $e_L<3\cdot10^{-43}$ and
+$d_L<1.4\cdot10^{-18}$. All multiplicities, both signs and possible
+high off-line zeros remain. The mixed formula extends from compact
+core tests by the same theta domination as S0, proving
+$\|(A_W-S_{3000})|_{\Ran C}\|<d_L$.
+Together with \eqref{physicalbounds} and $L\ge10^{-15}I$ this gives
+$\mathfrak a|_{\Ran C}\ge(38/10^{16})I$. It supplies no positive
+lower bound for the infinite complement.
+
+\section{True masses and the weighted deficit}\label{mass}
+For each subcell, the lower rectangle from S0 gives an outward
+lower mass $\ell_i$ on the cell $I_i$, rounded downward over $2^{80}$.
+Thus $0\le\ell_i\le\mu_i:=\int_{I_i}r_8(t)\dd t/\pi\le\mu_i^+$.
+The exact deficits $d_i=\mu_i^+-\ell_i$ have sum below $0.29826603$.
+For the true-mass midpoint operator $R_t$, including the identical pole,
+\[
+ 0\le R_m-R_t\le R_d:=\sum_i d_i f_{t_i}\otimes f_{t_i}.
+\]
+A trace estimate is valid but unnecessarily large. Instead every
+entry of the actual score Gram is bounded by the positive upper Gram
+$\overline G=G_0-bb^*/12$. Its full entry intervals use the near
+Fourier endpoints and all far envelopes. If $A_{ij}\ge|\overline G_{ij}|$
+and $w_i>0$, the weighted Schur estimate is
+\[
+ \|R_d\|\le\max_i\frac{\sum_j A_{ij}d_jw_j}{w_i}.
+\]
+The weights are exact positive integer multiples of $2^{-30}$, bounded
+below by $1/1024$. Their method of selection imposes no convergence
+premise. Entry errors receive $10^{-12}$, and the positive row products,
+sums and division receive $\gamma_{2\cdot2905+20}$, an outward step
+and a final exact $10^{-15}$ allowance. The guarded maximum is below
+$0.008552658376$, giving
+\begin{equation}\label{deficit}
+ \|R_m-R_t\|<427633/50000000=0.00855266.
+\end{equation}
+The pole deficit is zero; this removes no physical pairing with a pole
+test vector because the remaining feature map is kept in full.
+
+\section{Whole-space midpoint error and frame action}\label{bridge}
+Regard the continuum and true-mass midpoint feature maps as maps
+on the same $L^2$ input space. By \eqref{delta} their difference has
+norm at most $\sqrt{\delta_0}$. Expanding their positive products gives
+\[
+ \|R_q-R_t\|\le2\sqrt{\|R_t\|\delta_0}+\delta_0.
+\]
+The dense capture and exact factor provide
+$\|R_t\|\le\|R_m\|\le(1+10^{-8})\max\Lambda+3/12500
+<0.255985513$. Thus the whole-space bound is
+\begin{equation}\label{epsilonr}
+ \|R_q-R_m\|\le\epsilon_R:=
+ 2\sqrt{0.255985513\delta_0}+\delta_0+0.00855266.
+\end{equation}
+On the score quotient, the exact domain identity is
+$\mathcal E=A_W+R_q+S(J-J_8)S$. Therefore on $\Ran C$,
+\[
+ \|\mathcal E-(S_{3000}+R_m)\|\le\epsilon_R+t_8+d_{3000}
+ <0.013155646076930=:\eta.
+\]
+This last action bound is restricted to $\Ran C$; it is never applied
+to newly enriched zero directions. The whole-space bound
+\eqref{epsilonr}, by contrast, is independent of a trial space.
+
+\section{Complete frame residual and center errors}\label{residual}
+This section supplies the finite realization of main Lemma~2.1.
+For $s>0$, let $Y_0=CX$ with exact dyadic $X$. Put
+$G_B=B^*B$, $Q_b=V_0^*B$ and $G_z=V_0^*V_0$.
+Then, with $E_m=S_{3000}+R_m$,
+\[
+ r=C-(E_m+s)Y_0=BD_1+V_0D_2,
+ \quad D_1=Z(I-sX)-G_BZX,\quad D_2=-2A_0X,
+\]
+\begin{align*}
+ r^*r={}&D_1^*G_BD_1+D_1^*Q_b^*D_2
+               +D_2^*Q_bD_1+D_2^*G_zD_2.
+\end{align*}
+Every term is a full physical Gram. In particular $R_mC$ is not
+replaced by $CH_C$, and the residual is not projected into $\Ran C$.
+The full $Q_b$ Frobenius error is below $7.215\cdot10^{-13}$;
+all other input errors are those of S3--S4.
+
+If binary coefficient maps differ from the exact $D_1,D_2$ by
+$e_1,e_2$, their physical map error is at most
+$e_d=\sqrt{\|G_B\|}e_1+\sqrt{\|G_z\|}e_2$.
+Let $S_c$ approximate the Gram of the binary map with error $r_e$.
+Then the exact residual Gram has error bounded above by
+\[
+ s_e=r_e+2\sqrt{\lambda_{\max}(S_c)+r_e}\,e_d+e_d^2.
+\]
+This prices input maps before the matrix Young comparison.
+If $h_e,l_e,m_e$ bound respectively the physical Gram, zero compression
+and midpoint compression errors, the remaining exact-center errors obey
+\begin{align*}
+ q_e&\le h_e\|X\|^2+
+       \|Q_c-X^*H_cX\|_F,\\
+ k_e&\le2h_e\|X\|+(l_e+m_e+sh_e)\|X\|^2\\
+ &\hspace{12mm}+\|K_c-(H_cX+X^*H_c-X^*(L_c+M_c+sH_c)X)\|_F.
+\end{align*}
+The displayed center differences are computed using exact binary
+inputs and exact rational $s$ in Arb. Thus shift conversion, all inner
+and outer products and symmetrization are included. Each raw numerical
+guard is enlarged by $10^{-12}$; a further $10^{-6}$ is added to the
+final comparison price.
+
+The complete upper prices, with $s=\mu-\rho$, are
+\[
+ \begin{array}{c|c|c}
+ \mu&\text{Young parameter}&\text{complete price}\\\hline
+ 1/20&2/3&100157725018/125000000000\\
+ 1/25&1/2&450253581783/500000000000
+ \end{array}
+\]
+They are strictly below the respective targets
+\[
+ \frac{400631}{500000}(1-10^{-8}),\qquad
+ \frac{225127}{250000}(1-10^{-8}),
+\]
+with exact margins $9592169/(5\cdot10^{13})$ and
+$20685723/(25\cdot10^{12})$.
+Factorization in main Lemma~2.1 and \eqref{rest} give the stated
+frame-only comparisons. Their role is to exhibit the effect of keeping
+matrix correlation and to supply the residual directions used next.
+
+\section{The equality barrier and kernel-aware projection}\label{barriersupp}
+This supplies the scalar certificate for main Theorem~5.1.
+With $h=(\Phi'''-\Phi'/4)/w$, set
+$a=\langle h,q\rangle/Q$, $k=h-aq$ and $D=\|k\|^2$.
+S0 proves $k\in\Dom(G)\cap\ker A_W\cap q^\perp$.
+Its transform $it(t^2+1/4+a)\Xi(t)$ is not identically zero, so $D>0$.
+The degree-five atom polynomial for $wh$ is
+\[
+ -32y^5+360y^4-1056y^3+810y^2-90y.
+\]
+For $y\ge3$ its absolute value is at most $301y^5$. The full lattice
+comparison
+$\sum n^{10}q^{n^2-1}\le1+1024q^3/(1-58q^5)<2$, $q<1/20$,
+gives $|wh|/\Phi<20000e^{6x}$.
+Both doubled tails beyond $x=2$ of the norm and score pairing are
+bounded by
+\[
+ 10^{11}\int_{54}^\infty t^8e^{-3t}\dd t<2^{-140}.
+\]
+On $[0,2]$, the omitted degree-ten lattice satisfies
+$\sum_{n\ge9}n^{10}e^{-\pi t(n^2-1)}\le2\,9^{10}e^{-240}$.
+The three relative errors for $\Phi,\Phi',wh$ are below $2^{-270}$.
+Expanding the two quotient integrands bounds their integral errors
+by $12\,2^{85}2^{-270}<2^{-170}$. The common allowance $2^{-130}$
+is added to each meromorphic Arb integral before projection.
+This gives
+\[
+ \langle h,q\rangle=73.9389206536588932761816\ \pm6.26\cdot10^{-23},
+\]
+\[
+ \|h\|^2=54152.6907182449014086321392\ \pm3.28\cdot10^{-23}.
+\]
+In particular $a>6$ and $D<55000$.
+
+Every term of $R_m$ is nonnegative. The $635$ stored cells with
+$t_i\le20$ give the valid lower sum
+\[
+ \langle R_mk,k\rangle\ge
+ \sum_{t_i\le20}\mu_i^+t_i^2(t_i^2+25/4)^2\Xi(t_i)^2>1875.
+\]
+The exact dyadic masses and native complex $\Xi$ evaluations yield
+\[1876.7393730639281947402372447352786\]
+with radius below $2\cdot10^{-31}$. Thus $r=\langle R_mk,k\rangle/D>3/88$.
+The common feature-map triangle inequality gives
+$\langle R_qk,k\rangle\le
+(\sqrt{\langle R_mk,k\rangle}+\sqrt{\delta_0}\|k\|)^2$.
+Using $\mathfrak a(k)=0$, the dense capture and full prime tail proves
+\begin{align*}
+ \frac{\langle R_{56}k,k\rangle-E_8(k)}D&\ge f(r),\\
+ f(r)&:=r/10-2\sqrt{\delta_0r}-\delta_0\\
+     &\hspace{12mm}-(11/10)(3/12500)-t_8.
+\end{align*}
+The derivative is positive for $r\ge3/100$, and exact outward
+arithmetic gives $f(3/88)>7/5000$. This is the strict main barrier.
+Testing $R_{56}\le\theta(\mathcal E+s)$ on $k$ gives
+$\theta s>7/5000+(1-\theta)E_8(k)/D$ for $0<\theta\le1$.
+
+For an enlarged kernel removing $k$, let $\Pi=I-k\otimes k/D$,
+$B'=\Pi B$ and $C'=\Pi C$. Exact projection gives
+\[
+ B'^*B'=B^*B-(B^*k)(B^*k)^*/D,\quad
+ C'^*C'=C^*C-(C^*k)(C^*k)^*/D.
+\]
+Since $V_0^*k=0$, zero sampling and zero/feature cross Grams remain
+unchanged. Injectivity of $V_0^*C$ implies the projected rank is still
+$56$. Domain preservation follows from S0. An action comparison
+obtained by subtracting $A_WC$ before projection retains a term
+$d\|CX\|$, as well as the new continuum error on $C'X$; it cannot
+replace $\|CX\|$ by $\|C'X\|$ without a separate estimate. These
+identities establish a permissible changed certificate, not a new
+numerical improvement or a barrier on that larger quotient.
+
+\section{Admissible enrichment and a constructive action estimate}\label{enrich}
+Let $Y=Bb+V_0v:\mathbb C^{56}\to H$ use the supplied exact binary
+coefficient arrays. Each column is in $\Dom(G)\cap q^\perp$ by S0.
+A solve may choose the arrays but imposes no accuracy, rank or enlarged
+Gram-inverse premise. In particular the old frame-only error $\eta$
+is not available on $Y$.
+Put $\ell_8=m_\Gamma-k_8$ and $L_8=M_w\ell_8(D)M_w$.
+The pointwise identity $d_{8,+}=\ell_8+r_8$ and S6 give, on the
+whole operator domain,
+\begin{equation}\label{fullbridge}
+ \mathcal E=SL_8S+R_m-2p_Y\otimes p_Y+\Delta_R,
+ \qquad\Delta_R=R_q-R_m,\quad\|\Delta_R\|\le\epsilon_R.
+\end{equation}
+This replaces the unpriced high-zero action on the enriched columns
+by a smooth multiplier action.
+
+For one column with base representation
+$y_0=w\sum_a c_a\sin(ax)+c_pw\sinh(x/2)$, write
+$y=Sy_0$ and $\alpha=\langle y_0,q\rangle/Q$. Then
+\begin{equation}\label{exactfourier}
+ \widehat{wy}(t)=i\left\{
+ \sum_a c_a\frac{\Omega(t-a)-\Omega(t+a)}2
+             +c_pv(t)+\alpha t\Xi(t)\right\}.
+\end{equation}
+The coefficients include the mathematical square roots of the actual
+masses. For $V_0$ columns the score overlaps vanish at the actual
+zero ordinates. The pole overlap is exactly $-1/4$.
+
+Here is an explicit finite action enclosure. Put $a_0=1/4$ and
+$b_0=1/8$. For $|s|\le1/4$, the complete theta series proves
+\begin{equation}\label{strip20}
+ |\Omega(t+is)|,\ |\widehat{W\sinh(x/2)}(t+is)|,
+ |\Xi(t+is)|\le20e^{-|t|/8}.
+\end{equation}
+For an explicit bound use $\pi\cos(1/4)>5/2$ and
+$|\cosh((x+i\theta)/2)|\ge\tfrac12\cosh(x/2)$.
+On $x\ge0$, the weighted $W$ majorant is
+\[
+ \sum_n[160n^4e^{17x/4}+76n^2e^{9x/4}]
+                         e^{-(5/2)n^2e^{2x}}.
+\]
+Substitute $t=e^{2x}$ and bound its fractional powers by $t^2,t$.
+Their integrals are at most $106/125$ and $14/25$, times
+$e^{-5n^2/2}$. The lattice sum is at most $25/246$, so both
+half-lines cost
+$2[80(106/125)+38(14/25)](25/246)<20$.
+The other two functions have smaller bounds. Contour shifting by
+$1/8$ gives \eqref{strip20}, including both physical tails.
+
+The analytic continuation
+$m_\Gamma(z)=[\psi(1/4+iz/2)+\psi(1/4-iz/2)]/2-\log\pi$
+has no poles in this strip. The complete trigamma series bounds its
+vertical derivative by $36$, and the six-term cosine bound together
+with \eqref{logbound} gives
+\[
+ |\ell_8(t+is)|\le200+10|t|,\qquad |s|\le1/4.
+\]
+Regarding $c_a,c_p,\alpha$ as coefficient rows for the whole map $Y$,
+a common real and strip-line $L^1$ bound for
+$\ell_8(z)\widehat{wY}(z)$ is
+\begin{equation}\label{envelopeA}
+ A=20\left[\sum_a(4480+160|a|)\|c_a\|_2
+                +4480\|c_p\|_2+47200\|\alpha\|_2\right].
+\end{equation}
+The constants come from the complete moments
+$\int e^{-|t|/8}=16$, $\int|t|e^{-|t|/8}=128$ and
+$\int t^2e^{-|t|/8}=2048$.
+
+Let $h>0$, $T=Kh$, $P=2\pi/h$ and physical radius $R>0$.
+If $L_k$ denotes the exact row
+$\ell_8(kh)\widehat{wY}(kh)$ and $\widehat L_k$ its exact binary
+approximant, define
+\[
+ \widehat g(x)=\frac h{2\pi}\sum_{|k|\le K}\widehat L_ke^{-ikhx},
+ \quad\widehat J=S[w\widehat g],
+\]
+\[
+ t_h=\frac h{2\pi}\sum_{|k|>K}\|L_k\|_2,\quad
+ n_h=\frac h{2\pi}\sum_{|k|\le K}\|L_k-\widehat L_k\|_2,
+ \quad B_h=\frac h{2\pi}\sum_{k\in\mathbb Z}\|L_k\|_2.
+\]
+Every infinite sum is bounded by shifted exponential envelopes in
+\eqref{strip20}, or the sharper real bounds \eqref{fouriertail}.
+Geometric series and their first two derivatives sum their polynomial
+factors. No primitive frequency is replaced by a smaller presumed band.
+Poisson summation and contour inversion give the complete map bound
+\begin{align}\label{actionbound}
+ \|SL_8Y-\widehat J\|\le{}&\|w\|_2
+ \left[\frac A\pi e^{a_0R}
+ \frac{e^{-a_0P}}{1-e^{-a_0P}}+t_h+n_h\right]\\
+ &+\left[\frac A{2\pi}+B_h\right]
+                      \|w1_{|x|>R}\|_2.\nonumber
+\end{align}
+Indeed the inverse transform has row norm at most
+$Ae^{-a_0|x|}/(2\pi)$. Its periodic aliases on $[-R,R]$ sum to
+the first displayed term. Outside that interval use $A/(2\pi)$
+and $B_h$ on the two full inverse transforms, then multiply by $w$.
+Frequency omission and node error cost respectively $t_h,n_h$.
+The projection $S$ is contractive. This proves a whole output-space
+map estimate, including components outside every trial span.
+
+\section{The executed action certificate and its full Grams}\label{action}
+The parameters are $h=1/20$, $T=3300$, $R=3$. Near Fourier arguments
+use the complete Taylor enclosures in S4, with Horner, coefficient,
+zero-location and mass-square-root errors. The signed multiplier is
+evaluated at every exact grid point by outward digamma and six cosine
+balls. Score values through $128$ use order-$320$ quadrature with the
+complete base error in S4; beyond $128$ they use \eqref{fouriertail}.
+The following upward endpoints include all nodes and tails:
+\begin{center}
+\begin{tabular}{lr}
+Quantity & Upper bound\\\hline
+Strip row integral $A$ & $1.001591\cdot10^9$\\
+Alias before $\|w\|_2$ & $1.532843\cdot10^{-5}$\\
+Finite node/location/rounding error before $\|w\|_2$
+ & $1.797275\cdot10^{-8}$\\
+Omitted frequencies before $\|w\|_2$ & $10^{-88}$\\
+Both physical tails after $w$ & $10^{-157}$\\
+Finite midpoint-action map error & $3.366659\cdot10^{-6}$\\
+Complete map error $g$ & $1.421821\cdot10^{-5}$\\
+Trial norm $\|Y\|$ & $2.159290$
+\end{tabular}
+\end{center}
+Here $\|w\|_2\le1/\sqrt2$ and
+$\|w1_{|x|>3}\|_2\le2^{-550}$. The finite midpoint action is
+$Bd$, where $d$ is the exact binary approximation to
+$G_Bb+Q_b^*v$ with its pole row removed. Its coefficient error is
+priced as a physical map using $\|B\|$ and the full input Gram errors.
+Set $\widehat A=\widehat J+Bd$. Then
+\begin{equation}\label{actionpremise}
+ \|\mathcal EY-\widehat A-\Delta_RY\|\le g.
+\end{equation}
+
+The full physical action Gram is essential. For the smooth part it is
+\[
+ (h/(2\pi))^2\widehat L^*
+       [\Omega((k-l)h)]\widehat L
+ - (h/(2\pi))^2(b_0^*\widehat L)^*(b_0^*\widehat L)/Q.
+\]
+The Toeplitz product uses native outward complex DFT and inverse at
+length $262144$, on exact binary input. Every returned radius is
+retained. Kernel values through $128$ use the complete Taylor
+certificate; the omitted kernel has its whole geometric $L^1$ price.
+The pole, score, $Bd$ and all physical/Fourier cross products receive
+their full point and absolute-product guards.
+For
+$G_Y=Y^*Y$, $CY=C^*Y$, $YA=Y^*\widehat A$,
+$CA=C^*\widehat A$, $AG=\widehat A^*\widehat A$, the resulting
+operator uncertainties have upward endpoints
+\begin{center}
+\begin{tabular}{lr}
+$G_Y$ & $0.014115739$\\
+$CY$ & $4.979513\cdot10^{-5}$\\
+$YA$ & $5.596759\cdot10^{-6}$\\
+$CA$ & $1.982337\cdot10^{-8}$\\
+$AG$ & $2.263431\cdot10^{-9}$
+\end{tabular}
+\end{center}
+These are matrix uncertainties; they are not silently treated as a
+whole-map error. In particular $AG$ includes the entire outside output.
+
+\section{Shifted residual theorem and the finite tradeoffs}\label{tradeoffs}
+Put $T_s=\mathcal E+sI$, $s=\mu-\rho>0$. Completing the square gives
+\[
+ C^*T_s^{-1}C=K+R^*T_s^{-1}R\le K+R^*R/s,
+ \quad R=C-T_sY,\quad K=C^*Y+Y^*C-Y^*T_sY.
+\]
+This uses $T_s\ge sI$ and the operator-domain membership of all trial
+columns, without an unshifted gap. Define
+\begin{align*}
+ K_s&=CY+CY^*-sG_Y-(YA+YA^*)/2,\\
+ S_s&=H_C-CA-CA^*-s(CY+CY^*)+AG+s(YA+YA^*)+s^2G_Y.
+\end{align*}
+Write the exact error as $\Delta_RY+D$, $\|D\|\le g$.
+Its quadratic contribution is at most
+$\epsilon_RG_Y+g\|Y\|I$, and for $\tau>0$ its squared Gram is
+at most $(1+\tau)\epsilon_R^2G_Y+(1+1/\tau)g^2I$.
+A second Young inequality separating this error from the whole
+residual $C-\widehat A-sY$ gives, for every $\beta>0$,
+\begin{align}\label{enrichedcriterion}
+ C^*T_s^{-1}C\le{}&K_s+
+ \left[\epsilon_R+\frac{(1+1/\beta)(1+\tau)\epsilon_R^2}s\right]G_Y
+ +\frac{1+\beta}sS_s\\
+ &+\left[g\|Y\|_{\rm up}
+       +\frac{(1+1/\beta)(1+1/\tau)g^2}s\right]I.\nonumber
+\end{align}
+The chosen $\tau=g/(\epsilon_R\|Y\|_{\rm up})$ is positive.
+Each primitive matrix uncertainty from S10 is multiplied by its
+actual absolute scalar coefficient in the assembly of $K_s,S_s$.
+Exact shift conversion and all scalar products receive their stated
+rounding guards. The finite spectral comparison uses \eqref{polar}
+with exact-input 192-bit Arb residuals. Multiplication of the entire
+right side by $11/10$ and division of its upper endpoint by
+$n_0=1-10^{-8}$ yield an upward rational $\theta$ on the $10^{-12}$
+lattice. By \eqref{ngram} and the factorization norm identity,
+\[
+ R_{56}\le\theta T_s,\qquad
+ \mathfrak a(u)\ge(1-\theta)E_8(z)-[\rho+\theta s]\|z\|^2,
+ \quad z=(I-P_K)u.
+\]
+The final transfer is exactly \eqref{kerneltransfer}; it does not
+recompute a numerical certificate on a changed frame.
+
+There are $231$ tested rational parameter pairs with individually
+enclosed endpoints. Some have $\theta\ge1$ and do not retain a
+strictly positive energy coefficient. Among those with $\theta<1$,
+the least scalar loss is the first row below. The stated theorem uses
+exact terminating coefficients; scalar losses in the table are rounded
+upward for presentation. The exact first loss is given below the table.
+\begin{center}
+\begin{tabular}{c|c|c|c}
+$\mu$ & $\beta$ & $1-\theta$ & scalar loss upper\\\hline
+$401/12800$ & $1913/2048$ & $0.000118321042$ & $0.031324476155738683$\\
+$7/200$ & $1$ & $0.065210231692$ & $0.032749571$\\
+$1/25$ & $3/2$ & $0.132584532412$ & $0.034762$\\
+$9/200$ & $9/4$ & $0.182372427581$ & $0.036882534$\\
+$1/20$ & $1277/512$ & $0.212458845389$ & $0.039482$\\
+$3/50$ & $1$ & $0.236184893938$ & $0.045944547$\\
+$15867/102400$ & $63/512$ & $0.294954254754$ & $0.109392080$
+\end{tabular}
+\end{center}
+The first exact loss is $31324476155738682727829/10^{24}$.
+Every successful final price is strictly below $\theta n_0$.
+The set consists of a finite grid and rational local refinements;
+no untested interval is excluded. For fixed positive parameters the
+central bound has form $A+\beta sG_Y+M/s$ with $M\ge0$, so it is
+operator convex in $s$, but its derivative has no fixed sign. It
+therefore supplies no monotone bisection or global optimality result.
+
+\section{Exact signed-action cancellation}\label{signedsupp}
+The full identities in S6 and \eqref{fullbridge} give
+\[
+ A_Y=\mathcal E-R_q-T=SL_8S-2p_Y\otimes p_Y-T,
+ \qquad T=S(J-J_8)S,\quad\|T\|\le t_8.
+\]
+Let $\widehat J$ be the actual smooth Fourier action from S9--S10,
+and define
+$\widehat Z=\widehat J-2p_Y\otimes(Y^*p_Y)$ with its exact physical
+pole pairing. The continuum term has canceled before approximation.
+Thus $A_YY-\widehat Z=(SL_8Y-\widehat J)-TY$ and the rational
+whole-map bound is
+\begin{align*}
+ \|A_YY-\widehat Z\|\le{}&
+ \frac{71}{100}\left(\frac{1532843}{10^{11}}+
+       \frac{1797275}{10^{14}}+10^{-88}\right)+10^{-157}\\
+ &+\frac{32237}{10^{12}}\frac{2159290}{10^6}<\frac{11}{10^6}.
+\end{align*}
+Every prime tail, Fourier tail and physical output remains.
+This improves a signed-action approximation cost, not the global
+form floor. The combined positive-action cache by itself does not
+determine all separate smooth/pole cross Grams for this approximant.
+On a larger verified quotient, both trial and approximant must be
+projected. Contractivity preserves the error but not unchanged rank
+or inverse claims.
+
+\section{A cached positive five-dimensional subspace}\label{signedcache}
+A different signed approximant can be formed from the existing combined
+cache. Write $U=\widehat A$ and choose the supplied exact binary selector
+$X$ for $N^{-1}C^*Y$. Set $Z_s=U-CX$. The full dense capture gives
+$0\le R_m-CN^{-1}C^*\le(3/12500)I$, hence
+\begin{align*}
+ \|A_YY-Z_s\|\le{}&g+
+       (3/12500+t_8)\|Y\|\\
+ &+\|C\|\,\|N^{-1}C^*Y-X\|<7/12500.
+\end{align*}
+The selector error is paid by its exact-input solve residual,
+$N\ge n_0I$, the full $CY$ uncertainty, and the whole saved-center
+$N$ error at most $2\cdot10^{-8}$. Its whole physical Grams are
+\[
+ Y^*Z_s=YA-CY^*X,\quad C^*Z_s=CA-H_CX,
+\]
+\[
+ Z_s^*Z_s=AG-CA^*X-X^*CA+X^*H_CX.
+\]
+All input and saved binary-center errors are included; in particular
+$AG$ is not replaced by a projected action Gram.
+
+Let $W_5$ be the supplied exact $56\times5$ selector and $V=YW_5$.
+The enclosed physical Gram is above $0.5046238284239I$ and
+$\|V\|^2<5$. The Hermitian signed center, after subtracting its
+finite error and $(7/12500)\|Y\|\|W_5\|^2$, exceeds
+$0.0012532198376I>I/1000$. Therefore
+\begin{equation}\label{fivepos}
+ V^*V>\tfrac12I,\qquad
+ \mathfrak a(f)>\|f\|^2/5000\quad(0\ne f\in\Ran V).
+\end{equation}
+The input norm here is Euclidean until the displayed physical-norm
+conversion using $\|V\|^2<5$.
+
+Let $P_5$ be the actual projection onto $\Ran V$. A supplied exact
+selector $L$ approximates the projection of $Z_sW_5$ into $V$.
+Its full residual Gram is
+$(Z_sW_5-VL)^*(Z_sW_5-VL)$, with every mixed term retained.
+The certified lower bound for $V^*V$ justifies its inverse and prices
+the difference between the selector and the exact projection.
+Subtract that price and $(7/12500)\|W_5\|$ from the certified largest
+residual norm for a lower bound. For an upper squared norm, Young's
+inequality with parameter $1/100$ retains both the residual and
+whole-map error. The exact-input residual/polar enclosures give
+\begin{equation}\label{fivecoupling}
+ \|(I-P_5)A_YV\|>11/50,\qquad
+ \|(I-P_5)A_YV\|^2<0.062842088203.
+\end{equation}
+These are norms of the map with the ordinary Euclidean coefficient
+input of $V$, not a normalized physical metric. A large coupling
+is not a negative signed direction. Nor is $\Ran C$ proved to lie
+inside this five-dimensional space, so its complement does not
+inherit the $-\rho$ floor.
+
+\section{A fully coupled Schur criterion and its scope}\label{schur}
+Keep the old frame by taking $J_*= [C,Y]$ and $F=\Ran J_*$.
+Every column lies in $\Dom(A_Y)$, and \eqref{rest} implies
+$\mathfrak a|_{F^\perp}\ge-\rho I$ because $C^*v=0$ there.
+This statement requires neither an inverse of $J_*^*J_*$ nor a
+certified rank of the union.
+Let $Z_*$ approximate $A_YJ_*$ and suppose
+$D=A_YJ_*-Z_*$ satisfies $D^*D\le E$, with $E\ge0$.
+For any exact coefficient selector $L$, put
+\[
+ H=J_*^*J_*,\quad B=\operatorname{Herm}(J_*^*Z_*),\quad
+ Q_L=(Z_*-J_*L)^*(Z_*-J_*L).
+\]
+For $d>\rho$ and $\beta,\eta>0$, the sufficient comparison is
+\begin{equation}\label{schurcriterion}
+ B+(d-\eta/2)H-\frac E{2\eta}
+ -\frac{(1+\beta)Q_L+(1+1/\beta)E}{d-\rho}\ge0.
+\end{equation}
+It proves $\mathfrak a(u)\ge-d\|u\|^2$ on the full score quotient.
+Indeed write $u=J_*x+v$, $v\perp F$. Young's inequality gives
+$\operatorname{Herm}(J_*^*D)\ge-(\eta H+E/\eta)/2$.
+For the actual projection $P_F$,
+$(I-P_F)Z_*=(I-P_F)(Z_*-J_*L)$, so the outside true-action Gram is
+at most $(1+\beta)Q_L+(1+1/\beta)E$. Complete the square against
+the complementary lower bound $(d-\rho)\|v\|^2$.
+This proves \eqref{schurcriterion} even when the representation by
+$J_*$ is nonunique. It is the standard Schur principle with the
+required coercivity explicitly supplied, not a free unshifted inverse
+\cite[Theorem 1.2]{DSS}.
+For block map errors $e_C,e_Y$, one may use
+$E=\operatorname{diag}((1+\lambda)e_C^2I,(1+1/\lambda)e_Y^2I)$.
+The mixed signed-action Grams needed to verify this criterion for
+$[C,Y]$ have not been established in the present release.
+
+There is also a precise limitation for one declared $Y$-only capture
+class. If $W\ge0$ and $YWY^*\le I$, then $YWY^*\le P_Y$.
+Consequently a sufficient complement price inherited from
+\eqref{rest} is
+\[
+ \rho_{\rm eff}=\rho+\frac{11}{10n_0}
+      \|H_C-CY\,W\,CY^*\|.
+\]
+Let $G_c,CY_c$ be the saved centers and
+$g_0=0.014115739$ exceed the accepted $G_Y$ error. The positive
+matrix $M=G_c+g_0I$ is invertible, and $W_g=M^{-1}$ is the largest
+capture in the cone $0\le W\le W_g$. Every smaller capture leaves
+a larger positive residual. An exact binary Rayleigh locator for
+the center residual gives the outward value
+$0.13436493992529662392491776687409$.
+With $h=32/10^{10}$, $c=1/20000$, its full perturbation is at most
+\[
+ h+2c\|W_gCY_c^*\|_F+c^2\|W_g\|_F<0.000384941947.
+\]
+The native 192-bit inverse/Rayleigh check therefore yields
+$\rho_{\rm eff}>0.1478676174>0.14$ throughout that cone.
+This is a bound on that sufficient certificate's price, not a lower
+bound on a negative eigenvalue of the actual signed complement.
+
+\section*{Certificate correspondence and verification boundary}
+The section numbers above are the precise supplementary references in
+the main article. The manifest names the immutable binary inputs,
+executed-source snapshots and certificate records for each calculation.
+The correspondence is as follows:
+\begin{center}
+\begin{tabular}{ll}
+S0, S4 & symbol cells, Fourier grids, physical/zero tails\\
+S1--S3 & midpoint factors, dense residual, physical norms and Gram\\
+S4 & low-zero roots, Taylor grid and full sample/correlation matrices\\
+S5 & lower masses and weighted deficit norm\\
+S6--S7 & energy resolvent and whole matrix residual\\
+S8 & equality-jet integrals and fixed-price barrier\\
+S9--S10 & enriched trial, whole Fourier action and full Grams\\
+S11 & rational shift endpoints and their selected matrices\\
+S12--S13 & signed cancellation, cached subspace and outside coupling\\
+S14 & inverse/Rayleigh robust-capture check
+\end{tabular}
+\end{center}
+The bounded release verifier checks hashes, exact rational consequences,
+selected enriched comparisons reconstructed from cached matrices, and
+the stated robust-capture inverse/Rayleigh calculation. It accepts the
+upstream quadrature, zero completeness, Taylor, large-Gram and whole
+DFT/action allowances as certificate inputs. It does not regenerate
+those expensive computations. The analytic arguments in S0--S14 explain
+how those inputs control the actual continuum problem; a successful
+finite replay is not by itself a formalization of those arguments.
+The release verification report and formal correspondence document list
+the checked Lean declarations and their explicit analytical inputs.
+
+\begin{thebibliography}{9}
+\bibitem{Theta} L. van Hemert, \emph{Sharp logarithmic coupling estimates
+for theta equality frames in a signed Weil-form realization}, v1.0.0,
+11 October 2026, \href{https://doi.org/10.5281/zenodo.23298499}
+{doi:10.5281/zenodo.23298499}, Lemmas 2.1--2.2 and 5.1.
+\bibitem{DLMF} NIST Digital Library of Mathematical Functions,
+\href{https://dlmf.nist.gov/5.9.E13}{equation 5.9.13}.
+\bibitem{HSW} E. Hasanalizade, Q. Shen and P.-J. Wong,
+\emph{Counting zeros of the Riemann zeta function}, J. Number Theory
+235 (2022), 219--241, Corollary 1.2, equation (1.5),
+\href{https://www-math.nsysu.edu.tw/~pjwong/stuff/CountingRiemannZeros.pdf}
+{author-hosted published article}.
+\bibitem{FLINT} FLINT project, \emph{FLINT 3.6.0},
+\href{https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/acb_dirichlet.rst}
+{versioned \texttt{acb\_dirichlet} documentation}.
+\bibitem{DSS} G. Dusson, I. M. Sigal and B. Stamm,
+\emph{The Feshbach--Schur map and perturbation theory},
+\href{https://arxiv.org/abs/2105.02058v1}{arXiv:2105.02058v1}, Theorem 1.2.
+\end{thebibliography}
+\end{document}

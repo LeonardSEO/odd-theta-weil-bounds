@@ -1,0 +1,13 @@
+# Dependencies and local build products
+.venv/
+__pycache__/
+*.pyc
+lean/.lake/
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+.DS_Store
+# Versioned archives are release attachments, not repository source.
+dist/

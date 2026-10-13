@@ -1,0 +1,26 @@
+{
+  "status": "PASS: ST2 robust-cone sufficient-price barrier exceeds 0.14",
+  "precision_bits": 192,
+  "execution": "Source preserved verbatim from the completed stdin execution; this record transcribes its native Arb stdout. Successful check not rerun.",
+  "source_sha256": "4f9bb7ab570d51bf7bb3948d81e3fa084870c3312c96cd0c7f7142355777ff8d",
+  "source_file": "computations/complement_enriched_signed_tail_capture_check.py",
+  "input_sha256": {
+    "complement_residual_enrichment_action_matrices.npz": "1509969eeaf36edfffde3625fc5b11e17ae641b3721c97b1df547ea178dc3f95",
+    "complement_physical_frame_locator.npz": "bd387bda2eb9c49b3f191e2e9a84072845f8953e6400199eaf7ccfed11cb81a7",
+    "complement_residual_enrichment_action.json": "e530857ce32dbaab301f8ef9085c08dfdead78258479701be3bc13eb575311c3",
+    "complement_residual_enrichment_action_certificate.json": "26e175880276e79cfb9840230cd1e632cb4e5a94228ad84da72a17dc2c619162",
+    "complement_physical_frame_certificate.json": "8505edd30826a9117bd3fc76929eb4179f52da195314ed7d17f2507e297caafb"
+  },
+  "reproduce": "From the directory containing li-positivity, run the saved script with the existing numpy/python-flint runtime. Eigensolve chooses a binary Rayleigh locator only; native Arb evaluates the exact-input inverse and quotient.",
+  "regularizer_exact": "14115739/1000000000",
+  "H_error_exact": "32/10000000000",
+  "CY_error_exact": "1/20000",
+  "rho_exact": "979236349/2000000000000",
+  "factor_exact": "110000000/99999999",
+  "verified_lower_witness_ball": "[0.147867617424864413486807996434464976194344315790160460 +/- 5.07e-55]",
+  "frobenius_perturbation_price_ball": "[0.000384941946583513940223347268288624306401411569717895139 +/- 5.87e-58]",
+  "strict_rational_target": "7/50",
+  "scope": "The ST2 sufficient complementary price for every capture 0<=W<=(Gc+gI)^-1; not a lower bound for the actual signed complementary form or a negative actual direction.",
+  "proof_obligations": "Owning Y-Gram uncertainty below g, mixed/H uncertainties below the declared reserves, and the original R56 floor and coefficient metric are reused analytic/certificate premises.",
+  "output": "Verified robust capture barrier [0.147867617424864413486807996434464976194344315790160460 +/- 5.07e-55] with Frobenius W error [0.000384941946583513940223347268288624306401411569717895139 +/- 5.87e-58]"
+}

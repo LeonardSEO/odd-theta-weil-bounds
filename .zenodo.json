@@ -1,0 +1,31 @@
+{
+  "title": "Certified whole-domain bounds and equality barriers for the odd theta–Weil form",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {
+      "name": "van Hemert, Leonard"
+    }
+  ],
+  "version": "1.0.0",
+  "publication_date": "2026-10-13",
+  "description": "Explicit certified lower bounds on the full complex odd theta–Weil form domain, with positive-energy tradeoffs, complete residual coupling and a quantitative equality barrier. Includes a mathematical supplement, reproducible finite certificate checks and a pinned Lean project checking the central abstract proof chain and exact rational consequences conditional on stated analytical inputs. RH, zero-loss positivity, the even-sector argument and the full Li transfer remain unresolved.",
+  "access_right": "open",
+  "license": "other-closed",
+  "keywords": [
+    "Weil form",
+    "theta function",
+    "verified computation",
+    "residual estimates",
+    "Lean"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23298499",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
+    }
+  ],
+  "notes": "Copyright (c) 2026 Leonard van Hemert. All rights reserved; see NOTICE. Prepared metadata for a new work; no DOI has been issued or assigned by this package."
+}

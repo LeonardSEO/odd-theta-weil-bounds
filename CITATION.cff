@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite the preprint and its matching versioned source release. Add the issued DOI after archival."
+type: software
+title: "Certified whole-domain bounds and equality barriers for the odd theta–Weil form"
+authors:
+  - family-names: "van Hemert"
+    given-names: "Leonard"
+version: "1.0.0"
+date-released: "2026-10-13"
+abstract: >-
+  Explicit certified bounds on the full complex odd theta–Weil form domain,
+  with retained positive energy, complete residual coupling and arithmetic
+  tails. A quantitative equality-vector obstruction limits the fixed positive
+  comparison. Lean checks the abstract proof chain and exact rational
+  consequences conditional on explicitly identified analytical and numerical
+  realization inputs.
+keywords:
+  - Weil form
+  - theta function
+  - verified computation
+  - residual estimates
+  - Lean
+preferred-citation:
+  type: article
+  title: "Certified whole-domain bounds and equality barriers for the odd theta–Weil form"
+  authors:
+    - family-names: "van Hemert"
+      given-names: "Leonard"
+  year: 2026
+  version: "1.0.0"
+  date-released: "2026-10-13"

@@ -1,0 +1,22 @@
+{
+  "status": "PASS actual Arb norm integrals; enclosing balls preserved from successful stdout before unrelated coefficient-guard assertion failed",
+  "Q_ball": "[11.0676657471428749463191678229 +/- 6.97e-29]",
+  "tau_ball": "[0.00571290852978025013036375087 +/- 4.55e-30]",
+  "precision_bits": 192,
+  "interval": "2 integral_0^2",
+  "theta_error_exact": "1/2^250",
+  "physical_tail_error_exact": "1/2^180",
+  "method": "existing Arb acb.integral meromorphic callback; abs_tol=rel_tol=2^-100",
+  "original_script_sha256": "0da544a4b7e7cb82ff839dbf603e5a0451862dfb7e66c5ffd55ca12ec5a759b2",
+  "successful_norm_execution": {
+    "session_id": 96137,
+    "chunk_id": "808c95",
+    "following_matrix_assertion_exit_code": 1,
+    "stdout": [
+      "PASS actual Q [11.0676657471428749463191678229 +/- 6.97e-29] actual tau [0.00571290852978025013036375087 +/- 4.55e-30]"
+    ]
+  },
+  "source": "routes/complement-physical-frame-certificate.md",
+  "executed_source_file": "certificates/complement_physical_norms_executed_source.py",
+  "executed_source_file_sha256": "0da544a4b7e7cb82ff839dbf603e5a0451862dfb7e66c5ffd55ca12ec5a759b2"
+}

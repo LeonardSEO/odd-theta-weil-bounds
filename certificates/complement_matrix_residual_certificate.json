@@ -1,0 +1,282 @@
+{
+  "status": "PASS coupled whole-residual certificate on exact original quotient",
+  "source": "routes/complement-matrix-residual-certificate.md",
+  "method": "Young matrix residual plus complete coefficient-map and Gram errors",
+  "rho_exact": "979236349/2000000000000",
+  "eta_upper_exact": "1315564607693/100000000000000",
+  "coefficient_metric": "exact N=Z*Z; N_lower exact from accepted physical certificate",
+  "coefficient_N_lower_exact": "99999999/100000000",
+  "coefficient_N_upper_exact": "100000001/100000000",
+  "shifts": [
+    {
+      "mu_exact": "1/20",
+      "shift_exact": "99020763651/2000000000000",
+      "epsilon_exact": "2/3",
+      "passes": true,
+      "coupled_Y_coefficient_exact": "4336074478734218782125109/198041527302000000000000000",
+      "coupled_residual_coefficient_exact": "10000000000000/297062290953",
+      "finite_error_guards_exact": {
+        "X_operator_upper": "226239962063299/250000000000",
+        "Y_Gram_error_upper": "2617380579/1000000000000",
+        "K_error_upper": "1467458929/500000000000",
+        "D1_coefficient_error_upper": "2841397/1000000000000",
+        "D2_coefficient_error_upper": "951/200000000000",
+        "physical_coefficient_error_upper": "1715353/1000000000000",
+        "residual_Gram_error_upper": "806111/125000000000",
+        "full_midpoint_residual_Gram_error_upper": "691553/100000000000",
+        "GBZ_error_upper": "157/50000000000",
+        "mid_error_upper": "213/62500000000"
+      },
+      "matrix_error_price_exact": "21076714083721038111349352657280317663/5941245819060000000000000000000000000000",
+      "final_scalar_reserve_exact": "1/1000000",
+      "complete_price_upper_exact": "50078862509/62500000000",
+      "complete_price_Arb_ball": "[0.80126180014312937861955194219782230508205267344785054876 +/- 8.77e-57]",
+      "theta_exact": "803/1000",
+      "coefficient_target_margin_exact": "869095913/500000000000",
+      "retained_energy_coefficient_exact": "197/1000",
+      "full_floor_exact": "80492909560753/2000000000000000",
+      "locators": {
+        "X_Gram": {
+          "orthogonality_Frobenius_ball": "[8.28718014627534362045429192736506187253202e-15 +/- 6.18e-57]",
+          "whole_residual_Frobenius_ball": "[1.005662018341262175869505404395912753644052e-9 +/- 7.19e-52]",
+          "polar_correction_ball": "[7.79246748299100022846626062019258174193925e-9 +/- 6.14e-51]",
+          "largest_eigenvalue_upper_ball": "[818952.32695044576385826677777391010688562019258174193925 +/- 6.46e-51]"
+        },
+        "whole_residual_Gram": {
+          "orthogonality_Frobenius_ball": "[7.77813215233331617777668546658989974731583e-15 +/- 4.49e-57]",
+          "whole_residual_Frobenius_ball": "[3.58321317893758029541208358941785581440528e-17 +/- 3.09e-59]",
+          "polar_correction_ball": "[1.796854642943147575814153151869059480424422e-16 +/- 7.23e-59]",
+          "largest_eigenvalue_upper_ball": "[0.0184945858064117743216647848415470897096293329478181596297 +/- 7.82e-59]"
+        },
+        "coupled_matrix": {
+          "orthogonality_Frobenius_ball": "[7.71854069425467130226832889456471731666886e-15 +/- 6.22e-57]",
+          "whole_residual_Frobenius_ball": "[1.93691701495034970534185780968974939709694e-15 +/- 4.86e-57]",
+          "polar_correction_ball": "[8.09409939667406198766506290897537314499460e-15 +/- 4.99e-57]",
+          "largest_eigenvalue_upper_ball": "[0.79771327581479655246155563676203798926449283767783249460 +/- 5.08e-57]"
+        }
+      }
+    },
+    {
+      "mu_exact": "3/100",
+      "shift_exact": "59020763651/2000000000000",
+      "epsilon_exact": "1/3",
+      "passes": false,
+      "coupled_Y_coefficient_exact": "5402561168485601223743073/147551909127500000000000000",
+      "coupled_residual_coefficient_exact": "8000000000000/177062290953",
+      "finite_error_guards_exact": {
+        "X_operator_upper": "698135564956161/500000000000",
+        "Y_Gram_error_upper": "6230856813/1000000000000",
+        "K_error_upper": "6857313827/1000000000000",
+        "D1_coefficient_error_upper": "109599/25000000000",
+        "D2_coefficient_error_upper": "1467/200000000000",
+        "physical_coefficient_error_upper": "2646597/1000000000000",
+        "residual_Gram_error_upper": "5479567/1000000000000",
+        "full_midpoint_residual_Gram_error_upper": "3102579/500000000000",
+        "GBZ_error_upper": "157/50000000000",
+        "mid_error_upper": "213/62500000000"
+      },
+      "matrix_error_price_exact": "11955240568970171057418467301399669839/1475519091275000000000000000000000000000",
+      "final_scalar_reserve_exact": "1/1000000",
+      "complete_price_upper_exact": "1069874114397/1000000000000",
+      "complete_price_Arb_ball": "[1.06987411439655398597369313148061704709955569892430449444 +/- 8.39e-57]",
+      "theta_exact": "1071/1000",
+      "coefficient_target_margin_exact": "1125874893/1000000000000",
+      "retained_energy_coefficient_exact": null,
+      "full_floor_exact": null,
+      "locators": {
+        "X_Gram": {
+          "orthogonality_Frobenius_ball": "[9.22004528344159738964779313899219316785765e-15 +/- 3.80e-57]",
+          "whole_residual_Frobenius_ball": "[2.215032717847944620609999080862865543763576e-9 +/- 5.88e-52]",
+          "polar_correction_ball": "[2.019018469027567750159276090328302668034450e-8 +/- 6.09e-51]",
+          "largest_eigenvalue_upper_ball": "[1949573.06822662980206844977427369299901090328302668034450 +/- 6.61e-51]"
+        },
+        "whole_residual_Gram": {
+          "orthogonality_Frobenius_ball": "[8.41262897620645319302165556732864690415901e-15 +/- 3.65e-57]",
+          "whole_residual_Frobenius_ball": "[3.46990491047693122063870598787723534410121e-17 +/- 5.35e-59]",
+          "polar_correction_ball": "[1.927307855210552861667710058610662835118301e-16 +/- 5.37e-59]",
+          "largest_eigenvalue_upper_ball": "[0.0187850595650003086528143326655754340353124063238518712051 +/- 6.34e-59]"
+        },
+        "coupled_matrix": {
+          "orthogonality_Frobenius_ball": "[7.31874413464959487213917838070587091974870e-15 +/- 6.45e-57]",
+          "whole_residual_Frobenius_ball": "[2.53704148290568051584354305041180225790141e-15 +/- 6.67e-57]",
+          "polar_correction_ball": "[1.030786969760702047091903886152653182533351e-14 +/- 8.58e-57]",
+          "largest_eigenvalue_upper_ball": "[1.06177071799947340624961736357360673132142378239120033351 +/- 9.03e-57]"
+        }
+      }
+    },
+    {
+      "mu_exact": "1/40",
+      "shift_exact": "49020763651/2000000000000",
+      "epsilon_exact": "1/3",
+      "passes": false,
+      "coupled_Y_coefficient_exact": "5073670016562351223743073/122551909127500000000000000",
+      "coupled_residual_coefficient_exact": "8000000000000/147062290953",
+      "finite_error_guards_exact": {
+        "X_operator_upper": "1612699142830123/1000000000000",
+        "Y_Gram_error_upper": "1662436097/200000000000",
+        "K_error_upper": "4552368629/500000000000",
+        "D1_coefficient_error_upper": "202539/40000000000",
+        "D2_coefficient_error_upper": "8471/1000000000000",
+        "physical_coefficient_error_upper": "3056819/1000000000000",
+        "residual_Gram_error_upper": "5055687/1000000000000",
+        "full_midpoint_residual_Gram_error_upper": "5895377/1000000000000",
+        "GBZ_error_upper": "157/50000000000",
+        "mid_error_upper": "213/62500000000"
+      },
+      "matrix_error_price_exact": "7902039468209779585149906064293900673/735311454765000000000000000000000000000",
+      "final_scalar_reserve_exact": "1/1000000",
+      "complete_price_upper_exact": "18669129457/15625000000",
+      "complete_price_Arb_ball": "[1.19482428524795461801247880421659950119710269728158636410 +/- 7.97e-57]",
+      "theta_exact": "299/250",
+      "coefficient_target_margin_exact": "146962849/125000000000",
+      "retained_energy_coefficient_exact": null,
+      "full_floor_exact": null,
+      "locators": {
+        "X_Gram": {
+          "orthogonality_Frobenius_ball": "[7.19563779881802846662497962885748574685203e-15 +/- 2.86e-57]",
+          "whole_residual_Frobenius_ball": "[3.355853360054429844577288478276512858331306e-9 +/- 8.24e-52]",
+          "polar_correction_ball": "[2.207025753570546499824585964849645154747344e-8 +/- 7.91e-51]",
+          "largest_eigenvalue_upper_ball": "[2600798.52528501134157048774709097480835964849645154747344 +/- 7.97e-51]"
+        },
+        "whole_residual_Gram": {
+          "orthogonality_Frobenius_ball": "[7.59472563317869410777790081381197724577337e-15 +/- 3.76e-57]",
+          "whole_residual_Frobenius_ball": "[3.50543860596046282508811641372595136643287e-17 +/- 4.43e-59]",
+          "polar_correction_ball": "[1.782813972429383845677383642607367995765758e-16 +/- 8.08e-59]",
+          "largest_eigenvalue_upper_ball": "[0.0188587472544926456692402783918275757477086001075271156383 +/- 8.78e-59]"
+        },
+        "coupled_matrix": {
+          "orthogonality_Frobenius_ball": "[8.07689685115428481459402240527728008012175e-15 +/- 6.23e-57]",
+          "whole_residual_Frobenius_ball": "[2.76975094954694212572038519515799369119511e-15 +/- 4.97e-57]",
+          "polar_correction_ball": "[1.233341684395961662615327174840654036570777e-14 +/- 6.27e-57]",
+          "largest_eigenvalue_upper_ball": "[1.18407676495780734721641251051066304234798131669661570777 +/- 6.49e-57]"
+        }
+      }
+    },
+    {
+      "mu_exact": "1/25",
+      "shift_exact": "79020763651/2000000000000",
+      "epsilon_exact": "1/2",
+      "passes": true,
+      "coupled_Y_coefficient_exact": "358275058884474670782893/13624269595000000000000000",
+      "coupled_residual_coefficient_exact": "3000000000000/79020763651",
+      "finite_error_guards_exact": {
+        "X_operator_upper": "1099187939809641/1000000000000",
+        "Y_Gram_error_upper": "3861465543/1000000000000",
+        "K_error_upper": "4289810999/1000000000000",
+        "D1_coefficient_error_upper": "862803/250000000000",
+        "D2_coefficient_error_upper": "231/40000000000",
+        "physical_coefficient_error_upper": "1041749/500000000000",
+        "residual_Gram_error_upper": "303453/50000000000",
+        "full_midpoint_residual_Gram_error_upper": "1327611/200000000000",
+        "GBZ_error_upper": "157/50000000000",
+        "mid_error_upper": "213/62500000000"
+      },
+      "matrix_error_price_exact": "20180732740809939546079126838920531781/3951038182550000000000000000000000000000",
+      "final_scalar_reserve_exact": "1/1000000",
+      "complete_price_upper_exact": "450253581783/500000000000",
+      "complete_price_Arb_ball": "[0.90050716356502062080333497992806434414421657879141567017 +/- 8.71e-57]",
+      "theta_exact": "451/500",
+      "coefficient_target_margin_exact": "746413707/500000000000",
+      "retained_energy_coefficient_exact": "49/500",
+      "full_floor_exact": "36127982581101/1000000000000000",
+      "locators": {
+        "X_Gram": {
+          "orthogonality_Frobenius_ball": "[8.31844246045367443766762847973024435888759e-15 +/- 1.77e-57]",
+          "whole_residual_Frobenius_ball": "[1.494139507879376174343206162235596565227769e-9 +/- 8.61e-52]",
+          "polar_correction_ball": "[1.154459920342715550887016783959773097437574e-8 +/- 4.44e-51]",
+          "largest_eigenvalue_upper_ball": "[1208214.12702296059198584969790746199516783959773097437574 +/- 4.88e-51]"
+        },
+        "whole_residual_Gram": {
+          "orthogonality_Frobenius_ball": "[7.96395197067037077662850585452233032927361e-15 +/- 3.89e-57]",
+          "whole_residual_Frobenius_ball": "[3.498601010073209023108484224531268658042857e-17 +/- 8.20e-60]",
+          "polar_correction_ball": "[1.834259034017116524793471663234485399539167e-16 +/- 8.26e-59]",
+          "largest_eigenvalue_upper_ball": "[0.0186389739475644254266995436631210779103904006732713992292 +/- 8.51e-59]"
+        },
+        "coupled_matrix": {
+          "orthogonality_Frobenius_ball": "[8.21653376789514744115106326696805793157737e-15 +/- 4.38e-57]",
+          "whole_residual_Frobenius_ball": "[2.05692974582395527800590421763406347190847e-15 +/- 3.36e-57]",
+          "polar_correction_ball": "[9.41400142620070240068076053353990651587878e-15 +/- 6.02e-57]",
+          "largest_eigenvalue_upper_ball": "[0.89539845976455132367928582199950310228267404283620337878 +/- 6.33e-57]"
+        }
+      }
+    }
+  ],
+  "tested_shift_set_exact": [
+    "1/20",
+    "3/100",
+    "1/40",
+    "1/25"
+  ],
+  "epsilon_locator_set_exact": [
+    "1/10",
+    "1/5",
+    "1/4",
+    "1/3",
+    "1/2",
+    "2/3",
+    "1",
+    "3/2",
+    "2",
+    "3"
+  ],
+  "optimality_claim": false,
+  "main_result_and_inputs_unchanged": true,
+  "all_couplings": "all 2906 B features, all 2469 V0 features and complete rectangular mixed Gram",
+  "no_zero_Gram_grid_or_integral_loop": true,
+  "Arb_precision_bits": 192,
+  "owning_main_certificate_sha256": "6318beabe9812f1679d7fdb90a846b5477f882d40f14743f2029cd6b5c85f457",
+  "owning_guards_sha256": "e03e3205c9b1c8cea7d74bddb6e74e7bd377e32b6c4530155744f53b74a4e2d8",
+  "completed_full_Gram_sha256": "0e4cc230db21c4a3796e79d1e39186b2defb79edaa0a2d4cc2beb9e102142bd6",
+  "input_sha256": {
+    "factor": "97873d70e5472682244984d2986288b60eb63aeba414f0b2cc4b1acd55daf5f9",
+    "physical": "8505edd30826a9117bd3fc76929eb4179f52da195314ed7d17f2507e297caafb",
+    "physical_locator": "bd387bda2eb9c49b3f191e2e9a84072845f8953e6400199eaf7ccfed11cb81a7",
+    "sampling": "0fc15c8f6972f737376d154112c1b3e39dbd9761ad0e0ad261848a7e0b2d19e6",
+    "sampling_matrices": "0812a4c912fa040546088b100a62d58ae60bd8fde7d5fc0e16121f30283e91a0"
+  },
+  "matrix_sha256": "e1a5721fd043e8c4865d5d34c57bfc68dc6ad4dfe1003d438de06f12f05b31c2",
+  "script_sha256": "2cfb11b9acea9cf69eaaea6376aa060ad51f08c59b7bb07f836d28bd6251f5fb",
+  "elapsed_seconds": 0.7608755420078523,
+  "successful_execution": {
+    "chunk_id": "74633e",
+    "exit_code": 0,
+    "executed_source_file": "certificates/complement_matrix_residual_certificate_executed_source.py",
+    "executed_source_sha256": "2cfb11b9acea9cf69eaaea6376aa060ad51f08c59b7bb07f836d28bd6251f5fb",
+    "cached_Grams_only": true
+  },
+  "fresh_context_audit": {
+    "verdict": "Proof established in the checked scope under accepted ER1\u2013ER7 inputs",
+    "report": "routes/complement-matrix-residual-certificate-audit.md",
+    "all_exact_prices_and_finite_guards_reconstructed": true,
+    "old_inputs_replayed": false,
+    "audit_changed_files": false
+  },
+  "tight_exact_postprocessing": {
+    "denominator": 1000000,
+    "matrix_or_trial_run_repeated": false,
+    "method": "ceil(unchanged exact guarded price/Nlower * 10^6)/10^6",
+    "source": "computations/complement_matrix_residual_tight_endpoints.py",
+    "source_sha256": "e1fc9d2c69a7462aef755bacf358935f27d997b2439b3660624ef718f1e2b883",
+    "results": [
+      {
+        "mu_exact": "1/20",
+        "epsilon_exact": "2/3",
+        "unchanged_complete_price_upper_exact": "50078862509/62500000000",
+        "theta_exact": "400631/500000",
+        "coefficient_target_margin_exact": "9592169/50000000000000",
+        "retained_energy_coefficient_exact": "99369/500000",
+        "full_floor_exact": "40160405736763781/1000000000000000000"
+      },
+      {
+        "mu_exact": "1/25",
+        "epsilon_exact": "1/2",
+        "unchanged_complete_price_upper_exact": "450253581783/500000000000",
+        "theta_exact": "225127/250000",
+        "coefficient_target_margin_exact": "20685723/25000000000000",
+        "retained_energy_coefficient_exact": "24873/250000",
+        "full_floor_exact": "18034516545708677/500000000000000000"
+      }
+    ],
+    "independent_rational_audit": "Proof established; ceilings, strict margins, coefficients, losses and unchanged source/matrix hashes checked; no matrix replay"
+  }
+}

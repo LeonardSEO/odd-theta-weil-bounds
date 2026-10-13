@@ -1,0 +1,20 @@
+{
+  "status": "PASS actual score-projected first equality-jet barrier",
+  "precision_bits": 192,
+  "Hq_ball": "[73.9389206536588932761816 +/- 6.26e-23]",
+  "Hh_ball": "[54152.6907182449014086321392 +/- 3.28e-23]",
+  "a_ball": "[6.68062465409621476413287 +/- 2.67e-24]",
+  "D_ball": "[53658.732542028803995093995 +/- 3.40e-22]",
+  "complete_each_integral_allowance": "1/2^130",
+  "new_norm_method": "2 acb.integral_0^2; meromorphic callbacks; abs_tol=rel_tol=2^-80",
+  "partial_midpoint_cells": 635,
+  "partial_midpoint_ball_with_a_lower_6": "[1876.739373063928194740237244735278621428624842139084110 +/- 1.71e-52]",
+  "r_strict_lower": "3/88",
+  "general_margin_at_r_3_100": "[0.00114672240074860834754092745165277345738847118256498962535 +/- 5.19e-60]",
+  "strong_margin_at_r_3_88": "[0.00145227101268620027256880649524018968809833796669111641163 +/- 2.36e-60]",
+  "strict_barrier": "(R56-E_Y)(k)>7/5000 ||k||^2",
+  "cells_sha256": "cf4e6b03f62d5f787f41fb104f7912a7fcadd6333da3032ac086b36f5020df30",
+  "existing_norm_cache_sha256": "99ebffe92756ab7e67e0fcc97c4c12348f90573e337471010c50d0f65cb8fd44",
+  "script_sha256": "76bfc0b9a043e774031d6b34c10530c619754a5749825950f87feaceeb1f6725",
+  "owning_note": "routes/complement-positive-rest-barrier.md"
+}

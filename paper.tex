@@ -1,0 +1,857 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Certified whole-domain bounds and equality barriers for the odd theta–Weil form},
+ pdfauthor={Leonard van Hemert},
+ pdfsubject={Version 1.0.0; mathematical preprint and certified proof scope}}
+\usepackage{microtype}
+\setlength{\emergencystretch}{1em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Ran}{\operatorname{ran}}
+\newcommand{\Dom}{\operatorname{Dom}}
+\newcommand{\dd}{\,d}
+\title{Certified whole-domain bounds and equality barriers\protect\\
+for the odd theta--Weil form}
+\author{Leonard van Hemert}
+\date{13 October 2026 --- Version 1.0.0}
+\begin{document}\maketitle
+\begin{abstract}
+We prove explicit lower bounds on the full complex odd form domain of
+a theta-weighted realization of the Riemann--Weil form. After removing
+any closed verified kernel containing the score, an admissible residual-enriched trial proves a family of explicit bounds.
+One retains $0.132584532412$ of a positive gamma--prime-symbol energy
+with loss less than $0.034762$; another retains $0.212458845389$
+with loss less than $0.039482$. Among the positive-retention certificates in a set of $231$ tested
+parameter pairs, the least scalar loss is $0.031324476155738682727829$, with energy
+coefficient $0.000118321042$; no global optimality is asserted. The certificate keeps the
+entire physical residual Gram, its coupling outside the trial space,
+all prime powers, the contact and pole terms, and the infinite remainders.
+The exact obstruction frame has physical rank $56$. We also prove that
+the fixed positive midpoint comparison overshoots an actual verified
+equality vector by more than $7/5000$ in the original Hilbert norm.
+This gives a quantitative barrier to zero-loss certification by that
+comparison, even with perfect trial enrichment, and an exact kernel-aware
+replacement. The operator algebra uses established residual and
+factorization principles; the contribution is their fully priced
+theta--arithmetic realization and its equality obstruction. Exact continuum cancellation also gives a complete signed-action
+error below $11\cdot10^{-6}$ for the enriched trial, with every prime
+tail and pole retained. No zero-error positivity, even-sector conclusion,
+or resolution of RH is claimed.
+\end{abstract}
+
+\section{The result and its scope}
+Put $\Xi(t)=\xi(1/2+it)$, with
+$\xi(s)=s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s)/2$. For $x\ge0$ define
+\[
+ \Phi(x)=\sum_{n\ge1}e^{x/2-\pi n^2e^{2x}}
+       \bigl(4\pi^2n^4e^{4x}-6\pi n^2e^{2x}\bigr),
+ \qquad \Phi(-x)=\Phi(x).
+\]
+The theta transformation gives $\widehat\Phi=\Xi$ for
+$\widehat h(t)=\int_{\mathbb R}h(x)e^{itx}\dd x$.
+Set $w^2=\Phi/\cosh(x/2)$, $p=w\sinh(x/2)$ and
+$H=H_{\rm odd}\subset L^2(\mathbb R,\dd x)$. The equivalent
+positive-half-line measure is $2\dd x$ throughout.
+Let $b(t)=\Re\psi(1/4+it/2)-\psi(1/4)$ and let $G$ be the
+positive closed form operator $M_wb(D)M_w$. Its form domain is
+\[
+ \mathcal V=\left\{u\in H:
+   \frac1{2\pi}\int b(t)|\widehat{wu}(t)|^2\dd t<\infty\right\}.
+\]
+The ordinary signed odd form is
+\begin{equation}\label{signed}
+ \mathfrak a(u)=g(u)+c_\Gamma\|wu\|^2
+       -\langle Ju,u\rangle-2|\langle u,p\rangle|^2,
+ \quad c_\Gamma=\psi(1/4)-\log\pi,
+\end{equation}
+where the complete norm-convergent prime-power operator is
+\[
+ J=\sum_{n\ge2}\frac{\Lambda(n)}{\sqrt n}
+       M_w(T_{\log n}+T_{-\log n})M_w.
+\]
+Here $T_a h(x)=h(x+a)$; both shifts make the convention immaterial
+to the selfadjoint sum. The contact constant, gamma symbol, all
+prime powers and odd pole in \eqref{signed} are retained. The even
+pole disappears only because the present space is odd. The signed realization originates in \cite[Lemma 5.1]{Theta}.
+Supplement~S0 proves the domain, kernel and tail facts additionally used here.
+
+Define $q=\Phi'/w$ and $Q=\|q\|^2$. The score is in
+$\Dom(G)\cap\ker A_W$, where $A_W$ represents \eqref{signed}.
+The positive energy used in this paper is
+\begin{align}
+ E_8(u)&=\frac1{2\pi}\int d_{8,+}(t)|\widehat{wu}(t)|^2\dd t,
+ \label{energy}\\
+ d_8(t)&=m_\Gamma(t)-k_8(t),\nonumber\\
+ m_\Gamma(t)&=\Re\psi(1/4+it/2)-\log\pi,\nonumber\\
+ k_8(t)&=2\sum_{n=2,3,4,5,7,8}\frac{\Lambda(n)}{\sqrt n}
+                     \cos(t\log n).\nonumber
+\end{align}
+This is a different positive form from the score-difference energy
+$e_0$ associated with the score. No ordering between them is assumed.
+
+\begin{theorem}[Whole-domain bounds]\label{main}
+For every closed verified odd subspace $K\subset\ker A_W$ containing
+$q$, every complex $u\in\mathcal V$, and $z=(I-P_K)u$, we prove
+\begin{align*}
+ \mathfrak a(u)&\ge 0.132584532412 E_8(z)
+             -0.034762\|z\|^2,\\
+ \mathfrak a(u)&\ge 0.212458845389 E_8(z)
+             -0.039482\|z\|^2,\\
+ \mathfrak a(u)&\ge\frac{59160521}{500000000000} E_8(z)
+             -\frac{31324476155738682727829}{10^{24}}\|z\|^2.
+\end{align*}
+There are no further finite orthogonality conditions. All constants
+use the original physical norm and are independent of the equality-frame
+index $m$. Their pointwise maximum is valid.
+\end{theorem}
+The first two inequalities simultaneously improve the loss and energy
+coefficient of the respective earlier bounds
+$0.03E_8-0.077614688545235\|\cdot\|^2$ and
+$0.18E_8-0.08208813127141\|\cdot\|^2$.
+The last bound has the smallest scalar loss among the tested candidates
+with strictly positive energy retention,
+but its smaller energy coefficient prevents a scalar-only ordering.
+A negative lower bound does not establish positivity.
+For $z\ne0$, write $r=E_8(z)/\|z\|^2\ge0$. Each assertion is an
+ordinary affine lower bound in $r$. At small $r$ the least-loss row is
+useful; at larger $r$ a row retaining more energy is stronger. Taking
+the maximum is a pointwise operation on these scalar bounds, not the
+construction of a new quadratic form. The equality case $z=0$ gives
+$\mathfrak a(u)=0$ by the verified kernel identity.
+
+All finite matrices in the construction act on complex coefficient
+spaces. Their stored entries happen to be real; a real symmetric
+Loewner comparison extends to complex vectors by applying it to their
+real and imaginary parts. The contour and form arguments below likewise
+use sesquilinear pairings. Thus the complex quantifier is part of the
+proof, rather than an inference from tests on real trial vectors.
+
+
+\subsection{Normalization and the meaning of the quotient}
+The norm in Theorem~\ref{main} is
+\[
+ \|z\|^2=\int_{\mathbb R}|z(x)|^2\dd x
+         =2\int_0^\infty|z(x)|^2\dd x.
+\]
+If the physical Weil test is written as $f=wz$, this norm is
+$\int |f(x)|^2/w(x)^2\dd x$. The weight tends rapidly to zero, so
+it is essential to state which of these two variables carries the
+comparison norm. Multiplication by $w$ also does not impose compact
+support. All Fourier cutoffs used in the computation are accompanied
+by tails in this original weighted realization.
+
+The word ``verified'' in the kernel hypothesis means that membership
+in the operator kernel has been established for that subspace. It
+asserts no completeness of the currently known equality vectors.
+The smallest permitted choice is $K=\operatorname{span}\{q\}$.
+If $K$ is enlarged, $P_K$ remains the actual Hilbert orthogonal
+projection; an approximate frame projection cannot be substituted.
+The exact signed form annihilates every mixed pairing with $K$, so
+\[
+ \mathfrak a(u)=\mathfrak a(z),\qquad z=(I-P_K)u.
+\]
+Moreover $z\in\mathcal V\cap q^\perp$. Thus one certificate on the
+score quotient proves the displayed inequality for every such $K$.
+This transfer does not assert that the positive energies of two
+successive quotients are ordered, and it does not transfer a numerical
+Gram or conditioning bound onto a newly projected frame.
+
+There are three distinct spaces in the finite construction. The
+coefficient space of $B$ has dimension $2906$; the exact map $C=BZ$
+has $56$ input coordinates; and its vectors lie in the infinite
+physical Hilbert space. The coefficient metric $N=Z^*Z$ measures
+$\|Zx\|^2$, whereas $H=C^*C$ measures $\|Cx\|^2$. The proof retains
+both. This distinction is particularly important because the physical
+frame has a much smaller lower Gram bound than its coefficient frame.
+Numerical orthogonality in one metric cannot supply an inverse or a
+form comparison in the other.
+
+
+\section{A complete matrix residual certificate}
+The next lemma records the precise reusable certificate used below.
+It is an operator-valued version of standard coercive residual
+certification; see \cite[Section 4.3, Proposition 4C]{PR}.
+\begin{lemma}\label{matrixlemma}
+Let $E\ge0$ be selfadjoint on a Hilbert space, $s>0$, and $C$ a
+finite column map. Let $N>0$ be a coefficient matrix and $\nu>0$.
+For a trial map $Y_0$ with columns in $\Dom(E)$, suppose a
+selfadjoint proxy $E_m$ is defined on its range and
+$\|(E-E_m)|_{\Ran Y_0}\|\le\eta$. Set
+\[
+ Q_0=Y_0^*Y_0,\quad r=C-(E_m+s)Y_0,\quad S_0=r^*r,
+ \quad K_m=C^*Y_0+Y_0^*C-Y_0^*(E_m+s)Y_0.
+\]
+For any $\varepsilon>0$, the matrix comparison
+\begin{equation}\label{matrixcriterion}
+ \nu\left[K_m+
+   \left(\eta+\frac{(1+1/\varepsilon)\eta^2}s\right)Q_0
+    +\frac{1+\varepsilon}sS_0\right]\le\theta N
+\end{equation}
+implies $\nu CN^{-1}C^*\le\theta(E+s)$ as forms. It retains the
+entire residual in the ambient Hilbert space.
+If symmetric centers $K_c,Q_c,S_c$ have full operator errors
+$k_e,q_e,s_e$, adding
+$\nu[k_e+(\eta+(1+1/\varepsilon)\eta^2/s)q_e
+ +(1+\varepsilon)s_e/s]I$ to the center matrix suffices.
+\end{lemma}
+\begin{proof}
+Put $T=E+sI$. Selfadjointness and $T\ge sI$ give a bounded
+inverse with $0\le T^{-1}\le s^{-1}I$. This is precisely where the
+strictly positive shift is used. Since each trial column belongs to
+$\Dom(T)$, the maps $TY_0$ and $R=C-TY_0$ are well defined in the
+ambient Hilbert space. Expanding the entire residual gives
+\begin{align*}
+ R^*T^{-1}R
+ &= (C-TY_0)^*T^{-1}(C-TY_0)\\
+ &= C^*T^{-1}C-C^*Y_0-Y_0^*C+Y_0^*TY_0.
+\end{align*}
+Hence, with $K=C^*Y_0+Y_0^*C-Y_0^*TY_0$,
+\begin{equation}\label{completed}
+ C^*T^{-1}C=K+R^*T^{-1}R\le K+s^{-1}R^*R.
+\end{equation}
+There is no Galerkin equation in this identity. An arbitrary admissible
+trial works, and its quality affects only the residual size.
+
+Let $D=(E-E_m)Y_0$. For every coefficient vector $x$ the assumed
+action bound gives $\|Dx\|\le\eta\|Y_0x\|$. Since the quadratic
+pairing is real by symmetry,
+\[
+ K-K_m=-\operatorname{Herm}(Y_0^*D)\le\eta Q_0,
+ \qquad D^*D\le\eta^2Q_0.
+\]
+Also $R=r-D$. Applying scalar Young's inequality to the cross term
+in $\|rx-Dx\|^2$ for every $x$ proves the matrix inequality
+\[
+ R^*R\le(1+\varepsilon)S_0
+                   +(1+1/\varepsilon)\eta^2Q_0.
+\]
+Substitution in \eqref{completed} proves
+$\nu C^*T^{-1}C\le\theta N$ from \eqref{matrixcriterion}.
+
+For completeness, the passage from this coefficient inequality to
+a form inequality is exact. Define the bounded map
+\[
+ L=\sqrt\nu\,T^{-1/2}CN^{-1/2}.
+\]
+The coefficient statement is $L^*L\le\theta I$, equivalently
+$\|L\|^2\le\theta$, and therefore $LL^*\le\theta I$ on the full
+Hilbert space. For an arbitrary $z\in\Dom(T^{1/2})$, test the latter
+inequality on $T^{1/2}z$. Since $T^{-1/2}T^{1/2}z=z$, this yields
+\begin{align*}
+ \nu\langle CN^{-1}C^*z,z\rangle
+ &=\|L^*T^{1/2}z\|^2\\
+ &\le\theta\|T^{1/2}z\|^2.
+\end{align*}
+This is the claimed inequality on the entire form domain. It is an
+instance of standard majorization and factorization
+\cite[Theorem 1]{Douglas}, with its hypotheses supplied by the shift
+and $N>0$. The physical matrix $C^*C$ never replaces $N$ in this step.
+
+Finally, if $K_m\le K_c+k_eI$, $Q_0\le Q_c+q_eI$ and
+$S_0\le S_c+s_eI$, all their multipliers in
+\eqref{matrixcriterion} are positive. Substitution therefore adds
+exactly the stated scalar error times $I$. The center matrices need
+not themselves be positive for this upper-bound argument.
+\end{proof}
+
+Taking separate largest eigenvalues of $K_m$ and $S_0$ before adding
+them loses their correlation. Formula \eqref{matrixcriterion} retains
+that correlation until the final finite comparison. The difference is
+decisive in the actual calculation: the separate-norm certificate fails
+at $\mu=1/20$, while the full matrix certificate passes there.
+
+
+\subsection{From a contraction to an energy--loss bound}
+Suppose on a closed quotient the original form satisfies
+\[
+ \mathfrak a(z)\ge E(z)-\langle Rz,z\rangle-\rho\|z\|^2,
+ \qquad R=\nu CN^{-1}C^*.
+\]
+If the preceding certificate gives $R\le\theta(E+sI)$, with
+$0\le\theta<1$, substitution retains the positive energy:
+\begin{align}\label{floorconversion}
+ \mathfrak a(z)
+ &\ge E(z)-\theta\bigl(E(z)+s\|z\|^2\bigr)-\rho\|z\|^2\\
+ &= (1-\theta)E(z)-(\rho+\theta s)\|z\|^2.\nonumber
+\end{align}
+The parameter $s$ is a shift of the positive operator. It is not a
+positive gap for the signed operator. Writing $s=\mu-\rho$ is a
+convenient parametrization with $\mu>\rho$; it gives the loss
+$\rho+\theta(\mu-\rho)$. A successful comparison improves the
+scalar floor relative to $-\mu$, while keeping $1-\theta$ of $E$.
+If instead $\theta\ge1$, the same algebra is valid but its energy
+coefficient is nonpositive. This explains the positive-retention
+restriction in the least-loss statement.
+
+The construction has two logically separate tasks. First, an analytic
+and interval calculation supplies the finite-rank price $R$ and the
+whole remainder $\rho$. Second, a residual comparison absorbs most
+of $R$ into a shifted positive energy. A small finite signed eigenvalue
+alone performs neither task: it does not control the physical coupling
+to the rest of the Hilbert space. Both tasks are carried out below.
+
+\section{The actual theta--arithmetic certificate}
+Put $r_8=(-d_8)_+$ and $R_8=M_wr_8(D)M_w+2p\otimes p$.
+The literal common signed form is
+\begin{equation}\label{split}
+ \mathfrak a(u)=E_8(u)-\langle R_8u,u\rangle
+                         -\langle(J-J_8)u,u\rangle.
+\end{equation}
+Since $|d_{8,+}-b|\le|c_\Gamma|+\|k_8\|_\infty$, $E_8-G$ is
+bounded, $\Dom(E_8)=\Dom(G)$ and $\Dom(E_8^{1/2})=\mathcal V$.
+Let $S=I-q\otimes q/Q$ and $E_Y$ be its positive form compression
+to $Y=q^\perp$. The projection preserves the graph domain.
+
+The exact finite data consist of $2905$ nonzero frequency cells
+$I_i=[k_i/64,(k_i+1)/64]$, their midpoints $t_i=(2k_i+1)/128$,
+and the exact upward binary64 mass bounds $\mu_i^+$ for
+$\int_{I_i}r_8(t)\dd t/\pi$. Define
+\begin{gather*}
+ Be_i=\sqrt{\mu_i^+}S[w\sin(t_ix)],\qquad Be_p=\sqrt2Sp,\\
+ C=BZ,\qquad N=Z^*Z,\qquad R_{56}=\frac{11}{10}CN^{-1}C^*.
+\end{gather*}
+Every entry of the supplied $2906\times56$ matrix $Z$ is interpreted
+as an exact dyadic rational. Its origin in a numerical solve is not
+an orthogonality or rank premise.
+
+\begin{proposition}[Verified realization data]\label{inputs}
+The supplied interval certificates and analytical estimates establish
+\begin{gather*}
+ (1-10^{-8})I\le N\le(1+10^{-8})I,\qquad
+ C^*C\ge\frac{21}{10^8}N,\quad C^*C<\frac{32}{125}I,\\
+ \mathfrak a(z)\ge E_8(z)-\langle R_{56}z,z\rangle-\rho\|z\|^2,
+ \quad \rho=\frac{979236349}{2000000000000},\quad z\in\mathcal V\cap Y.
+\end{gather*}
+The actual physical rank is $56$. With all $2469$ positive zeros
+through $3000$, both signs and multiplicities included, the positive
+sampling operator $S_{3000}$ satisfies
+\[
+ \|(A_W-S_{3000})|_{\Ran C}\|<1.4\cdot10^{-18},\qquad
+ \mathfrak a|_{\Ran C}\ge\frac{38}{10^{16}}I.
+\]
+For $R_m=BB^*$ and $E_m=S_{3000}+R_m$, the whole action price on
+this trial range is
+\[
+ \|(E_Y-E_m)|_{\Ran C}\|<\eta,
+ \qquad \eta=0.013155646076930.
+\]
+\end{proposition}
+\begin{proof}
+We give the complete bridge and the finite enclosures which make the
+data reviewable. Supplement~S1--S7 and the certificate files identified in the
+manifest give the interval construction, including all infinite
+allowances; none is a sampled-matrix positivity assumption.
+
+The full support certificate proves $r_8(t)=0$ for $|t|\ge10000$,
+its positive-half-line mass is below $14$, and
+$\|J-J_8\|\le t_8=32237/10^{12}$. A full theta moment gives
+\[
+ \int\|S[w\sin(tx)]-S[w\sin(t_ix)]\|^2r_8(t)\dd t/\pi
+ \le\delta_0=21/1024000.
+\]
+Young's inequality on every cell, with parameter $1/10$, gives
+$SR_8S\le(11/10)BB^*+11\delta_0I$, including the identical pole.
+The positive coefficient upper Gram $\Gamma$ retains every
+frequency difference, sum, score and pole correlation. The full
+dense residual certificate proves
+$\|\Gamma-Z\Lambda Z^*\|<3/12500$, with $\Lambda>0$ exact dyadic.
+Compression to $(\Ran Z)^\perp$ therefore gives
+$\|B(I-P)B^*\|\le3/12500$, where $P=ZN^{-1}Z^*$.
+Adding the full prime tail yields
+$\rho=t_8+11\delta_0+(11/10)(3/12500)$, exactly as displayed.
+
+The actual feature Gram is
+$B^*B=D_\mu(G_0-b_0b_0^*/Q)D_\mu$, with
+$G_0(i,j)=[\widehat{w^2}(t_i-t_j)-\widehat{w^2}(t_i+t_j)]/2$,
+$G_0(p,i)=2\int_0^\infty w^2\sinh(x/2)\sin(t_ix)\dd x$,
+$G_0(p,p)=\tau$, $b_{0,i}=-t_i\Xi(t_i)$, $b_{0,p}=-1/4$.
+New outward integrals use the actual $Q\approx11.06766574714$
+and $\tau\approx0.005712908530$, with complete allowances
+$2^{-250}+2^{-180}$. The whole compression error is below
+$3.2\cdot10^{-9}$. A binary spectral locator is corrected by its full
+orthogonality defect and residual, giving the rational Gram bounds
+above. Thus $\kappa_B\le\sqrt{10^8/21}<2182.178903$.
+
+Native FLINT $3.6.0$ zero enclosures exhaust its multiplicity count
+$N(3000)=2469$ \cite{FLINT}. Disjoint actual roots prove finite-range
+simplicity. With $V_0e_\gamma=w\sin(\gamma x)$ and $A_0=V_0^*C$,
+the complete paired moments are $L=2A_0^*A_0$ and
+$O=4A_0^*(V_0^*V_0)A_0$. All $2469^2$ correlations are kept.
+A new order-$20$, spacing-$1/8$ Taylor grid through $128$ uses
+$320$-node outward quadrature, the entire lattice and physical tails.
+The complete bounds are $\|\Delta A_0\|_F\le2\cdot10^{-12}$,
+$\|\Delta(V_0^*V_0)\|\le3.2\cdot10^{-11}$,
+$\|\Delta L\|\le10^{-11}$ and $\|\Delta O\|\le3.1\cdot10^{-10}$.
+Direct rectangular-factor certification proves $L\ge10^{-15}I$.
+The maximal actual midpoint is $T=313317/128$. The full contour
+and zero-count tails at height $L_0=3000$ are
+\begin{align*}
+ e&=10^6\kappa_B^2e^{T/4}Z_{1/4}(L_0),\\
+ d&=11000\kappa_Be^{T/8}Z_{1/8}(L_0),\\
+ Z_a(L)&=e^{-aL}\left[2L\log L+
+                \frac{2(\log L+1)}a+\frac4{a^2L}\right].
+\end{align*}
+They give $e<3\cdot10^{-43}$ and $d<1.4\cdot10^{-18}$, including
+every omitted/off-line zero and multiplicity. This proves the finite
+signed gap without asserting any infinite-block inverse.
+
+Finally introduce the true-mass midpoint map on the same feature input.
+Its distance from the continuum feature map is at most $\sqrt{\delta_0}$.
+Thus its price differs from $SR_8S$ in norm by at most
+$2\sqrt{0.255985513\delta_0}+\delta_0$.
+The entire weighted mass-deficit certificate adds less than
+$0.00855266$, equivalently $427633/50000000$,
+with zero pole deficit.
+On $Y$, $E_Y=A_W+SR_8S+S(J-J_8)S$.
+Adding $t_8$ and the whole action tail $d$ proves the stated $\eta$.
+The columns are in $\Dom(G)$ by complete theta smoothing and
+verified score projection. This proves the domain and action premises.
+\end{proof}
+
+\subsection{The coupled finite comparison}
+For each shift $\mu>\rho$, put $s=\mu-\rho$ and choose the supplied
+exact binary trial $Y_0=CX$. It needs no certified solve accuracy.
+Let $G_B=B^*B$, $G_z=V_0^*V_0$, $Q_b=V_0^*B$. The whole residual is
+\begin{align*}
+ r&=BD_1+V_0D_2,\\
+ D_1&=Z(I-sX)-G_BZX,\qquad D_2=-2A_0X,
+\end{align*}
+with exact Gram
+\begin{align*}
+ r^*r={}&D_1^*G_BD_1+D_1^*Q_b^*D_2\\
+       &+D_2^*Q_bD_1+D_2^*G_zD_2.
+\end{align*}
+All $2469\cdot2906$ mixed correlations appear. In particular the
+component outside $\Ran C$ is never removed. The certificate prices
+every input, inner/outer product, exact shift conversion and coefficient
+assembly. If $e_d$ bounds the physical coefficient-map error and
+$r_e$ the center Gram error, its actual Gram upper price is
+$r_e+2\sqrt{\lambda_{\max}(S_c)+r_e}\,e_d+e_d^2$.
+This price is included before Lemma~\ref{matrixlemma} is used.
+All small matrix locators use exact-input $192$-bit Arb residuals and
+their polar-unitary correction. Only locators come from floating point.
+
+The complete upper prices are exact rationals:
+\begin{center}
+\begin{tabular}{c|c|c|c}
+$\mu$ & $\varepsilon$ & matrix price $p$ & $\theta$\\\hline
+$1/20$ & $2/3$ & $100157725018/125000000000$ & $400631/500000$\\
+$1/25$ & $1/2$ & $450253581783/500000000000$ & $225127/250000$
+\end{tabular}
+\end{center}
+Each $p$ includes the full finite error prices and an additional
+$10^{-6}$ reserve. The strict margins to $\theta(1-10^{-8})$ are
+$9592169/(5\cdot10^{13})$ and $20685723/(25\cdot10^{12})$.
+Thus Lemma~\ref{matrixlemma} proves $R_{56}\le\theta(E_Y+s)$.
+Inserting this into Proposition~\ref{inputs} gives
+$\mathfrak a\ge(1-\theta)E_8-[\rho+\theta(\mu-\rho)]\|\cdot\|^2$,
+which proves the two original matrix-only bounds on $q^\perp$.
+The enriched improvements in Theorem~\ref{main} follow in the next section.
+For a larger verified $K$, $z\in\mathcal V\cap Y$ and the literal
+kernel identity gives $\mathfrak a(u)=\mathfrak a(z)$.
+This transfers the full theorem without recertifying a changed frame.
+
+\section{Admissible residual enrichment and its full action}
+The original frame-only action error cannot be applied to a new
+residual direction. We instead use the actual dyadic trial
+$Y=Bb+V_0v$ with $56$ input columns, selected from the residual outside
+$\Ran C$. No inverse or rank of an enlarged trial Gram is assumed.
+For every fixed frequency $a$, $w^2\sin(ax)$ is Schwartz; the complete
+theta series proves the same smoothing for the pole and score terms.
+The bound $b(t)\le17+9\log(1+|t|)$ therefore places each column in
+$\Dom(G)\cap q^\perp$. The existing positive physical Gram justifies the
+projection off $\Ran C$ used in selecting the residual. Exact binary
+selected coefficients themselves define the trial, so rounded numerical
+orthogonality is not a premise.
+
+Put $\ell_8=m_\Gamma-k_8$, $L_8=M_w\ell_8(D)M_w$, and let
+$\mathcal E$ denote the positive compressed operator previously called
+$E_Y$. Its full domain identity is
+\[
+ \mathcal E=SL_8S+R_m-2Sp\otimes Sp+\Delta_R,
+ \qquad \|\Delta_R\|\le\epsilon_R,
+\]
+where
+$\epsilon_R=2\sqrt{0.255985513\delta_0}+\delta_0+0.00855266$.
+This follows from $d_{8,+}=\ell_8+r_8$ and the already proved
+whole-space mass and midpoint prices. It makes no low-zero action
+assumption on the new columns.
+
+The completed outward Fourier calculation supplies a whole map
+$\widehat A$ with
+\[
+ \|\mathcal E Y-\widehat A-\Delta_RY\|\le g,
+ \quad g<1.421821\cdot10^{-5},\qquad \|Y\|<2.159290.
+\]
+Here the finite lattice has spacing $1/20$, frequency height $3300$,
+and physical radius $3$. The theta strip envelope bounds the complete
+Fourier row integral by $1.001591\cdot10^9$; contour shifting prices
+the alias below $1.532843\cdot10^{-5}$ before $\|w\|$.
+Complete node/location/rounding price is below
+$1.797275\cdot10^{-8}$, omitted frequencies below $10^{-88}$,
+and physical tails below $10^{-157}$.
+The physical action Gram retains the full $\widehat{w^2}(t-s)$
+Toeplitz convolution, both Fourier shifts and the score subtraction.
+Native outward complex DFT radii are included. Supplement~S9 gives
+all analytic envelopes and product guards; S10 gives the whole-action calculation and its error ledger. These are operator-map
+bounds, not sampled form positivity.
+
+\subsection{The entire action error in the resolvent comparison}
+For $s=\mu-\rho>0$, set
+\[
+ G_Y=Y^*Y,\quad CY=C^*Y,\quad YA=Y^*\widehat A,
+\]
+\[
+ CA=C^*\widehat A,\qquad AG=\widehat A^*\widehat A,
+ \qquad H=C^*C.
+\]
+These are exact physical matrices. Their outward numerical enclosures
+will be inserted only after the operator calculation. Define
+\begin{align*}
+ \widehat R_s&=C-\widehat A-sY,\\
+ K_s&=CY+CY^*-sG_Y-(YA+YA^*)/2,\\
+ S_s&=\widehat R_s^*\widehat R_s\\
+    &=H-CA-CA^*-s(CY+CY^*)+AG\\
+    &\hspace{12mm}+s(YA+YA^*)+s^2G_Y.
+\end{align*}
+The appearance of $AG$ is essential: $\widehat A$ takes values in
+the full Hilbert space, so this product measures action outside the
+trial span as well as inside it. Replacing $AG$ by a compressed action
+product would no longer equal the displayed residual Gram.
+
+Write the exact action discrepancy as
+\[
+ \mathcal EY=\widehat A+\Delta_RY+D,
+ \qquad\Delta_R^*=\Delta_R,\quad
+ \|\Delta_R\|\le\epsilon_R,\quad\|D\|\le g.
+\]
+The two errors have different structure. The first is a bounded
+selfadjoint operator applied to $Y$, so its quadratic price keeps
+$G_Y$. The second is a complete map error on the coefficient input,
+so its worst quadratic price is a scalar multiple of $I$.
+For each coefficient vector $x$,
+\begin{align*}
+ |\langle\Delta_RYx,Yx\rangle|
+     &\le\epsilon_R\|Yx\|^2,\\
+ |\Re\langle Dx,Yx\rangle|
+     &\le g\|Y\|_{\rm upper}\|x\|^2.
+\end{align*}
+Consequently the exact completed-square quadratic is bounded above by
+$K_s+\epsilon_RG_Y+g\|Y\|_{\rm upper}I$.
+
+For any $\tau>0$, vector Young's inequality also gives
+\begin{align*}
+ (\Delta_RY+D)^*(\Delta_RY+D)
+ \le (1+\tau)\epsilon_R^2G_Y+(1+1/\tau)g^2I.
+\end{align*}
+The true residual is $\widehat R_s-(\Delta_RY+D)$. Apply Young a
+second time, now with $\beta>0$, to separate this entire residual
+from its action error. Combining with \eqref{completed} gives
+\begin{align}\label{re5main}
+ C^*(\mathcal E+s)^{-1}C\le{}&K_s+a_YG_Y+a_SS_s+a_II,\\
+ a_Y&=\epsilon_R+
+          \frac{(1+1/\beta)(1+\tau)\epsilon_R^2}{s},\nonumber\\
+ a_S&=\frac{1+\beta}{s},\nonumber\\
+ a_I&=g\|Y\|_{\rm upper}
+       +\frac{(1+1/\beta)(1+1/\tau)g^2}{s}.\nonumber
+\end{align}
+The selected value $\tau=g/(\epsilon_R\|Y\|_{\rm upper})$ is
+strictly positive. No rank or inverse of $G_Y$ occurs anywhere in
+this proof. The coefficient space of $Y$ has the same dimension as
+that of $C$, which is all that is required by these products.
+
+\subsection{Inserting finite matrix uncertainties}
+For clarity, let the exact matrices above have symmetric or Hermitian
+centers carrying operator errors
+$e_G,e_{CY},e_{YA},e_{CA},e_{AG},e_H$.
+With exact rational $s$, the triangle inequality gives the input-error
+parts
+\begin{align*}
+ e_K&\le2e_{CY}+se_G+e_{YA},\\
+ e_S&\le e_H+2e_{CA}+2se_{CY}+e_{AG}
+                  +2se_{YA}+s^2e_G.
+\end{align*}
+The implementation additionally encloses the products and sums that
+form those centers, including conversion of the shift. Such assembly
+errors are added to $e_K,e_S$; they are not absorbed into the map
+error $g$ without proof. If $U_c$ is the center of
+$K_s+a_YG_Y+a_SS_s$, then a sufficient final upper comparison is
+\[
+ \frac{11}{10}\left[U_c+
+       (e_K+a_Ye_G+a_Se_S+a_I)I\right]\le\theta N.
+\]
+This follows because $a_Y,a_S\ge0$. An exact-input residual and
+orthogonality correction encloses the largest eigenvalue of the
+center. Its certified upper endpoint, after all scalar allowances,
+is compared with $\theta(1-10^{-8})$, using Proposition~\ref{inputs}.
+Thus a numerical spectral locator alone is never the final premise.
+The full input allowances and product guards are given in
+Supplement~S10--S11.
+
+\subsection{The certified parameter family}
+Supplement~S11 certifies the endpoints for $231$ rational $(\mu,\beta)$ candidates from
+these same cached Grams with independent exact-input Arb residuals,
+polar corrections, full assembly prices and rational endpoints.
+For $\mu=1/25,\beta=3/2$, the certified $\theta$ is exactly
+$0.867415467588$; for $\mu=1/20,\beta=1277/512$, it is exactly
+$0.787541154611$. Their exact losses are below the upward decimals in
+Theorem~\ref{main}. For $\mu=401/12800,\beta=1913/2048$,
+$\theta=499940839479/500000000000$ gives the third exact bound.
+Each final price is strictly below $\theta(1-10^{-8})$.
+Factorization and the original rest price prove Theorem~\ref{main}.
+The accompanying finite verifier checks the exact candidate endpoints;
+the saved primitive Grams determine each selected comparison.
+
+The central upper matrix has the form $A+\beta sG_Y+M/s$, $M\ge0$.
+It is operator convex in $s$, but its derivative can have either sign.
+Thus the adaptive rational-neighborhood search makes no monotone
+bisection or interval exclusion claim. Only candidates with $\theta<1$ enter the stated least-loss comparison;
+other tested endpoints can have a negative energy coefficient. Best tested
+in this class is not proved optimal.
+At the least-loss candidate the central price is about $0.997674$;
+the complete finite uncertainty is below $0.002208$. The actual whole
+residual and bounded continuum error remain substantive prices.
+
+\section{An actual equality obstruction to the fixed positive price}
+Define the first verified pole-null jet $h=(\Phi'''-\Phi'/4)/w$,
+$a=\langle h,q\rangle/Q$, and $k=h-aq$. Both $h$ and $q$ belong
+to $\Dom(G)\cap\ker A_W$; their transforms are polynomial multiples
+of $\Xi$, vanishing at every actual zero, with the full signed
+explicit formula and graph-domain extension. Moreover
+$\widehat{wk}(t)=it(t^2+1/4+a)\Xi(t)$, so $k\ne0$.
+\begin{theorem}[Fixed-price equality barrier]\label{barrier}
+On the score-only quotient, the actual vector $k$ satisfies
+\[
+ \langle R_{56}k,k\rangle-E_Y(k)>\frac7{5000}\|k\|^2,
+ \qquad \mathfrak a(k)=0.
+\]
+Therefore any comparison $R_{56}\le\theta(E_Y+s)$ with
+$0<\theta\le1$ requires $\theta s>7/5000$. Its scalar price
+$\alpha=\rho+\theta s$ must exceed $0.0018896181745$.
+This is a barrier for this fixed positive comparison, not a negative
+direction of the actual Weil form or a barrier after removing $k$.
+\end{theorem}
+\begin{proof}
+Two new complete meromorphic Arb integrals enclose
+$\langle h,q\rangle\approx73.93892065366$ and
+$\|h\|^2\approx54152.69071824$; their full theta and physical
+allowances are less than $2^{-130}$. They give $a>6$ and
+$0<D=\|k\|^2<55000$. The degree-five theta-atom jet polynomial is
+$-32y^5+360y^4-1056y^3+810y^2-90y$. Its complete lattice comparison
+bounds $|wh|/\Phi<20000e^{6x}$. The entire doubled norm and cross
+tails beyond $x=2$ are below
+$10^{11}\int_{54}^\infty t^8e^{-3t}\dd t<2^{-140}$.
+On $[0,2]$ the omitted lattice and quotient expansion cost less than
+$2^{-170}$; both costs are added before projection.
+
+Every midpoint price term is nonnegative. Keep only the $635$ cells
+with $t_i\le20$, replace $a$ by $6$ in the squared sine pairing,
+and evaluate the exact upward dyadic masses and actual $\Xi(t_i)$
+with complex Arb arithmetic. The resulting sum is greater than $1875$.
+Hence $r=\langle R_mk,k\rangle/D>3/88$; the omitted pole and all
+other midpoint cells only increase this lower bound.
+To compare this midpoint energy with the actual continuum energy,
+let $F_0$ be the continuum feature map and $F_1$ the midpoint map
+using the true cell masses, on a common $L^2$ coefficient space.
+Their positive products are respectively $SR_8S$ and $R_t$, and
+$\|F_0-F_1\|\le\sqrt{\delta_0}$. Since $0\le R_t\le R_m$,
+\begin{align*}
+ \sqrt{\langle SR_8Sk,k\rangle}
+ &=\|F_0^*k\|\\
+ &\le\|F_1^*k\|+\sqrt{\delta_0}\|k\|\\
+ &\le\sqrt{\langle R_mk,k\rangle}+\sqrt{\delta_0}\|k\|.
+\end{align*}
+This vectorwise bound uses no sign assertion about the difference
+$SR_8S-R_m$. It is stronger for the present purpose than replacing
+that difference by a whole-space absolute norm.
+
+Put $\varepsilon_c=3/12500$ and $T=S(J-J_8)S$. The exact identities
+and inequalities on the kernel vector are
+\begin{align*}
+ E_Y(k)&=\langle SR_8Sk,k\rangle+\langle Tk,k\rangle,\\
+ \langle Tk,k\rangle&\le t_8D,\\
+ \langle R_{56}k,k\rangle
+ &\ge\frac{11}{10}\langle R_mk,k\rangle
+                  -\frac{11}{10}\varepsilon_cD.
+\end{align*}
+The first follows from the signed form and $\mathfrak a(k)=0$;
+the last is the complete dense capture. Dividing by $D>0$ and
+using the feature-map triangle bound proves
+\begin{align}\label{barrierfunction}
+ \frac{\langle R_{56}k,k\rangle-E_Y(k)}D&\ge f(r),\\
+ f(r)&=\frac r{10}-2\sqrt{\delta_0r}-\delta_0
+                     -\frac{11}{10}\varepsilon_c-t_8.\nonumber
+\end{align}
+For $r\ge3/100$, its derivative
+$1/10-\sqrt{\delta_0/r}$ is positive. The outward scalar comparison
+$f(3/88)>7/5000$, together with $r>3/88$, gives the first assertion.
+Every signed arithmetic term is present in the kernel identity; only
+nonnegative midpoint terms were omitted in obtaining the lower sum.
+
+Finally suppose $R_{56}\le\theta(E_Y+s)$ with $0<\theta\le1$.
+Evaluation on this same vector, subtraction of $E_Y(k)$, and division
+by $D$ give
+\[
+ \frac7{5000}<\theta s-(1-\theta)\frac{E_Y(k)}D
+                                    \le\theta s.
+\]
+The nonnegativity of $E_Y$ justifies the last inequality. Adding the
+fixed $\rho$ proves the strict scalar-loss barrier in the theorem.
+Supplement~S8 gives the scalar integral enclosures and complete tails.
+\end{proof}
+
+The barrier identifies lost equality cancellation caused by the positive
+midpoint enlargement. It redirects improvement toward the signed rest
+or a kernel-aware price, rather than unlimited decimal tuning.
+For $\Pi=I-k\otimes k/D$, set $B'=\Pi B$, $C'=\Pi C$.
+The exact update is
+\begin{align*}
+ B'^*B'&=B^*B-b_kb_k^*/D,\\
+ C'^*C'&=C^*C-c_kc_k^*/D,\qquad b_k=B^*k,\quad c_k=Z^*b_k.
+\end{align*}
+Actual-zero orthogonality gives $V_0^*k=0$; hence the sampling,
+zero Gram and zero/feature cross-Gram remain unchanged. The projected
+rank is still $56$, since the existing sampling factor is injective.
+All columns retain their graph domain. The full projected action error
+costs $d\|CX\|+\eta_c\|C'X\|$; replacing the first norm by the
+second without proof would be invalid. Supplement~S8 proves these kernel-aware identities. Its first complete numerical
+test has upper price greater than one and proves no improved sign.
+
+\section{Signed continuation and the remaining complement}
+The positive comparison above is sufficient for Theorem~\ref{main}, but
+its equality barrier suggests retaining the signed cancellation. On the
+score quotient the exact operator-domain identity is
+\[
+ A_Y=SL_8S-2Sp\otimes Sp-S(J-J_8)S.
+\]
+Thus the continuum midpoint error cancels before approximation. For the
+same admissible enriched trial, Supplement~S12 proves a complete signed
+action error below $11/10^6$, including the full prime tail and physical
+output. Supplement~S13 gives a different cached signed approximant with
+error below $7/12500$, an actual positive five-dimensional subspace with
+form lower bound $\|f\|^2/5000$, and its full outside coupling. These
+secondary conclusions do not establish the sign of the complement.
+Supplement~S14 states an inverse-free, fully coupled Schur criterion and
+identifies its unverified mixed-action hypotheses. No improvement beyond
+Theorem~\ref{main} is inferred from them.
+
+\section{Reproducibility, literature and what remains}
+The accompanying release includes exact binary trials and matrices,
+input and executed-source fingerprints, the analytical supplement and a
+bounded finite verifier. That verifier checks hashes, rational consequences,
+selected enriched comparisons reconstructed from cached matrices, and the
+robust-capture inverse/Rayleigh calculation. It accepts the upstream
+quadrature, zero-completeness, Taylor, large-Gram and whole-action error
+allowances as inputs; it does not regenerate those computations.
+The distinction between analytical proof, certificate inputs, finite replay
+and formal verification is recorded explicitly in the release verification report.
+Ordinary sampled positivity and an unpriced FFT are not certificate inputs.
+
+The cancellation of a common bounded operator is elementary; its
+quantitative benefit here depends on the actual whole-action ledger.
+The factorization, coercive residual square and legal Schur inverse are
+standard \cite{Douglas,PR,DSS}. Our specific result concerns the whole
+theta-weighted complex odd domain and the exact arithmetic realization.
+Zhu's compact-window theorem already certifies finite/tail coupling and
+odd-sector positivity \cite[Theorems 1.1--1.2 and Section 6]{Zhu}.
+Specifically, Zhu's Theorem~1.1 lifts a finite Legendre block with
+explicit tail and coupling costs; Theorem~1.2 and Section~6 certify
+positivity for complex tests supported in $[-0.8,0.8]$. The odd-sector
+floor there is $8.2065\cdot10^{-15}$. Here the test is $wu$ on the whole
+line, the comparison norm is $\|u\|_{L^2(dx)}$, and the arithmetic tail
+is infinite. Compact support and theta multiplication impose different
+conditions, so neither numerical constant dominates the other theorem.
+Suzuki's Friedrichs realization on $L^2(-a,a)$ uses the same gamma
+multiplier, but its small-window positivity theorem has different
+support and norm hypotheses \cite[Theorems 1.1 and 1.4]{Suzuki}.
+Connes--Consani's archimedean trace lower bound has a finite loss under
+compact multiplicative support and a Fourier vanishing condition; it
+does not include the present full prime operator
+\cite[Theorem 6.11]{CC}. These are structural precedents. The contribution
+claimed here is the explicit theta-weighted whole-domain certificate
+and the fixed-price equality obstruction. No first-method or exhaustive
+priority claim is made.
+
+The zero-error task remains the original signed comparison
+$E_8(z)\ge\langle(R_8+J-J_8)z,z\rangle$ on the required quotient.
+At fixed $\rho>0$, even $s\downarrow0$ in a successful sufficient
+comparison would retain the floor $-\rho$; Theorem~\ref{barrier}
+locates a stronger obstruction for this particular fixed price.
+The residual-enriched whole-action certificate is used in
+Theorem~\ref{main}. The signed continuation certifies an actual positive
+five-dimensional subspace and its whole outside coupling; neither it
+nor the sharper signed-action estimate proves the required complement sign. The even sector and all-index Li transfer remain
+necessary. The published metric congruence retains its full
+$\beta\|M_\beta^{-1/2}v\|^2$ term and fixed-frame logarithmic
+conditioning \cite[Proposition 7.1]{Theta}; no $\beta\to0$ control follows.
+
+\subsection{Formal verification scope}
+The accompanying executable Lean~4.32.0 project checks the central
+abstract argument, with mathlib pinned to a recorded commit. It proves
+the coercive inverse bound, exact full-residual identity and upper bound,
+the complete action-error comparison, and the coefficient-metric
+transfer on the entire form domain. The composed declaration
+\texttt{enriched\_certified\_retained\_energy} passes from the full action
+decomposition and its finite upper-price certificate to the
+energy--loss conclusion. Complex scalar restriction retains every
+complex vector and its Hermitian quadratic; it does not replace the
+coefficient metric by the physical Gram.
+
+The kernel also checks the exact rational endpoint identities and pass
+predicates for all $231$ saved records, and the three displayed numerical
+consequences under their explicit premises. The $22$ audited declarations
+have only \texttt{propext}, \texttt{Classical.choice} and
+\texttt{Quot.sound} in their actual transitive axiom reports, with no
+\texttt{sorryAx}, custom axiom or native-evaluation extension.
+
+This is conditional formal verification of the proof mechanism and exact
+arithmetic. Construction of the theta operators and closed forms,
+resolvent existence, admissibility of the actual trial columns,
+theta/Fourier identities, prime and zero tails, interval matrix enclosures,
+and original-form/kernel identification remain analytical inputs proved
+or certified in the written account. The entire theta--Weil specialization
+and the equality-barrier proof are not claimed as formalized.
+The included \texttt{lean/README.md} and
+\texttt{verification/FORMAL\_CORRESPONDENCE.md} map the declarations to the
+published statements; the build and actual axiom output accompany the sources.
+
+\begin{thebibliography}{9}
+\bibitem{Theta} L. van Hemert, \emph{Sharp logarithmic coupling estimates
+for theta equality frames in a signed Weil-form realization}, v1.0.0,
+11 October 2026, \href{https://doi.org/10.5281/zenodo.23298499}
+{doi:10.5281/zenodo.23298499}, Lemma 5.1 and Proposition 7.1.
+\bibitem{Douglas} R. G. Douglas, \emph{On majorization, factorization,
+and range inclusion of operators on Hilbert space}, Proc. AMS 17 (1966),
+413--415, Theorem 1. \href{https://home.agh.edu.pl/~rudol/Operat/DouglasFactorizationLemma.pdf}{Original scan}.
+\bibitem{PR} A. T. Patera and G. Rozza, \emph{Reduced Basis Approximation
+and A Posteriori Error Estimation for Parametrized Partial Differential
+Equations}, Version 1.0, Copyright MIT 2006--2007, Part I,
+Section 4.3, Proposition 4C and (4.26b).
+\href{https://people.sissa.it/~grozza/wp-content/uploads/2024/10/PR07_Patera_Rozza_book_part1_redux.pdf}{Author-hosted text}.
+\bibitem{DSS} G. Dusson, I. M. Sigal and B. Stamm,
+\emph{The Feshbach--Schur map and perturbation theory},
+\href{https://arxiv.org/abs/2105.02058v1}{arXiv:2105.02058v1}, Theorem 1.2.
+\bibitem{Zhu} X. Zhu, \emph{Weil positivity in compact windows: a finite
+reduction, certified two-sided bounds, and a Landau--Widom decay law},
+\href{https://arxiv.org/abs/2608.24827v2}{arXiv:2608.24827v2},
+2 September 2026, Theorems 1.1--1.2 and Section 6.
+\bibitem{Suzuki} M. Suzuki, \emph{Weil's quadratic form via the screw
+function}, \href{https://arxiv.org/abs/2606.09096v3}{arXiv:2606.09096v3},
+23 September 2026, Theorems 1.1 and 1.4.
+\bibitem{CC} A. Connes and C. Consani, \emph{Weil positivity and Trace
+formula, the archimedean place},
+\href{https://arxiv.org/abs/2006.13771v1}{arXiv:2006.13771v1},
+24 June 2020, Theorem 6.11.
+\bibitem{FLINT} FLINT project, \emph{FLINT 3.6.0},
+\href{https://raw.githubusercontent.com/flintlib/flint/v3.6.0/doc/source/acb_dirichlet.rst}
+{versioned \texttt{acb\_dirichlet} documentation},
+\texttt{zeta\_zeros}, \texttt{zeta\_nzeros}, Turing count with multiplicity.
+\end{thebibliography}
+\end{document}

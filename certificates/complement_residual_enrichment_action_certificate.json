@@ -1,0 +1,81 @@
+{
+  "status": "PASS full RE5 enriched-trial certificate",
+  "precision_bits": 192,
+  "locators": {
+    "coupled_beta_2": {
+      "orthogonality": "[8.47299518523106895473204992617170387784517e-15 +/- 4.43e-57]",
+      "whole_residual": "[1.531332325533374898463826317968880447947059e-15 +/- 5.69e-58]",
+      "polar_correction": "[8.18003586486537625005704322610428608083621e-15 +/- 3.31e-57]"
+    },
+    "coupled_beta_5/2": {
+      "orthogonality": "[7.67869412947382187360887211773324970887087e-15 +/- 2.76e-57]",
+      "whole_residual": "[1.639166105767976214666844636370382629365687e-15 +/- 4.04e-58]",
+      "polar_correction": "[7.66237561432440999142642929908902915866949e-15 +/- 3.44e-57]"
+    },
+    "coupled_beta_3": {
+      "orthogonality": "[7.70640811806318590223272765465811342900128e-15 +/- 5.55e-57]",
+      "whole_residual": "[1.801892399509243373016677229063031043894515e-15 +/- 5.92e-58]",
+      "polar_correction": "[8.63135441444843078386469342878747837090536e-15 +/- 5.05e-57]"
+    }
+  },
+  "action_record_sha256": "e530857ce32dbaab301f8ef9085c08dfdead78258479701be3bc13eb575311c3",
+  "action_matrix_sha256": "1509969eeaf36edfffde3625fc5b11e17ae641b3721c97b1df547ea178dc3f95",
+  "action_executed_source_sha256": "bb3b37363a42f82f4d6a2faa4dae10239e0acd9fa3fd686a86719c8d3a6bfb4d",
+  "source_sha256": "19a6b8f4c6419644262435be636054764453b33c86d8a197d36c215451470ca6",
+  "route_sha256": "6cde937c30f5c5abd6eb284fd170f7276f541b33f7995a0bff69ca829ca4456f",
+  "calculation": "RE5 assembly only; completed point, whole-action, cross/Gram and native DFT stages reused",
+  "input_sha256": {
+    "complement_residual_enrichment_pilot.json": "59083e3804b70a86fb27885f5132f6a70ad83e3a923b6505b416d14518d279eb",
+    "complement_residual_enrichment_pilot_matrices.npz": "8c4bb30c3e969c4522b92af667e018859e9ad17a6d35cc4d1901560f07e08a24",
+    "complement_energy_resolvent.json": "6318beabe9812f1679d7fdb90a846b5477f882d40f14743f2029cd6b5c85f457",
+    "complement_energy_resolvent_matrices.npz": "0e4cc230db21c4a3796e79d1e39186b2defb79edaa0a2d4cc2beb9e102142bd6",
+    "complement_energy_resolvent_tighter_matrices.npz": "3b14e3bd86d530502bace088096db3cc86b0cba9e03f54bc8539f8dc47d68bb6",
+    "complement_midpoint_rank_factors.npz": "97873d70e5472682244984d2986288b60eb63aeba414f0b2cc4b1acd55daf5f9",
+    "complement_physical_frame_certificate.json": "8505edd30826a9117bd3fc76929eb4179f52da195314ed7d17f2507e297caafb",
+    "complement_physical_frame_locator.npz": "bd387bda2eb9c49b3f191e2e9a84072845f8953e6400199eaf7ccfed11cb81a7",
+    "complement_physical_norms.json": "99ebffe92756ab7e67e0fcc97c4c12348f90573e337471010c50d0f65cb8fd44",
+    "complement_signed_symbol_norm_cells.json": "cf4e6b03f62d5f787f41fb104f7912a7fcadd6333da3032ac086b36f5020df30",
+    "complement_low_zero_frame_certificate.json": "0fc15c8f6972f737376d154112c1b3e39dbd9761ad0e0ad261848a7e0b2d19e6",
+    "complement_low_zero_frame_matrices.npz": "0812a4c912fa040546088b100a62d58ae60bd8fde7d5fc0e16121f30283e91a0",
+    "complement_low_zero_taylor_grid_certificate.json": "9e3cea5c726274b1a7485215d5c05313147af66d3fcdb802222965df14c0dd7a",
+    "complement_low_zero_taylor_grid.npz": "a09c3eaf546b97ef2a2b174885572f8ba1b031925982417b24986cd8a6b402e0",
+    "complement_fourier_weight_grid.json": "b9b18b988354cf912bcc305946f9fe8ecdb677ad8b464bc5bd26be057b3bfe16"
+  },
+  "additional_exact_shift_frequency_tail_ball": "[8.66849702305399264493650253896433114292915758725557335e-89 +/- 6.97e-143]",
+  "choices": [
+    {
+      "beta_exact": "2",
+      "tau_ball": "[0.00050052134148593553272891104734019213 +/- 3.56e-39]",
+      "central_largest_eigenvalue": 0.7846934164344863,
+      "finite_matrix_error_ball": "[0.00389231835073833451246100775838 +/- 6.26e-33]",
+      "whole_price_upper_ball": "[0.78858573478523327137580804099885 +/- 7.85e-33]"
+    },
+    {
+      "beta_exact": "5/2",
+      "tau_ball": "[0.00050052134148593553272891104734019213 +/- 3.56e-39]",
+      "central_largest_eigenvalue": 0.7844054479832621,
+      "finite_matrix_error_ball": "[0.00433180377528211715303322358624 +/- 7.53e-33]",
+      "whole_price_upper_ball": "[0.78873725175855339461465012165821 +/- 9.15e-33]"
+    },
+    {
+      "beta_exact": "3",
+      "tau_ball": "[0.00050052134148593553272891104734019213 +/- 3.56e-39]",
+      "central_largest_eigenvalue": 0.8862055980309977,
+      "finite_matrix_error_ball": "[0.00477339863260139404405455357805 +/- 6.90e-33]",
+      "whole_price_upper_ball": "[0.89097899666360688042860816077974 +/- 8.43e-33]"
+    }
+  ],
+  "chosen_beta_exact": "2",
+  "chosen_price_upper_ball": "[0.78858573478523327137580804099885 +/- 7.85e-33]",
+  "rational_resolvent_coefficient_exact": "79/100",
+  "coefficient_metric_lower_exact": "99999999/100000000",
+  "exact_target": "7899999921/10000000000",
+  "mu_exact": "1/20",
+  "rho_exact": "979236349/2000000000000",
+  "shift_exact": "99020763651/2000000000000",
+  "whole_action_error_ball": "[1.42181987665150090504740206985108229e-5 +/- 6.47e-41]",
+  "elapsed_seconds": 0.1481809999968391,
+  "retained_energy_coefficient_exact": "21/100",
+  "full_floor_exact": "7920563963329/200000000000000",
+  "analytical_scope": "Entire original odd form domain under RE1-RE5 and existing original-operator/theta/score/frame ER premises; no even or Li exhaustion claim"
+}

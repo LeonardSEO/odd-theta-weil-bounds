@@ -1,0 +1,106 @@
+{
+  "status": "NOT PASS: explicit paid upper bound exceeds target",
+  "precision_bits": 128,
+  "locators": {
+    "Y_Gram": {
+      "orthogonality": "[8.2315928938460079437083e-15 +/- 3.48e-38]",
+      "whole_residual": "[3.9533426075976605412215e-15 +/- 1.28e-38]",
+      "polar_correction": "[4.2217204303532958721266e-14 +/- 3.68e-37]"
+    },
+    "coupled_beta_2": {
+      "orthogonality": "[9.4556966685009424413383e-15 +/- 5.64e-38]",
+      "whole_residual": "[7.3724178318444166522027e-14 +/- 3.81e-37]",
+      "polar_correction": "[5.8750883603034637735671e-13 +/- 6.73e-36]"
+    },
+    "coupled_beta_5/2": {
+      "orthogonality": "[7.8442558241245533031068e-15 +/- 3.70e-38]",
+      "whole_residual": "[5.8416116649699870520238e-14 +/- 6.01e-37]",
+      "polar_correction": "[4.5661703197224550142013e-13 +/- 3.19e-36]"
+    },
+    "coupled_beta_3": {
+      "orthogonality": "[7.8867151545926627194106e-15 +/- 1.47e-38]",
+      "whole_residual": "[5.2858091599952567952153e-14 +/- 5.45e-37]",
+      "polar_correction": "[4.3443091897429445583929e-13 +/- 4.41e-36]"
+    }
+  },
+  "trial": "exact binary b and v computed from saved pilot Bcoef,Vcoef,X; no rank or solve premise",
+  "input_sha256": {
+    "complement_residual_enrichment_pilot.json": "59083e3804b70a86fb27885f5132f6a70ad83e3a923b6505b416d14518d279eb",
+    "complement_residual_enrichment_pilot_matrices.npz": "8c4bb30c3e969c4522b92af667e018859e9ad17a6d35cc4d1901560f07e08a24",
+    "complement_energy_resolvent.json": "6318beabe9812f1679d7fdb90a846b5477f882d40f14743f2029cd6b5c85f457",
+    "complement_energy_resolvent_matrices.npz": "0e4cc230db21c4a3796e79d1e39186b2defb79edaa0a2d4cc2beb9e102142bd6",
+    "complement_energy_resolvent_tighter_matrices.npz": "3b14e3bd86d530502bace088096db3cc86b0cba9e03f54bc8539f8dc47d68bb6",
+    "complement_midpoint_rank_factors.npz": "97873d70e5472682244984d2986288b60eb63aeba414f0b2cc4b1acd55daf5f9",
+    "complement_physical_frame_certificate.json": "8505edd30826a9117bd3fc76929eb4179f52da195314ed7d17f2507e297caafb",
+    "complement_physical_frame_locator.npz": "bd387bda2eb9c49b3f191e2e9a84072845f8953e6400199eaf7ccfed11cb81a7",
+    "complement_physical_norms.json": "99ebffe92756ab7e67e0fcc97c4c12348f90573e337471010c50d0f65cb8fd44",
+    "complement_signed_symbol_norm_cells.json": "cf4e6b03f62d5f787f41fb104f7912a7fcadd6333da3032ac086b36f5020df30",
+    "complement_low_zero_frame_certificate.json": "0fc15c8f6972f737376d154112c1b3e39dbd9761ad0e0ad261848a7e0b2d19e6",
+    "complement_low_zero_frame_matrices.npz": "0812a4c912fa040546088b100a62d58ae60bd8fde7d5fc0e16121f30283e91a0",
+    "complement_low_zero_taylor_grid_certificate.json": "9e3cea5c726274b1a7485215d5c05313147af66d3fcdb802222965df14c0dd7a",
+    "complement_low_zero_taylor_grid.npz": "a09c3eaf546b97ef2a2b174885572f8ba1b031925982417b24986cd8a6b402e0",
+    "complement_fourier_weight_grid.json": "b9b18b988354cf912bcc305946f9fe8ecdb677ad8b464bc5bd26be057b3bfe16"
+  },
+  "source_sha256": "bb3b37363a42f82f4d6a2faa4dae10239e0acd9fa3fd686a86719c8d3a6bfb4d",
+  "route_sha256": "6cde937c30f5c5abd6eb284fd170f7276f541b33f7995a0bff69ca829ca4456f",
+  "action_prices": {
+    "strip_L1_A": "[1001590065.91453236233011597149242627 +/- 7.40e-27]",
+    "alias_before_w": "[1.53284223693659233037463552649445513e-5 +/- 5.38e-41]",
+    "frequency_tail_before_w": "[8.668497023053855163014766092159958e-89 +/- 1.70e-123]",
+    "node_before_w": "[1.7972743206047320863651609899027302515e-8 +/- 3.77e-46]",
+    "physical_tail": "[4.3252637351348392673179522311455817e-158 +/- 5.25e-193]",
+    "finite_Rmid_map_error": "[3.366658715647278254551961005522695353e-6 +/- 4.46e-43]",
+    "whole_map_error": "[1.42181987665150090504740206985108229e-5 +/- 6.46e-41]"
+  },
+  "frequency_step_exact": "1/20",
+  "frequency_limit": 3300,
+  "physical_radius": 3,
+  "DFT": {
+    "native": "acb.dft and inverse; all inputs exact binary; all output radii paid",
+    "length": 262144,
+    "kernel_halfwidth": 2560,
+    "kernel_l1_error": "[4.67326774791947683466352671350356546e-11 +/- 3.08e-47]",
+    "extracted_convolution_radius_Frobenius": 7.787991400730189e-14,
+    "whole_smooth_action_Gram_error": "[2.53706779839775790075051e-11 +/- 7.19e-35]"
+  },
+  "finite_Gram_errors": {
+    "Y_Gram": "[0.014115738590697375507993424532385326364 +/- 2.75e-40]",
+    "C_Y_cross": "[4.9795128462500920620306826668020447246e-5 +/- 7.83e-43]",
+    "Y_action_cross": "[5.596758115392712941626299162987214615e-6 +/- 6.07e-43]",
+    "C_action_cross": "[1.9823367870213764293061080309930388294e-8 +/- 7.65e-46]",
+    "whole_action_Gram": "[2.2634305647523719414501664e-9 +/- 4.66e-35]",
+    "K": "[0.00080406262241648798226415190401801907 +/- 4.73e-39]",
+    "whole_residual_Gram": "[4.01316502588435417475253082780e-5 +/- 6.39e-35]",
+    "Y_norm_upper": "[2.1592894569733258857468226501671438537 +/- 6.64e-38]"
+  },
+  "choices": [
+    {
+      "beta_exact": "2",
+      "tau_ball": "[1997.91680616699465057813976796726005 +/- 7.48e-33]",
+      "central_largest_eigenvalue": 54.33599191304734,
+      "finite_matrix_error_ball": "[0.16654261593928264987325500820607 +/- 7.57e-33]",
+      "whole_price_upper_ball": "[54.50253452898720027391439889778094 +/- 6.90e-33]",
+      "pass": false
+    },
+    {
+      "beta_exact": "5/2",
+      "tau_ball": "[1997.91680616699465057813976796726005 +/- 7.48e-33]",
+      "central_largest_eigenvalue": 50.76337695385931,
+      "finite_matrix_error_ball": "[0.15613874819125604363363425351760 +/- 5.59e-33]",
+      "whole_price_upper_ball": "[50.91951570205108375970822537906742 +/- 6.37e-33]",
+      "pass": false
+    },
+    {
+      "beta_exact": "3",
+      "tau_ball": "[1997.91680616699465057813976796726005 +/- 7.48e-33]",
+      "central_largest_eigenvalue": 48.381717850192274,
+      "finite_matrix_error_ball": "[0.14935144093352728699778354139325 +/- 4.79e-33]",
+      "whole_price_upper_ball": "[48.53106929112625703390869944247501 +/- 8.49e-33]",
+      "pass": false
+    }
+  ],
+  "chosen_beta_exact": "3",
+  "chosen_price_upper_ball": "[48.53106929112625703390869944247501 +/- 8.49e-33]",
+  "elapsed_seconds": 58.07747991599899,
+  "matrix_sha256": "1509969eeaf36edfffde3625fc5b11e17ae641b3721c97b1df547ea178dc3f95"
+}

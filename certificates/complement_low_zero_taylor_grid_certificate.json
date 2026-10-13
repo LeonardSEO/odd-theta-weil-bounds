@@ -1,0 +1,13 @@
+{
+  "status": "PASS completed Taylor grid in actual owner run; downstream far-cache indexing failed",
+  "precision_bits": 192,
+  "quadrature_order": 320,
+  "frequency_limit": 128,
+  "grid_denominator": 8,
+  "Taylor_order": 20,
+  "executed_source_sha256": "1dc91ef8d118e2791a4be848c34293e556befda026509abe9ff7a747ddd6e34a",
+  "grid_sha256": "a09c3eaf546b97ef2a2b174885572f8ba1b031925982417b24986cd8a6b402e0",
+  "execution_session": 76005,
+  "execution_output": "Certified Taylor grid 1024 / 1024; then complete A error 1.6247965143108305e-12; downstream Gzero far-cache IndexError",
+  "executed_source_file": "certificates/complement_low_zero_taylor_grid_executed_source.py"
+}
