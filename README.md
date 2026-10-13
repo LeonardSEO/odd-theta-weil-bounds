@@ -2,6 +2,8 @@
 
 **Leonard van Hemert · Version 1.0.0 · 13 October 2026**
 
+[GitHub source](https://github.com/LeonardSEO/odd-theta-weil-bounds) · [Releases](https://github.com/LeonardSEO/odd-theta-weil-bounds/releases) · [CI runs](https://github.com/LeonardSEO/odd-theta-weil-bounds/actions)
+
 This publication proves explicit lower bounds on the full complex odd form domain of a theta-weighted Riemann–Weil form. It combines an admissible residual-enriched trial, complete physical residual coupling and certified arithmetic tails. A quantitative equality-vector obstruction explains a limitation of the fixed positive comparison.
 
 Read [paper.pdf](paper.pdf) for the main argument and [supplement.pdf](supplement.pdf) for the detailed analytical and certificate construction. Their sources are `paper.tex` and `supplement.tex`. The existing rights notice is [NOTICE](NOTICE).
@@ -82,4 +84,4 @@ Packaging verifies archive membership and byte contents before reporting success
 
 [RELEASE_NOTES.md](RELEASE_NOTES.md) contains the repository description, release notes and concrete publication sequence. Publish the reviewed source and matching tagged GitHub release, archive that exact release through Zenodo, and then add the **actual issued version DOI** through an explicit metadata update. No DOI is invented in this package. Do not silently rewrite a frozen tag or reuse the earlier paper's DOI.
 
-The prepared GitHub Actions workflow builds Lean and checks its axioms and certificates. It has not been executed on GitHub during local preparation. [PROVENANCE.md](PROVENANCE.md) records the earlier versioned publication and the source lineage; [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) records dependency attribution. [ANNOUNCEMENT.md](ANNOUNCEMENT.md) is a proposed announcement, not an external message.
+The prepared GitHub Actions workflow builds Lean and checks its axioms and certificates. The linked CI runs record its execution on GitHub. [PROVENANCE.md](PROVENANCE.md) records the earlier versioned publication and the source lineage; [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) records dependency attribution. [ANNOUNCEMENT.md](ANNOUNCEMENT.md) is a proposed announcement, not an external message.
