@@ -1,6 +1,8 @@
 cff-version: 1.2.0
-message: "Please cite the preprint and its matching versioned source release. Add the issued DOI after archival."
+message: "Please cite the versioned preprint using its DOI."
 type: software
+doi: "10.5281/zenodo.23337494"
+url: "https://doi.org/10.5281/zenodo.23337494"
 repository-code: "https://github.com/LeonardSEO/odd-theta-weil-bounds"
 title: "Certified whole-domain bounds and equality barriers for the odd theta–Weil form"
 authors:
@@ -23,6 +25,10 @@ keywords:
   - Lean
 preferred-citation:
   type: article
+  doi: "10.5281/zenodo.23337494"
+  url: "https://doi.org/10.5281/zenodo.23337494"
+  publisher:
+    name: "Zenodo"
   title: "Certified whole-domain bounds and equality barriers for the odd theta–Weil form"
   authors:
     - family-names: "van Hemert"

@@ -11,16 +11,10 @@ Assets include the main paper, complete supplement, exact certificate inputs and
 
 RH, zero-loss positivity, the even-sector argument and the full Li transfer remain unresolved.
 
-## Suggested GitHub repository description
+## Publication
 
-Certified odd theta–Weil bounds, equality barriers, reproducible certificates and a pinned Lean proof project.
+Published on 13 October 2026. Cite the versioned preprint at [10.5281/zenodo.23337494](https://doi.org/10.5281/zenodo.23337494). The [Zenodo archive](https://doi.org/10.5281/zenodo.23337494) contains both PDFs, the complete source ZIP and original checksums. The [GitHub release](https://github.com/LeonardSEO/odd-theta-weil-bounds/releases/tag/v1.0.0) also includes the alternative tar.gz archive.
 
-## Publication handoff
+The [publication CI run](https://github.com/LeonardSEO/odd-theta-weil-bounds/actions/runs/38374755999) passed the Lean and certificate jobs. Detailed scope and evidence are in [the verification report](verification/VERIFICATION_REPORT.md).
 
-1. Review the PDFs, `verification/` reports, `NOTICE`, metadata and checksums. Confirm the author and preparation date. The public repository is [LeonardSEO/odd-theta-weil-bounds](https://github.com/LeonardSEO/odd-theta-weil-bounds).
-2. Publish this readable source tree, including `lean/`, its lock file and verification logs. Run the provided GitHub Actions workflow. Resolve any platform-specific failure before release.
-3. Tag the reviewed, verified source commit `v1.0.0`. Create a matching GitHub release and attach `paper.pdf`, `supplement.pdf`, the versioned source archives and `SHA256SUMS`. Do not change assets after freezing the release.
-4. Archive that exact release through Zenodo (connect the repository before publishing the release, or upload the matching reviewed assets manually). Confirm the resulting record corresponds to the tag and retain the actual version DOI and concept DOI separately.
-5. In an explicit follow-up metadata commit or new version, record the issued version DOI in `CITATION.cff`, `.zenodo.json` and `README.md`. Update the Zenodo record as appropriate. Do not invent a DOI, relabel the earlier work's DOI, or rewrite the frozen source tag. If changed source/PDF bytes are to be released, use a new version with new archives and checksums.
-
-The follow-up instruction authorizes GitHub publication. Zenodo archival and DOI minting remain a separate handoff.
+Subsequent author-attribution, citation and documentation updates are recorded on the default branch. The v1.0.0 tag, PDFs and release archives remain unchanged.

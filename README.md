@@ -2,13 +2,15 @@
 
 **Leonard van Hemert · Version 1.0.0 · 13 October 2026**
 
-[GitHub source](https://github.com/LeonardSEO/odd-theta-weil-bounds) · [Releases](https://github.com/LeonardSEO/odd-theta-weil-bounds/releases) · [CI runs](https://github.com/LeonardSEO/odd-theta-weil-bounds/actions)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23337494.svg)](https://doi.org/10.5281/zenodo.23337494)
+
+[Read the paper](https://github.com/LeonardSEO/odd-theta-weil-bounds/releases/download/v1.0.0/paper.pdf) · [Supplement](https://github.com/LeonardSEO/odd-theta-weil-bounds/releases/download/v1.0.0/supplement.pdf) · [Download v1.0.0](https://github.com/LeonardSEO/odd-theta-weil-bounds/releases/tag/v1.0.0) · [Verification](https://github.com/LeonardSEO/odd-theta-weil-bounds/actions/workflows/verify.yml)
 
 This publication proves explicit lower bounds on the full complex odd form domain of a theta-weighted Riemann–Weil form. It combines an admissible residual-enriched trial, complete physical residual coupling and certified arithmetic tails. A quantitative equality-vector obstruction explains a limitation of the fixed positive comparison.
 
-Read [paper.pdf](paper.pdf) for the main argument and [supplement.pdf](supplement.pdf) for the detailed analytical and certificate construction. Their sources are `paper.tex` and `supplement.tex`. The existing rights notice is [NOTICE](NOTICE).
+The **14-page paper** develops the main theorem and its significance. The **17-page supplement** supplies the domain arguments, complete arithmetic tails, matrix estimates and certificate derivations. This repository contains both manuscripts, the required certificate data and scripts, and the complete Lean proof project.
 
-## Mathematical scope
+## Main result
 
 Under the exact hypotheses of the main theorem, with `z = (I − P_K)u` on the original odd form domain and the original positive energy `E₈`, the certified family contains:
 
@@ -24,7 +26,13 @@ The equality barrier proves that the fixed positive midpoint comparison overshoo
 
 RH, zero-loss positivity, the even-sector argument and the full Li transfer remain unresolved.
 
-## Lean verification
+## Reproduce the verification
+
+The [release verification report](verification/VERIFICATION_REPORT.md) records the executed checks. The frozen publication commit passed both the Lean and certificate jobs in [GitHub Actions](https://github.com/LeonardSEO/odd-theta-weil-bounds/actions/runs/38374755999).
+
+For the exact published source, download a source archive from [v1.0.0](https://github.com/LeonardSEO/odd-theta-weil-bounds/releases/tag/v1.0.0), extract it and run the commands below from its root.
+
+### Lean
 
 The complete readable project is in [lean/](lean/), pinned to **Lean 4.32.0** and mathlib commit `81a5d257c8e410db227a6665ed08f64fea08e997`, with dependency revisions in `lake-manifest.json`. The checked proof chain includes the domain-explicit full-residual resolvent identity and upper bound, complete action-error inequalities, coefficient-metric transfer on the form domain, and exact rational certificate consequences.
 
@@ -43,7 +51,7 @@ cd ..
 
 The axiom check accepts only Lean's standard logical axioms `propext`, `Classical.choice` and `Quot.sound`. It rejects `sorryAx`, custom axioms and native-evaluation trust extensions. Explicit hypotheses in the theorem types are mathematical premises, not hidden axioms; they are listed in the correspondence report.
 
-## Certificate checks
+### Certificates
 
 Use Python 3.14 and an isolated virtual environment:
 
@@ -57,7 +65,7 @@ Run without Python's `-O` flag: assertions perform the checks. The checker is re
 
 Historical generators in `computations/` may overwrite certificate files and perform expensive work; do not use them as the routine verifier. Optional generation dependencies are recorded separately in `requirements-generation.txt`. Numerical regeneration may depend on BLAS locator choices; cross-platform byte-identical regeneration is not claimed.
 
-## Build the PDFs
+### Manuscripts
 
 With Tectonic 0.17.0 (used for this release), run from the repository root:
 
@@ -68,20 +76,36 @@ tectonic supplement.tex
 
 Both sources are standalone and include their bibliography. TeX Live with `latexmk -pdf paper.tex` and `latexmk -pdf supplement.tex` is an alternative, not tested for this release. The supplement is linked by filename; keep both PDFs together.
 
-## Release assets and checksums
+## Downloads and integrity
 
-`MANIFEST.sha256` fingerprints publication/source files, including the Lean project and PDFs. `SHA256SUMS` fingerprints the two PDFs and the versioned source archives in `dist/`. The archives include the source manifest and readable Lean proof sources and dependency lock, excluding installed dependencies, caches and `.git`. `SHA256SUMS` accompanies the archives rather than being embedded in them, avoiding a circular checksum.
+The [Zenodo record](https://doi.org/10.5281/zenodo.23337494) archives the paper, supplement, complete source ZIP and original checksums. The [GitHub v1.0.0 release](https://github.com/LeonardSEO/odd-theta-weil-bounds/releases/tag/v1.0.0) also provides the alternative tar archive:
+
+- `paper.pdf` and `supplement.pdf`.
+- Complete source archives in `.tar.gz` and `.zip` formats, including readable Lean proofs and the dependency lock.
+- `SHA256SUMS` for the four files above.
+
+To check downloaded release assets, place both PDFs and `SHA256SUMS` in one directory and both archives in its `dist/` subdirectory, then run:
 
 ```sh
-python3 scripts/package_release.py
 shasum -a 256 -c SHA256SUMS
+```
+
+Each source archive also contains `MANIFEST.sha256`. From the extracted source directory, verify its contents with:
+
+```sh
 shasum -a 256 -c MANIFEST.sha256
 ```
 
-Packaging verifies archive membership and byte contents before reporting success. Rebuilding PDFs or modifying any source changes release bytes; regenerate checksums and use a new version after a release is frozen.
+The tagged release and its downloadable assets are fixed. The default branch includes subsequent citation and documentation updates; its source manifest describes that checkout. Installed dependencies and build caches are excluded from the source archives.
 
-## GitHub and Zenodo handoff
+## Citation
 
-[RELEASE_NOTES.md](RELEASE_NOTES.md) contains the repository description, release notes and concrete publication sequence. Publish the reviewed source and matching tagged GitHub release, archive that exact release through Zenodo, and then add the **actual issued version DOI** through an explicit metadata update. No DOI is invented in this package. Do not silently rewrite a frozen tag or reuse the earlier paper's DOI.
+Leonard van Hemert. *Certified whole-domain bounds and equality barriers for the odd theta–Weil form*. Version 1.0.0, Zenodo, 2026. [10.5281/zenodo.23337494](https://doi.org/10.5281/zenodo.23337494).
 
-The prepared GitHub Actions workflow builds Lean and checks its axioms and certificates. The linked CI runs record its execution on GitHub. [PROVENANCE.md](PROVENANCE.md) records the earlier versioned publication and the source lineage; [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) records dependency attribution. [ANNOUNCEMENT.md](ANNOUNCEMENT.md) is a proposed announcement, not an external message.
+Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
+
+## Documentation and rights
+
+[Release notes](RELEASE_NOTES.md) describe version 1.0.0. [Provenance](PROVENANCE.md) records the mathematical sources and release lineage. The [formal correspondence](verification/FORMAL_CORRESPONDENCE.md) and [certificate scope](verification/CERTIFICATE_SCOPE.md) identify the verification boundary in detail.
+
+Copyright © 2026 Leonard van Hemert. All rights reserved; see [NOTICE](NOTICE). Public availability does not grant an open-content or open-source licence. Third-party dependency attribution is recorded in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

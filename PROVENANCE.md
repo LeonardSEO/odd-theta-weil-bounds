@@ -1,6 +1,6 @@
 # Provenance and rights
 
-This is version 1.0.0 of **Certified whole-domain bounds and equality barriers for the odd theta–Weil form**, by Leonard van Hemert. It is a new publication, distinct from the earlier *Coupling estimates* publication. The publication date is the manuscript's preparation date. GitHub publication is recorded in [the repository history](https://github.com/LeonardSEO/odd-theta-weil-bounds); a Zenodo DOI for this new work has not been assigned.
+This is version 1.0.0 of **Certified whole-domain bounds and equality barriers for the odd theta–Weil form**, by Leonard van Hemert. It is a new publication, distinct from the earlier *Coupling estimates* publication. The publication date is the manuscript's preparation date. GitHub publication is recorded in [the repository history](https://github.com/LeonardSEO/odd-theta-weil-bounds); this work is archived at [10.5281/zenodo.23337494](https://doi.org/10.5281/zenodo.23337494).
 
 ## Mathematical source
 
@@ -20,4 +20,10 @@ The existing `NOTICE` applies to this publication and packaging. No new open-con
 
 ## Release identity
 
-`MANIFEST.sha256` identifies the release's tracked publication files. `SHA256SUMS` identifies the PDF and versioned source archive assets. Neither checksum file asserts mathematical truth. A subsequent DOI metadata update must be an explicit new commit or version; never silently replace the bytes of a frozen tagged release.
+`MANIFEST.sha256` identifies the tracked publication files in the corresponding checkout or extracted archive. `SHA256SUMS` identifies the PDF and versioned source archive assets. Neither checksum file asserts mathematical truth. A subsequent DOI metadata update must be an explicit new commit or version; never silently replace the bytes of a frozen tagged release.
+
+## Post-publication metadata and author attribution
+
+On 13 October 2026, the Zenodo record [10.5281/zenodo.23337494](https://doi.org/10.5281/zenodo.23337494) was published with the two PDFs, complete source ZIP and original `SHA256SUMS`. The public API confirmed the title, author, version, publication state and all four file sizes and MD5 checksums against the frozen local assets. The alternative tar.gz archive remains available on the matching GitHub release. The concept DOI is [10.5281/zenodo.23337493](https://doi.org/10.5281/zenodo.23337493).
+
+The frozen `v1.0.0` tag remains at `aadbdb0affb9e97124f68d2c37e388fdd2304345`, whose [CI run](https://github.com/LeonardSEO/odd-theta-weil-bounds/actions/runs/38374755999) passed. At the author's request, the five commits on the default branch were reattributed to the LeonardSEO account, producing `5ab7c958bcca1100c408f49f7809a4001da67be9`; their trees were unchanged. The tag and release asset bytes were preserved. This follow-up documentation commit records the issued DOI and updates the public README and citation metadata. Its source manifest covers the updated checkout; the manifests inside the frozen archives remain unchanged.
