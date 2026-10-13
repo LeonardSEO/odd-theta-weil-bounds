@@ -251,10 +251,38 @@ exec(compile(ast.Module(body=setup, type_ignores=[]), str(source), 'exec'), name
 published = [search['best_tested_scalar'], search['best_tested_energy']]
 published += [next(row for row in passed if row['mu_exact'] == mu and row['beta_exact'] == beta)
               for mu, beta in [('1/25', '3/2'), ('1/20', '1277/512')]]
+# Reuse the same assembly and every error term, stopping before the eigensolver.
+assembly_function = next(node for node in ast.parse(source.read_text()).body
+                         if isinstance(node, ast.FunctionDef) and node.name == 'evaluate')
+assembly_function.name = 'assemble_comparison'
+end = next(i for i, node in enumerate(assembly_function.body)
+           if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'top'
+                                                  for t in node.targets))
+assembly_function.body = assembly_function.body[:end] + [ast.Return(
+    value=ast.Tuple(elts=[ast.Name(id='upper', ctx=ast.Load()),
+                          ast.Name(id='err', ctx=ast.Load())], ctx=ast.Load()))]
+assembly_module = ast.fix_missing_locations(ast.Module(body=[assembly_function], type_ignores=[]))
+exec(compile(assembly_module, str(source), 'exec'), namespace)
+
+def positive_definite(matrix):
+    # Interval LDL: positive pivots certify the strict Loewner inequality.
+    entries = [[matrix[i, j] for j in range(matrix.ncols())]
+               for i in range(matrix.nrows())]
+    for k in range(len(entries)):
+        pivot = entries[k][k]
+        assert pivot > 0, ('nonpositive or unresolved LDL pivot', k, str(pivot))
+        for i in range(k + 1, len(entries)):
+            factor = entries[i][k] / pivot
+            for j in range(i, len(entries)):
+                entries[j][i] -= factor * entries[j][k]
+                entries[i][j] = entries[j][i]
+
 for row in published:
-    replay = namespace['evaluate'](Fraction(row['mu_exact']), Fraction(row['beta_exact']))
-    # Reconstructed price, not the stored price_ball, must meet the published theta.
-    assert arb(replay['price_ball']) < aq(Fraction(row['theta_exact']) * nlo)
-    print('PASS reconstructed published enriched row', row['mu_exact'], row['beta_exact'])
+    upper, error = namespace['assemble_comparison'](Fraction(row['mu_exact']), Fraction(row['beta_exact']))
+    threshold = aq(Fraction(row['theta_exact']) * nlo) - error
+    dimension = len(upper)
+    identity = arb_mat(np.eye(dimension).astype(int).tolist())
+    positive_definite(threshold * identity - symmetric(upper))
+    print('PASS reconstructed published enriched row by strict Arb LDL', row['mu_exact'], row['beta_exact'])
 runpy.run_path(str(root / 'computations/complement_enriched_signed_tail_capture_check.py'), run_name='__certificate_st2__')
 print('PASS bounded certificate verification; upstream cached integral/zero/DFT/Gram error claims remain premises')

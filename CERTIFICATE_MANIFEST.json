@@ -272,12 +272,12 @@
       "bytes": 15852
     },
     "scripts/check_certificates.py": {
-      "sha256": "67dd5598f2c5cf425f873b8435143d5d52a06e9853e1223c22cebd8b33594285",
-      "bytes": 14929
+      "sha256": "4b1ad0e5b07e3bde63060b03e6058b0426541bda6155fde40c7cf8ed92f240d7",
+      "bytes": 16514
     },
     "verification/CERTIFICATE_SCOPE.md": {
-      "sha256": "2ec9dacf9f8f338ed6bebc62333b633bc9e6f93df588cddb99e93bde3c782dd1",
-      "bytes": 7515
+      "sha256": "c9fe1ad3a80fd23004d8f938909f27dbf3527180f01c5b732a3cc3ddce908adc",
+      "bytes": 7882
     }
   },
   "verification_scope": "Bounded read-only hash closure, exact-input finite guards, all 231 saved rational endpoints, four published enriched prices reconstructed from cached matrices, signed finite guards, and fresh ST2 inverse/Rayleigh check. Upstream integral/zero/DFT/large-Gram error claims remain accepted premises; see verification/CERTIFICATE_SCOPE.md. Cell-certificate command/cwd provenance alone is sanitized; historical digests are preserved and explicitly resolved through a verified canonical-payload adaptation.",
@@ -323,7 +323,10 @@
       "canonical_original_release_payload_comparison": "equal during preparation",
       "private_absolute_paths_in_owned_text_files": false,
       "historical_digest_policy": "unchanged original references resolved via explicitly declared provenance-only alias"
-    }
+    },
+    "published_row_spectral_method": "Strict Arb LDL of (published theta * coefficient lower - full unchanged assembly error) I minus reconstructed symmetric comparison center; no fresh eigensolver/polar surcharge.",
+    "published_row_portability_repair_status": "PASS local checker with four strict Arb LDL certificates; platform CI execution is tracked by GitHub Actions.",
+    "LDL_control_checks": "PASS: positive definite 2x2 accepted; indefinite 2x2, singular 2x2, and interval-uncertain 1x1 rejected. Executed extracted checker function without rerunning numerical certificates."
   },
   "certificate_hash_links": {
     "certificates/complement_energy_resolvent.json": {
